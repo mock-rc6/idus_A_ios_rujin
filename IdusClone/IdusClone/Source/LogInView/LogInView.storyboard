@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4WZ-sR-cOp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="j5U-Rk-A0E">
+            <objects>
+                <viewController storyboardIdentifier="LogInViewController" id="4WZ-sR-cOp" customClass="LogInViewController" customModule="IdusClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YcI-CP-08Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="LogInViewBg" translatesAutoresizingMaskIntoConstraints="NO" id="94p-n2-MsO">
+                                <rect key="frame" x="0.0" y="-27" width="414" height="923"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gU-pd-spP">
+                                <rect key="frame" x="55" y="116" width="305" height="285"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LogInBanner" translatesAutoresizingMaskIntoConstraints="NO" id="Dkv-lp-A2x">
+                                        <rect key="frame" x="8" y="8" width="289" height="266"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="266" id="YLQ-q5-S8C"/>
+                                            <constraint firstAttribute="width" constant="289" id="p6A-sZ-962"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97591799499999998" green="0.97303384540000004" blue="0.96612542869999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Dkv-lp-A2x" secondAttribute="bottom" constant="11" id="PFQ-0x-UiW"/>
+                                    <constraint firstAttribute="height" constant="285" id="TnY-t4-6P4"/>
+                                    <constraint firstItem="Dkv-lp-A2x" firstAttribute="leading" secondItem="4gU-pd-spP" secondAttribute="leading" constant="8" id="ahv-Zg-gU8"/>
+                                    <constraint firstAttribute="width" constant="305" id="apg-F3-EtG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dkv-lp-A2x" secondAttribute="trailing" constant="8" id="lKH-YV-skV"/>
+                                    <constraint firstItem="Dkv-lp-A2x" firstAttribute="top" secondItem="4gU-pd-spP" secondAttribute="top" constant="8" id="xze-16-IO7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLf-34-Tmv">
+                                <rect key="frame" x="55" y="531" width="305" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="스크린샷 2022-06-26 오후 6.34.18" title="카카오로 3초만에 시작하기" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="19"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="0.98431372640000003" green="0.9098039269" blue="0.30980393290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GJE-Wo-e38"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GJE-Wo-e38" firstAttribute="trailing" secondItem="4gU-pd-spP" secondAttribute="trailing" constant="54" id="Cud-Er-h5Q"/>
+                            <constraint firstItem="4gU-pd-spP" firstAttribute="leading" secondItem="GJE-Wo-e38" secondAttribute="leading" constant="55" id="MQs-zJ-ICa"/>
+                            <constraint firstItem="4gU-pd-spP" firstAttribute="top" secondItem="GJE-Wo-e38" secondAttribute="top" constant="72" id="Oj4-cj-wBE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="topBannerView" destination="Dkv-lp-A2x" id="ASn-ir-qVu"/>
+                        <outlet property="topView" destination="4gU-pd-spP" id="IPX-Uv-DNc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nmV-fY-Qat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogInBanner" width="516" height="504"/>
+        <image name="LogInViewBg" width="886" height="1976"/>
+        <image name="스크린샷 2022-06-26 오후 6.34.18" width="96" height="90"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

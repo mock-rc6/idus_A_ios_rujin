@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D71F2868543A00CF1A1B /* AppDelegate.swift */; };
+		17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7212868543A00CF1A1B /* SceneDelegate.swift */; };
+		17F0D7242868543A00CF1A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7232868543A00CF1A1B /* ViewController.swift */; };
+		17F0D7272868543A00CF1A1B /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F0D7252868543A00CF1A1B /* Splash.storyboard */; };
+		17F0D72A2868543A00CF1A1B /* IdusClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7282868543A00CF1A1B /* IdusClone.xcdatamodeld */; };
+		17F0D72C2868543E00CF1A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17F0D72B2868543E00CF1A1B /* Assets.xcassets */; };
+		17F0D73A2868543E00CF1A1B /* IdusCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7392868543E00CF1A1B /* IdusCloneTests.swift */; };
+		17F0D7442868543E00CF1A1B /* IdusCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7432868543E00CF1A1B /* IdusCloneUITests.swift */; };
+		17F0D7462868543E00CF1A1B /* IdusCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7452868543E00CF1A1B /* IdusCloneUITestsLaunchTests.swift */; };
+		17F0D755286855D000CF1A1B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D754286855D000CF1A1B /* Constant.swift */; };
+		17F0D7592868565800CF1A1B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7582868565800CF1A1B /* SplashViewController.swift */; };
+		17F0D75B286856A800CF1A1B /* LogInView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F0D75A286856A800CF1A1B /* LogInView.storyboard */; };
+		17F0D75D286856B900CF1A1B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D75C286856B900CF1A1B /* LogInViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17F0D7362868543E00CF1A1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17F0D7142868543A00CF1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17F0D71B2868543A00CF1A1B;
+			remoteInfo = IdusClone;
+		};
+		17F0D7402868543E00CF1A1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17F0D7142868543A00CF1A1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17F0D71B2868543A00CF1A1B;
+			remoteInfo = IdusClone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17F0D71C2868543A00CF1A1B /* IdusClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdusClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F0D71F2868543A00CF1A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17F0D7212868543A00CF1A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		17F0D7232868543A00CF1A1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17F0D7262868543A00CF1A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Splash.storyboard; sourceTree = "<group>"; };
+		17F0D7292868543A00CF1A1B /* IdusClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IdusClone.xcdatamodel; sourceTree = "<group>"; };
+		17F0D72B2868543E00CF1A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17F0D7302868543E00CF1A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F0D7352868543E00CF1A1B /* IdusCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdusCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F0D7392868543E00CF1A1B /* IdusCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdusCloneTests.swift; sourceTree = "<group>"; };
+		17F0D73F2868543E00CF1A1B /* IdusCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdusCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F0D7432868543E00CF1A1B /* IdusCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdusCloneUITests.swift; sourceTree = "<group>"; };
+		17F0D7452868543E00CF1A1B /* IdusCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdusCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		17F0D754286855D000CF1A1B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		17F0D7582868565800CF1A1B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		17F0D75A286856A800CF1A1B /* LogInView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInView.storyboard; sourceTree = "<group>"; };
+		17F0D75C286856B900CF1A1B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17F0D7192868543A00CF1A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17F0D7322868543E00CF1A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17F0D73C2868543E00CF1A1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17F0D7132868543A00CF1A1B = {
+			isa = PBXGroup;
+			children = (
+				17F0D71E2868543A00CF1A1B /* IdusClone */,
+				17F0D7382868543E00CF1A1B /* IdusCloneTests */,
+				17F0D7422868543E00CF1A1B /* IdusCloneUITests */,
+				17F0D71D2868543A00CF1A1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17F0D71D2868543A00CF1A1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17F0D71C2868543A00CF1A1B /* IdusClone.app */,
+				17F0D7352868543E00CF1A1B /* IdusCloneTests.xctest */,
+				17F0D73F2868543E00CF1A1B /* IdusCloneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17F0D71E2868543A00CF1A1B /* IdusClone */ = {
+			isa = PBXGroup;
+			children = (
+				17F0D753286855C200CF1A1B /* Configuration */,
+				17F0D752286855B800CF1A1B /* Source */,
+				17F0D71F2868543A00CF1A1B /* AppDelegate.swift */,
+				17F0D7212868543A00CF1A1B /* SceneDelegate.swift */,
+				17F0D7232868543A00CF1A1B /* ViewController.swift */,
+				17F0D72B2868543E00CF1A1B /* Assets.xcassets */,
+				17F0D7302868543E00CF1A1B /* Info.plist */,
+				17F0D7282868543A00CF1A1B /* IdusClone.xcdatamodeld */,
+			);
+			path = IdusClone;
+			sourceTree = "<group>";
+		};
+		17F0D7382868543E00CF1A1B /* IdusCloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				17F0D7392868543E00CF1A1B /* IdusCloneTests.swift */,
+			);
+			path = IdusCloneTests;
+			sourceTree = "<group>";
+		};
+		17F0D7422868543E00CF1A1B /* IdusCloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17F0D7432868543E00CF1A1B /* IdusCloneUITests.swift */,
+				17F0D7452868543E00CF1A1B /* IdusCloneUITestsLaunchTests.swift */,
+			);
+			path = IdusCloneUITests;
+			sourceTree = "<group>";
+		};
+		17F0D752286855B800CF1A1B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				17F0D756286855E800CF1A1B /* Splash */,
+				17F0D757286855F100CF1A1B /* LogInView */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		17F0D753286855C200CF1A1B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				17F0D754286855D000CF1A1B /* Constant.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		17F0D756286855E800CF1A1B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				17F0D7252868543A00CF1A1B /* Splash.storyboard */,
+				17F0D7582868565800CF1A1B /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		17F0D757286855F100CF1A1B /* LogInView */ = {
+			isa = PBXGroup;
+			children = (
+				17F0D75A286856A800CF1A1B /* LogInView.storyboard */,
+				17F0D75C286856B900CF1A1B /* LogInViewController.swift */,
+			);
+			path = LogInView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17F0D71B2868543A00CF1A1B /* IdusClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17F0D7492868543E00CF1A1B /* Build configuration list for PBXNativeTarget "IdusClone" */;
+			buildPhases = (
+				17F0D7182868543A00CF1A1B /* Sources */,
+				17F0D7192868543A00CF1A1B /* Frameworks */,
+				17F0D71A2868543A00CF1A1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IdusClone;
+			productName = IdusClone;
+			productReference = 17F0D71C2868543A00CF1A1B /* IdusClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17F0D7342868543E00CF1A1B /* IdusCloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17F0D74C2868543E00CF1A1B /* Build configuration list for PBXNativeTarget "IdusCloneTests" */;
+			buildPhases = (
+				17F0D7312868543E00CF1A1B /* Sources */,
+				17F0D7322868543E00CF1A1B /* Frameworks */,
+				17F0D7332868543E00CF1A1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17F0D7372868543E00CF1A1B /* PBXTargetDependency */,
+			);
+			name = IdusCloneTests;
+			productName = IdusCloneTests;
+			productReference = 17F0D7352868543E00CF1A1B /* IdusCloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17F0D73E2868543E00CF1A1B /* IdusCloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17F0D74F2868543E00CF1A1B /* Build configuration list for PBXNativeTarget "IdusCloneUITests" */;
+			buildPhases = (
+				17F0D73B2868543E00CF1A1B /* Sources */,
+				17F0D73C2868543E00CF1A1B /* Frameworks */,
+				17F0D73D2868543E00CF1A1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17F0D7412868543E00CF1A1B /* PBXTargetDependency */,
+			);
+			name = IdusCloneUITests;
+			productName = IdusCloneUITests;
+			productReference = 17F0D73F2868543E00CF1A1B /* IdusCloneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17F0D7142868543A00CF1A1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					17F0D71B2868543A00CF1A1B = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					17F0D7342868543E00CF1A1B = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 17F0D71B2868543A00CF1A1B;
+					};
+					17F0D73E2868543E00CF1A1B = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 17F0D71B2868543A00CF1A1B;
+					};
+				};
+			};
+			buildConfigurationList = 17F0D7172868543A00CF1A1B /* Build configuration list for PBXProject "IdusClone" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17F0D7132868543A00CF1A1B;
+			productRefGroup = 17F0D71D2868543A00CF1A1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17F0D71B2868543A00CF1A1B /* IdusClone */,
+				17F0D7342868543E00CF1A1B /* IdusCloneTests */,
+				17F0D73E2868543E00CF1A1B /* IdusCloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17F0D71A2868543A00CF1A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F0D72C2868543E00CF1A1B /* Assets.xcassets in Resources */,
+				17F0D75B286856A800CF1A1B /* LogInView.storyboard in Resources */,
+				17F0D7272868543A00CF1A1B /* Splash.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17F0D7332868543E00CF1A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17F0D73D2868543E00CF1A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17F0D7182868543A00CF1A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F0D72A2868543A00CF1A1B /* IdusClone.xcdatamodeld in Sources */,
+				17F0D7242868543A00CF1A1B /* ViewController.swift in Sources */,
+				17F0D755286855D000CF1A1B /* Constant.swift in Sources */,
+				17F0D75D286856B900CF1A1B /* LogInViewController.swift in Sources */,
+				17F0D7592868565800CF1A1B /* SplashViewController.swift in Sources */,
+				17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */,
+				17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17F0D7312868543E00CF1A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F0D73A2868543E00CF1A1B /* IdusCloneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17F0D73B2868543E00CF1A1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F0D7442868543E00CF1A1B /* IdusCloneUITests.swift in Sources */,
+				17F0D7462868543E00CF1A1B /* IdusCloneUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17F0D7372868543E00CF1A1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17F0D71B2868543A00CF1A1B /* IdusClone */;
+			targetProxy = 17F0D7362868543E00CF1A1B /* PBXContainerItemProxy */;
+		};
+		17F0D7412868543E00CF1A1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17F0D71B2868543A00CF1A1B /* IdusClone */;
+			targetProxy = 17F0D7402868543E00CF1A1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17F0D7252868543A00CF1A1B /* Splash.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17F0D7262868543A00CF1A1B /* Base */,
+			);
+			name = Splash.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17F0D7472868543E00CF1A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17F0D7482868543E00CF1A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17F0D74A2868543E00CF1A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U53S827ZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IdusClone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Splash;
+				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rooznn.IdusClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17F0D74B2868543E00CF1A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U53S827ZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IdusClone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Splash;
+				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rooznn.IdusClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		17F0D74D2868543E00CF1A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U53S827ZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rooznn.IdusCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdusClone.app/IdusClone";
+			};
+			name = Debug;
+		};
+		17F0D74E2868543E00CF1A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U53S827ZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rooznn.IdusCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdusClone.app/IdusClone";
+			};
+			name = Release;
+		};
+		17F0D7502868543E00CF1A1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U53S827ZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rooznn.IdusCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IdusClone;
+			};
+			name = Debug;
+		};
+		17F0D7512868543E00CF1A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U53S827ZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rooznn.IdusCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IdusClone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17F0D7172868543A00CF1A1B /* Build configuration list for PBXProject "IdusClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17F0D7472868543E00CF1A1B /* Debug */,
+				17F0D7482868543E00CF1A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17F0D7492868543E00CF1A1B /* Build configuration list for PBXNativeTarget "IdusClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17F0D74A2868543E00CF1A1B /* Debug */,
+				17F0D74B2868543E00CF1A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17F0D74C2868543E00CF1A1B /* Build configuration list for PBXNativeTarget "IdusCloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17F0D74D2868543E00CF1A1B /* Debug */,
+				17F0D74E2868543E00CF1A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17F0D74F2868543E00CF1A1B /* Build configuration list for PBXNativeTarget "IdusCloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17F0D7502868543E00CF1A1B /* Debug */,
+				17F0D7512868543E00CF1A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		17F0D7282868543A00CF1A1B /* IdusClone.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				17F0D7292868543A00CF1A1B /* IdusClone.xcdatamodel */,
+			);
+			currentVersion = 17F0D7292868543A00CF1A1B /* IdusClone.xcdatamodel */;
+			path = IdusClone.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 17F0D7142868543A00CF1A1B /* Project object */;
+}
