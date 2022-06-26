@@ -12,6 +12,8 @@
 		17E406D52868D5630006DFF4 /* EmailRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406D32868D5630006DFF4 /* EmailRegisterViewController.swift */; };
 		17E406D62868D5640006DFF4 /* EmailRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E406D42868D5630006DFF4 /* EmailRegisterViewController.xib */; };
 		17E406D92869009D0006DFF4 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406D82869009D0006DFF4 /* UIImage.swift */; };
+		17E406DD2869091D0006DFF4 /* MemberLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406DB2869091D0006DFF4 /* MemberLoginViewController.swift */; };
+		17E406DE2869091D0006DFF4 /* MemberLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E406DC2869091D0006DFF4 /* MemberLoginViewController.xib */; };
 		17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D71F2868543A00CF1A1B /* AppDelegate.swift */; };
 		17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7212868543A00CF1A1B /* SceneDelegate.swift */; };
 		17F0D7242868543A00CF1A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7232868543A00CF1A1B /* ViewController.swift */; };
@@ -53,6 +55,8 @@
 		17E406D32868D5630006DFF4 /* EmailRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegisterViewController.swift; sourceTree = "<group>"; };
 		17E406D42868D5630006DFF4 /* EmailRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailRegisterViewController.xib; sourceTree = "<group>"; };
 		17E406D82869009D0006DFF4 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		17E406DB2869091D0006DFF4 /* MemberLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberLoginViewController.swift; sourceTree = "<group>"; };
+		17E406DC2869091D0006DFF4 /* MemberLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberLoginViewController.xib; sourceTree = "<group>"; };
 		17F0D71C2868543A00CF1A1B /* IdusClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdusClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F0D71F2868543A00CF1A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F0D7212868543A00CF1A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,15 @@
 				17E406D82869009D0006DFF4 /* UIImage.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		17E406DA286908FB0006DFF4 /* MemberLogin */ = {
+			isa = PBXGroup;
+			children = (
+				17E406DB2869091D0006DFF4 /* MemberLoginViewController.swift */,
+				17E406DC2869091D0006DFF4 /* MemberLoginViewController.xib */,
+			);
+			path = MemberLogin;
 			sourceTree = "<group>";
 		};
 		17F0D7132868543A00CF1A1B = {
@@ -218,6 +231,7 @@
 		17F0D757286855F100CF1A1B /* LogInView */ = {
 			isa = PBXGroup;
 			children = (
+				17E406DA286908FB0006DFF4 /* MemberLogin */,
 				17E406CE2868D46B0006DFF4 /* EmailRegister */,
 				1726D9592868BA2F00C5B0E5 /* MainLogin */,
 			);
@@ -358,6 +372,7 @@
 			files = (
 				17E406D62868D5640006DFF4 /* EmailRegisterViewController.xib in Resources */,
 				17F0D72C2868543E00CF1A1B /* Assets.xcassets in Resources */,
+				17E406DE2869091D0006DFF4 /* MemberLoginViewController.xib in Resources */,
 				17F0D75B286856A800CF1A1B /* LogInView.storyboard in Resources */,
 				17F0D7272868543A00CF1A1B /* Splash.storyboard in Resources */,
 			);
@@ -495,6 +510,7 @@
 				17F0D7592868565800CF1A1B /* SplashViewController.swift in Sources */,
 				17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */,
 				17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */,
+				17E406DD2869091D0006DFF4 /* MemberLoginViewController.swift in Sources */,
 				17E406D52868D5630006DFF4 /* EmailRegisterViewController.swift in Sources */,
 				1726D95B2868BA9800C5B0E5 /* BottomSheetViewController.swift in Sources */,
 			);

@@ -58,8 +58,16 @@ class LogInViewController: UIViewController {
         actionsheet.addAction(cancel)
         
         self.present(actionsheet, animated: true, completion: nil)
-        
+    
     }
+    
+    //MARK: - 기존 회원 로그인
+    @IBAction func pressMemberLoginBtn(_ sender: UIButton) {
+        let vc = MemberLoginViewController()
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
+    
     
     func initUI() {
         topView.layer.cornerRadius = 15

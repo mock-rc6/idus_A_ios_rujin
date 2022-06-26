@@ -121,7 +121,7 @@ class EmailRegisterViewController: UIViewController {
         registerBtn.layer.cornerRadius = 20
         view.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
         
-        //leftTopBtn.imageView?.image = UIImage(named: "keyboard")
+        leftTopBtn.imageView?.image = UIImage(named: "keyboard")
     }
     
     func setAgreeBtn() {
