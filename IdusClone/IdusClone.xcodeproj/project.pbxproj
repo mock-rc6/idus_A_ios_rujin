@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		099F3DDF578C5920C2A832E5 /* Pods_IdusCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812AF351AB8C5FC865A590FB /* Pods_IdusCloneTests.framework */; };
 		1726D95B2868BA9800C5B0E5 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1726D95A2868BA9800C5B0E5 /* BottomSheetViewController.swift */; };
+		17E406D52868D5630006DFF4 /* EmailRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406D32868D5630006DFF4 /* EmailRegisterViewController.swift */; };
+		17E406D62868D5640006DFF4 /* EmailRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E406D42868D5630006DFF4 /* EmailRegisterViewController.xib */; };
+		17E406D92869009D0006DFF4 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406D82869009D0006DFF4 /* UIImage.swift */; };
 		17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D71F2868543A00CF1A1B /* AppDelegate.swift */; };
 		17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7212868543A00CF1A1B /* SceneDelegate.swift */; };
 		17F0D7242868543A00CF1A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7232868543A00CF1A1B /* ViewController.swift */; };
@@ -47,6 +50,9 @@
 		0BCC9586F3C050EBB5FC7673 /* Pods-IdusCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdusCloneTests.release.xcconfig"; path = "Target Support Files/Pods-IdusCloneTests/Pods-IdusCloneTests.release.xcconfig"; sourceTree = "<group>"; };
 		1577374A859C3039803769A1 /* Pods_IdusClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdusClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1726D95A2868BA9800C5B0E5 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		17E406D32868D5630006DFF4 /* EmailRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegisterViewController.swift; sourceTree = "<group>"; };
+		17E406D42868D5630006DFF4 /* EmailRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailRegisterViewController.xib; sourceTree = "<group>"; };
+		17E406D82869009D0006DFF4 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		17F0D71C2868543A00CF1A1B /* IdusClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdusClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F0D71F2868543A00CF1A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F0D7212868543A00CF1A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,14 +107,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1726D9592868BA2F00C5B0E5 /* LogInMainView */ = {
+		1726D9592868BA2F00C5B0E5 /* MainLogin */ = {
 			isa = PBXGroup;
 			children = (
 				17F0D75A286856A800CF1A1B /* LogInView.storyboard */,
 				17F0D75C286856B900CF1A1B /* LogInViewController.swift */,
 				1726D95A2868BA9800C5B0E5 /* BottomSheetViewController.swift */,
 			);
-			path = LogInMainView;
+			path = MainLogin;
+			sourceTree = "<group>";
+		};
+		17E406CE2868D46B0006DFF4 /* EmailRegister */ = {
+			isa = PBXGroup;
+			children = (
+				17E406D32868D5630006DFF4 /* EmailRegisterViewController.swift */,
+				17E406D42868D5630006DFF4 /* EmailRegisterViewController.xib */,
+			);
+			path = EmailRegister;
+			sourceTree = "<group>";
+		};
+		17E406D72869006B0006DFF4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				17E406D82869009D0006DFF4 /* UIImage.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		17F0D7132868543A00CF1A1B = {
@@ -137,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				17F0D753286855C200CF1A1B /* Configuration */,
+				17E406D72869006B0006DFF4 /* Extension */,
 				17F0D752286855B800CF1A1B /* Source */,
 				17F0D71F2868543A00CF1A1B /* AppDelegate.swift */,
 				17F0D7212868543A00CF1A1B /* SceneDelegate.swift */,
@@ -194,7 +218,8 @@
 		17F0D757286855F100CF1A1B /* LogInView */ = {
 			isa = PBXGroup;
 			children = (
-				1726D9592868BA2F00C5B0E5 /* LogInMainView */,
+				17E406CE2868D46B0006DFF4 /* EmailRegister */,
+				1726D9592868BA2F00C5B0E5 /* MainLogin */,
 			);
 			path = LogInView;
 			sourceTree = "<group>";
@@ -331,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17E406D62868D5640006DFF4 /* EmailRegisterViewController.xib in Resources */,
 				17F0D72C2868543E00CF1A1B /* Assets.xcassets in Resources */,
 				17F0D75B286856A800CF1A1B /* LogInView.storyboard in Resources */,
 				17F0D7272868543A00CF1A1B /* Splash.storyboard in Resources */,
@@ -462,12 +488,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				17F0D72A2868543A00CF1A1B /* IdusClone.xcdatamodeld in Sources */,
+				17E406D92869009D0006DFF4 /* UIImage.swift in Sources */,
 				17F0D7242868543A00CF1A1B /* ViewController.swift in Sources */,
 				17F0D755286855D000CF1A1B /* Constant.swift in Sources */,
 				17F0D75D286856B900CF1A1B /* LogInViewController.swift in Sources */,
 				17F0D7592868565800CF1A1B /* SplashViewController.swift in Sources */,
 				17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */,
 				17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */,
+				17E406D52868D5630006DFF4 /* EmailRegisterViewController.swift in Sources */,
 				1726D95B2868BA9800C5B0E5 /* BottomSheetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
