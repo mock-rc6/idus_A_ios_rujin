@@ -1,0 +1,6 @@
+framework module Pods_IdusCloneTests {
+  umbrella header "Pods-IdusCloneTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

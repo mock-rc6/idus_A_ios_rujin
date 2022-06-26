@@ -24,7 +24,7 @@ class SplashViewController: UIViewController {
   
     // MARK: 토큰이 없을때
     func hasnotToken() {
-        guard let vc = UIStoryboard(name: "LogInView", bundle: nil).instantiateViewController(identifier: "LogInViewController") as? LogInViewController else { return }
+        guard let vc = UIStoryboard(name: "LogInView", bundle: nil).instantiateViewController(identifier: "LogInVC") as? LogInViewController else { return }
         vc.modalPresentationStyle = .overFullScreen
         self.present(vc, animated: true, completion: nil)
     }

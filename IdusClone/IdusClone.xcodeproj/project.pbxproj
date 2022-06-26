@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099F3DDF578C5920C2A832E5 /* Pods_IdusCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812AF351AB8C5FC865A590FB /* Pods_IdusCloneTests.framework */; };
+		1726D95B2868BA9800C5B0E5 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1726D95A2868BA9800C5B0E5 /* BottomSheetViewController.swift */; };
 		17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D71F2868543A00CF1A1B /* AppDelegate.swift */; };
 		17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7212868543A00CF1A1B /* SceneDelegate.swift */; };
 		17F0D7242868543A00CF1A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7232868543A00CF1A1B /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 		17F0D7592868565800CF1A1B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7582868565800CF1A1B /* SplashViewController.swift */; };
 		17F0D75B286856A800CF1A1B /* LogInView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17F0D75A286856A800CF1A1B /* LogInView.storyboard */; };
 		17F0D75D286856B900CF1A1B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D75C286856B900CF1A1B /* LogInViewController.swift */; };
+		9F0627392A45ED03D9C6370E /* Pods_IdusClone_IdusCloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A12C966BC70344B44BED23F /* Pods_IdusClone_IdusCloneUITests.framework */; };
+		EE61A2D02BB8FCB5971A3BF4 /* Pods_IdusClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1577374A859C3039803769A1 /* Pods_IdusClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BCC9586F3C050EBB5FC7673 /* Pods-IdusCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdusCloneTests.release.xcconfig"; path = "Target Support Files/Pods-IdusCloneTests/Pods-IdusCloneTests.release.xcconfig"; sourceTree = "<group>"; };
+		1577374A859C3039803769A1 /* Pods_IdusClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdusClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1726D95A2868BA9800C5B0E5 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		17F0D71C2868543A00CF1A1B /* IdusClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdusClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F0D71F2868543A00CF1A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F0D7212868543A00CF1A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +64,13 @@
 		17F0D7582868565800CF1A1B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		17F0D75A286856A800CF1A1B /* LogInView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogInView.storyboard; sourceTree = "<group>"; };
 		17F0D75C286856B900CF1A1B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2665CC38FDF6691A8ACAED2C /* Pods-IdusClone-IdusCloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdusClone-IdusCloneUITests.debug.xcconfig"; path = "Target Support Files/Pods-IdusClone-IdusCloneUITests/Pods-IdusClone-IdusCloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DE60D8EA0953BA5B62003E5 /* Pods-IdusClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdusClone.release.xcconfig"; path = "Target Support Files/Pods-IdusClone/Pods-IdusClone.release.xcconfig"; sourceTree = "<group>"; };
+		4AAC67FDD6D39EFA2D599F86 /* Pods-IdusClone-IdusCloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdusClone-IdusCloneUITests.release.xcconfig"; path = "Target Support Files/Pods-IdusClone-IdusCloneUITests/Pods-IdusClone-IdusCloneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5A12C966BC70344B44BED23F /* Pods_IdusClone_IdusCloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdusClone_IdusCloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		812AF351AB8C5FC865A590FB /* Pods_IdusCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdusCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81E2CAC1EA5BCA23AEBCFBC3 /* Pods-IdusClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdusClone.debug.xcconfig"; path = "Target Support Files/Pods-IdusClone/Pods-IdusClone.debug.xcconfig"; sourceTree = "<group>"; };
+		8B82C909A3E4C389EFF4079E /* Pods-IdusCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdusCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-IdusCloneTests/Pods-IdusCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE61A2D02BB8FCB5971A3BF4 /* Pods_IdusClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099F3DDF578C5920C2A832E5 /* Pods_IdusCloneTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +94,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0627392A45ED03D9C6370E /* Pods_IdusClone_IdusCloneUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1726D9592868BA2F00C5B0E5 /* LogInMainView */ = {
+			isa = PBXGroup;
+			children = (
+				17F0D75A286856A800CF1A1B /* LogInView.storyboard */,
+				17F0D75C286856B900CF1A1B /* LogInViewController.swift */,
+				1726D95A2868BA9800C5B0E5 /* BottomSheetViewController.swift */,
+			);
+			path = LogInMainView;
+			sourceTree = "<group>";
+		};
 		17F0D7132868543A00CF1A1B = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +118,8 @@
 				17F0D7382868543E00CF1A1B /* IdusCloneTests */,
 				17F0D7422868543E00CF1A1B /* IdusCloneUITests */,
 				17F0D71D2868543A00CF1A1B /* Products */,
+				D953885834D96F9090BF2AB0 /* Pods */,
+				9302F2462D76FFA9D4441B01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,10 +194,32 @@
 		17F0D757286855F100CF1A1B /* LogInView */ = {
 			isa = PBXGroup;
 			children = (
-				17F0D75A286856A800CF1A1B /* LogInView.storyboard */,
-				17F0D75C286856B900CF1A1B /* LogInViewController.swift */,
+				1726D9592868BA2F00C5B0E5 /* LogInMainView */,
 			);
 			path = LogInView;
+			sourceTree = "<group>";
+		};
+		9302F2462D76FFA9D4441B01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1577374A859C3039803769A1 /* Pods_IdusClone.framework */,
+				5A12C966BC70344B44BED23F /* Pods_IdusClone_IdusCloneUITests.framework */,
+				812AF351AB8C5FC865A590FB /* Pods_IdusCloneTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D953885834D96F9090BF2AB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81E2CAC1EA5BCA23AEBCFBC3 /* Pods-IdusClone.debug.xcconfig */,
+				2DE60D8EA0953BA5B62003E5 /* Pods-IdusClone.release.xcconfig */,
+				2665CC38FDF6691A8ACAED2C /* Pods-IdusClone-IdusCloneUITests.debug.xcconfig */,
+				4AAC67FDD6D39EFA2D599F86 /* Pods-IdusClone-IdusCloneUITests.release.xcconfig */,
+				8B82C909A3E4C389EFF4079E /* Pods-IdusCloneTests.debug.xcconfig */,
+				0BCC9586F3C050EBB5FC7673 /* Pods-IdusCloneTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17F0D7492868543E00CF1A1B /* Build configuration list for PBXNativeTarget "IdusClone" */;
 			buildPhases = (
+				D577B5EF9350822CA7B01F1B /* [CP] Check Pods Manifest.lock */,
 				17F0D7182868543A00CF1A1B /* Sources */,
 				17F0D7192868543A00CF1A1B /* Frameworks */,
 				17F0D71A2868543A00CF1A1B /* Resources */,
+				907DF6187BD9A0A2725DED32 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17F0D74C2868543E00CF1A1B /* Build configuration list for PBXNativeTarget "IdusCloneTests" */;
 			buildPhases = (
+				BED56927005A16DE20FBFD5B /* [CP] Check Pods Manifest.lock */,
 				17F0D7312868543E00CF1A1B /* Sources */,
 				17F0D7322868543E00CF1A1B /* Frameworks */,
 				17F0D7332868543E00CF1A1B /* Resources */,
@@ -213,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17F0D74F2868543E00CF1A1B /* Build configuration list for PBXNativeTarget "IdusCloneUITests" */;
 			buildPhases = (
+				5B307B7412431719D7F72B47 /* [CP] Check Pods Manifest.lock */,
 				17F0D73B2868543E00CF1A1B /* Sources */,
 				17F0D73C2868543E00CF1A1B /* Frameworks */,
 				17F0D73D2868543E00CF1A1B /* Resources */,
+				894B2288B2C13ACA772D72A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,6 +353,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5B307B7412431719D7F72B47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IdusClone-IdusCloneUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		894B2288B2C13ACA772D72A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IdusClone-IdusCloneUITests/Pods-IdusClone-IdusCloneUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IdusClone-IdusCloneUITests/Pods-IdusClone-IdusCloneUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IdusClone-IdusCloneUITests/Pods-IdusClone-IdusCloneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		907DF6187BD9A0A2725DED32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IdusClone/Pods-IdusClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IdusClone/Pods-IdusClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IdusClone/Pods-IdusClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BED56927005A16DE20FBFD5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IdusCloneTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D577B5EF9350822CA7B01F1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IdusClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17F0D7182868543A00CF1A1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -309,6 +468,7 @@
 				17F0D7592868565800CF1A1B /* SplashViewController.swift in Sources */,
 				17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */,
 				17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */,
+				1726D95B2868BA9800C5B0E5 /* BottomSheetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +632,7 @@
 		};
 		17F0D74A2868543E00CF1A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81E2CAC1EA5BCA23AEBCFBC3 /* Pods-IdusClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -500,6 +661,7 @@
 		};
 		17F0D74B2868543E00CF1A1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE60D8EA0953BA5B62003E5 /* Pods-IdusClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -528,6 +690,7 @@
 		};
 		17F0D74D2868543E00CF1A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B82C909A3E4C389EFF4079E /* Pods-IdusCloneTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,6 +711,7 @@
 		};
 		17F0D74E2868543E00CF1A1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BCC9586F3C050EBB5FC7673 /* Pods-IdusCloneTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -568,6 +732,7 @@
 		};
 		17F0D7502868543E00CF1A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2665CC38FDF6691A8ACAED2C /* Pods-IdusClone-IdusCloneUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +751,7 @@
 		};
 		17F0D7512868543E00CF1A1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AAC67FDD6D39EFA2D599F86 /* Pods-IdusClone-IdusCloneUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
