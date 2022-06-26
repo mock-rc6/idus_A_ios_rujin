@@ -17,6 +17,7 @@
 		17E86568286733CD0039312A /* idusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E86567286733CD0039312A /* idusTests.swift */; };
 		17E86572286733CD0039312A /* idusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E86571286733CD0039312A /* idusUITests.swift */; };
 		17E86574286733CD0039312A /* idusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E86573286733CD0039312A /* idusUITestsLaunchTests.swift */; };
+		17F0D7062868423C00CF1A1B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7052868423C00CF1A1B /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		17E8656D286733CD0039312A /* idusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = idusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E86571286733CD0039312A /* idusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = idusUITests.swift; sourceTree = "<group>"; };
 		17E86573286733CD0039312A /* idusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = idusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		17F0D7052868423C00CF1A1B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,8 @@
 		17E8654C286733CA0039312A /* idus */ = {
 			isa = PBXGroup;
 			children = (
+				17F0D7072868426300CF1A1B /* Source */,
+				17F0D7042868421100CF1A1B /* Configuration */,
 				17E8654D286733CA0039312A /* AppDelegate.swift */,
 				17E8654F286733CA0039312A /* SceneDelegate.swift */,
 				17E86551286733CA0039312A /* ViewController.swift */,
@@ -128,6 +132,29 @@
 				17E86573286733CD0039312A /* idusUITestsLaunchTests.swift */,
 			);
 			path = idusUITests;
+			sourceTree = "<group>";
+		};
+		17F0D7042868421100CF1A1B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				17F0D7052868423C00CF1A1B /* Constant.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		17F0D7072868426300CF1A1B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				17F0D7082868428900CF1A1B /* Splash */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		17F0D7082868428900CF1A1B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +290,7 @@
 			files = (
 				17E86552286733CA0039312A /* ViewController.swift in Sources */,
 				17E8654E286733CA0039312A /* AppDelegate.swift in Sources */,
+				17F0D7062868423C00CF1A1B /* Constant.swift in Sources */,
 				17E86558286733CA0039312A /* idus.xcdatamodeld in Sources */,
 				17E86550286733CA0039312A /* SceneDelegate.swift in Sources */,
 			);
