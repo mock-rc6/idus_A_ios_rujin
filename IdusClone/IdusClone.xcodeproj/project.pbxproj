@@ -12,8 +12,19 @@
 		17E406D52868D5630006DFF4 /* EmailRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406D32868D5630006DFF4 /* EmailRegisterViewController.swift */; };
 		17E406D62868D5640006DFF4 /* EmailRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E406D42868D5630006DFF4 /* EmailRegisterViewController.xib */; };
 		17E406D92869009D0006DFF4 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406D82869009D0006DFF4 /* UIImage.swift */; };
-		17E406DD2869091D0006DFF4 /* MemberLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406DB2869091D0006DFF4 /* MemberLoginViewController.swift */; };
-		17E406DE2869091D0006DFF4 /* MemberLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E406DC2869091D0006DFF4 /* MemberLoginViewController.xib */; };
+		17E406E928698D6F0006DFF4 /* MemberLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406E728698D6F0006DFF4 /* MemberLoginViewController.swift */; };
+		17E406EA28698D6F0006DFF4 /* MemberLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E406E828698D6F0006DFF4 /* MemberLoginViewController.xib */; };
+		17E406EE2869957B0006DFF4 /* BaseStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E406ED2869957B0006DFF4 /* BaseStoryBoard.storyboard */; };
+		17E406F0286996000006DFF4 /* WorkView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E406EF286996000006DFF4 /* WorkView.storyboard */; };
+		17E406F6286996440006DFF4 /* ClassView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E406F5286996440006DFF4 /* ClassView.storyboard */; };
+		17E406F82869965B0006DFF4 /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E406F72869965B0006DFF4 /* SearchView.storyboard */; };
+		17E406FA286996640006DFF4 /* CategoryView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E406F9286996640006DFF4 /* CategoryView.storyboard */; };
+		17E406FC2869966E0006DFF4 /* MyInfoView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E406FB2869966E0006DFF4 /* MyInfoView.storyboard */; };
+		17E406FE2869968A0006DFF4 /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406FD2869968A0006DFF4 /* MyInfoViewController.swift */; };
+		17E407002869969A0006DFF4 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406FF2869969A0006DFF4 /* CategoryViewController.swift */; };
+		17E40702286996A50006DFF4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40701286996A50006DFF4 /* SearchViewController.swift */; };
+		17E40704286996AD0006DFF4 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40703286996AD0006DFF4 /* ClassViewController.swift */; };
+		17E40706286996BB0006DFF4 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40705286996BB0006DFF4 /* WorkViewController.swift */; };
 		17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D71F2868543A00CF1A1B /* AppDelegate.swift */; };
 		17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7212868543A00CF1A1B /* SceneDelegate.swift */; };
 		17F0D7242868543A00CF1A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7232868543A00CF1A1B /* ViewController.swift */; };
@@ -55,8 +66,19 @@
 		17E406D32868D5630006DFF4 /* EmailRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegisterViewController.swift; sourceTree = "<group>"; };
 		17E406D42868D5630006DFF4 /* EmailRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailRegisterViewController.xib; sourceTree = "<group>"; };
 		17E406D82869009D0006DFF4 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		17E406DB2869091D0006DFF4 /* MemberLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberLoginViewController.swift; sourceTree = "<group>"; };
-		17E406DC2869091D0006DFF4 /* MemberLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberLoginViewController.xib; sourceTree = "<group>"; };
+		17E406E728698D6F0006DFF4 /* MemberLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberLoginViewController.swift; sourceTree = "<group>"; };
+		17E406E828698D6F0006DFF4 /* MemberLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberLoginViewController.xib; sourceTree = "<group>"; };
+		17E406ED2869957B0006DFF4 /* BaseStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseStoryBoard.storyboard; sourceTree = "<group>"; };
+		17E406EF286996000006DFF4 /* WorkView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorkView.storyboard; sourceTree = "<group>"; };
+		17E406F5286996440006DFF4 /* ClassView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClassView.storyboard; sourceTree = "<group>"; };
+		17E406F72869965B0006DFF4 /* SearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchView.storyboard; sourceTree = "<group>"; };
+		17E406F9286996640006DFF4 /* CategoryView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryView.storyboard; sourceTree = "<group>"; };
+		17E406FB2869966E0006DFF4 /* MyInfoView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyInfoView.storyboard; sourceTree = "<group>"; };
+		17E406FD2869968A0006DFF4 /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		17E406FF2869969A0006DFF4 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		17E40701286996A50006DFF4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		17E40703286996AD0006DFF4 /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+		17E40705286996BB0006DFF4 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
 		17F0D71C2868543A00CF1A1B /* IdusClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdusClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F0D71F2868543A00CF1A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F0D7212868543A00CF1A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,10 +163,63 @@
 		17E406DA286908FB0006DFF4 /* MemberLogin */ = {
 			isa = PBXGroup;
 			children = (
-				17E406DB2869091D0006DFF4 /* MemberLoginViewController.swift */,
-				17E406DC2869091D0006DFF4 /* MemberLoginViewController.xib */,
+				17E406E728698D6F0006DFF4 /* MemberLoginViewController.swift */,
+				17E406E828698D6F0006DFF4 /* MemberLoginViewController.xib */,
 			);
 			path = MemberLogin;
+			sourceTree = "<group>";
+		};
+		17E406EB286995130006DFF4 /* WorkView */ = {
+			isa = PBXGroup;
+			children = (
+				17E406EF286996000006DFF4 /* WorkView.storyboard */,
+				17E40705286996BB0006DFF4 /* WorkViewController.swift */,
+			);
+			path = WorkView;
+			sourceTree = "<group>";
+		};
+		17E406EC286995600006DFF4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				17E406ED2869957B0006DFF4 /* BaseStoryBoard.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		17E406F1286996070006DFF4 /* ClassView */ = {
+			isa = PBXGroup;
+			children = (
+				17E406F5286996440006DFF4 /* ClassView.storyboard */,
+				17E40703286996AD0006DFF4 /* ClassViewController.swift */,
+			);
+			path = ClassView;
+			sourceTree = "<group>";
+		};
+		17E406F2286996110006DFF4 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				17E406F72869965B0006DFF4 /* SearchView.storyboard */,
+				17E40701286996A50006DFF4 /* SearchViewController.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		17E406F32869961F0006DFF4 /* CategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				17E406F9286996640006DFF4 /* CategoryView.storyboard */,
+				17E406FF2869969A0006DFF4 /* CategoryViewController.swift */,
+			);
+			path = CategoryView;
+			sourceTree = "<group>";
+		};
+		17E406F42869962B0006DFF4 /* MyInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				17E406FB2869966E0006DFF4 /* MyInfoView.storyboard */,
+				17E406FD2869968A0006DFF4 /* MyInfoViewController.swift */,
+			);
+			path = MyInfoView;
 			sourceTree = "<group>";
 		};
 		17F0D7132868543A00CF1A1B = {
@@ -206,6 +281,11 @@
 			isa = PBXGroup;
 			children = (
 				17F0D756286855E800CF1A1B /* Splash */,
+				17E406EB286995130006DFF4 /* WorkView */,
+				17E406F1286996070006DFF4 /* ClassView */,
+				17E406F2286996110006DFF4 /* SearchView */,
+				17E406F32869961F0006DFF4 /* CategoryView */,
+				17E406F42869962B0006DFF4 /* MyInfoView */,
 				17F0D757286855F100CF1A1B /* LogInView */,
 			);
 			path = Source;
@@ -215,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				17F0D754286855D000CF1A1B /* Constant.swift */,
+				17E406EC286995600006DFF4 /* Base */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -371,9 +452,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E406D62868D5640006DFF4 /* EmailRegisterViewController.xib in Resources */,
+				17E406FC2869966E0006DFF4 /* MyInfoView.storyboard in Resources */,
+				17E406F0286996000006DFF4 /* WorkView.storyboard in Resources */,
 				17F0D72C2868543E00CF1A1B /* Assets.xcassets in Resources */,
-				17E406DE2869091D0006DFF4 /* MemberLoginViewController.xib in Resources */,
+				17E406FA286996640006DFF4 /* CategoryView.storyboard in Resources */,
+				17E406EE2869957B0006DFF4 /* BaseStoryBoard.storyboard in Resources */,
+				17E406F6286996440006DFF4 /* ClassView.storyboard in Resources */,
+				17E406EA28698D6F0006DFF4 /* MemberLoginViewController.xib in Resources */,
 				17F0D75B286856A800CF1A1B /* LogInView.storyboard in Resources */,
+				17E406F82869965B0006DFF4 /* SearchView.storyboard in Resources */,
 				17F0D7272868543A00CF1A1B /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,11 +594,16 @@
 				17F0D7242868543A00CF1A1B /* ViewController.swift in Sources */,
 				17F0D755286855D000CF1A1B /* Constant.swift in Sources */,
 				17F0D75D286856B900CF1A1B /* LogInViewController.swift in Sources */,
+				17E40706286996BB0006DFF4 /* WorkViewController.swift in Sources */,
 				17F0D7592868565800CF1A1B /* SplashViewController.swift in Sources */,
+				17E40704286996AD0006DFF4 /* ClassViewController.swift in Sources */,
 				17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */,
 				17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */,
-				17E406DD2869091D0006DFF4 /* MemberLoginViewController.swift in Sources */,
+				17E40702286996A50006DFF4 /* SearchViewController.swift in Sources */,
+				17E406E928698D6F0006DFF4 /* MemberLoginViewController.swift in Sources */,
 				17E406D52868D5630006DFF4 /* EmailRegisterViewController.swift in Sources */,
+				17E407002869969A0006DFF4 /* CategoryViewController.swift in Sources */,
+				17E406FE2869968A0006DFF4 /* MyInfoViewController.swift in Sources */,
 				1726D95B2868BA9800C5B0E5 /* BottomSheetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

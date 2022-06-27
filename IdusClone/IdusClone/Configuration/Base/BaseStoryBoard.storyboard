@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SBB-N9-Q7X">
+            <objects>
+                <tabBarController storyboardIdentifier="BaseTBC" automaticallyAdjustsScrollViewInsets="NO" id="jnR-5z-wDm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iOI-4c-J68">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.38823530080000002" green="0.38823530080000002" blue="0.38823530080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ye2-4j-iwY" kind="relationship" relationship="viewControllers" id="dPP-en-8i3"/>
+                        <segue destination="ITa-7S-sXP" kind="relationship" relationship="viewControllers" id="mYN-Hb-iMr"/>
+                        <segue destination="VUb-zf-mjm" kind="relationship" relationship="viewControllers" id="hXe-8C-M0r"/>
+                        <segue destination="cgj-Zf-ggH" kind="relationship" relationship="viewControllers" id="WWJ-dp-M9P"/>
+                        <segue destination="1wI-I0-trP" kind="relationship" relationship="viewControllers" id="qeB-Qy-ZAh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbW-Ec-Ai1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="66.964285714285708"/>
+        </scene>
+        <!--WorkVC-->
+        <scene sceneID="AWm-hb-wKJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WorkView" referencedIdentifier="WorkVC" id="ye2-4j-iwY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="dAK-zE-nPA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yaz-1H-f54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059" y="-224"/>
+        </scene>
+        <!--MyInfoVC-->
+        <scene sceneID="DTD-wT-b28">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyInfoView" referencedIdentifier="MyInfoVC" id="1wI-I0-trP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="person" catalog="system" id="k5m-yi-IK5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QA8-9k-iK7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="358"/>
+        </scene>
+        <!--CategoryVC-->
+        <scene sceneID="XJw-ou-8U7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CategoryView" referencedIdentifier="CategoryVC" id="cgj-Zf-ggH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="line.3.horizontal" catalog="system" id="0OP-r7-SiF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45B-aY-2Rk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="220"/>
+        </scene>
+        <!--SearchVC-->
+        <scene sceneID="eVf-yY-J26">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchView" referencedIdentifier="SearchVC" id="VUb-zf-mjm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="magnifyingglass" catalog="system" id="wEo-9h-oiz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FkE-jk-XO9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="67"/>
+        </scene>
+        <!--ClassVC-->
+        <scene sceneID="KMs-2e-pEe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ClassView" referencedIdentifier="ClassVC" id="ITa-7S-sXP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="play.tv" catalog="system" id="IIF-6m-pt7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OI2-uj-fxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058" y="-65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="play.tv" catalog="system" width="128" height="97"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

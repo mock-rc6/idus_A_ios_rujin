@@ -9,7 +9,6 @@ import UIKit
 
 class EmailRegisterViewController: UIViewController {
     
-    @IBOutlet var headerView: UIView!
     @IBOutlet weak var selectView: UIView!
     @IBOutlet weak var bgImg: UIImageView!
     

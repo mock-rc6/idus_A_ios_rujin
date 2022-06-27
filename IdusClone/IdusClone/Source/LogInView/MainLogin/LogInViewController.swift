@@ -68,6 +68,14 @@ class LogInViewController: UIViewController {
         self.present(vc, animated: true, completion: nil)
     }
     
+    //MARK: - 회원가입 없이 둘러보기
+    @IBAction func moveToWithOutLogin(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "BaseStoryBoard", bundle: Bundle.main)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BaseTBC")
+
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
     
     func initUI() {
         topView.layer.cornerRadius = 15
