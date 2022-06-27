@@ -13,23 +13,97 @@
             <objects>
                 <viewController storyboardIdentifier="WorkVC" id="Y6W-OH-hqX" customClass="WorkViewController" customModule="IdusClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmj-HB-kas">
+                                <rect key="frame" x="20" y="44" width="374" height="39"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="QYc-dt-MLT">
+                                        <rect key="frame" x="8" y="9" width="358" height="21.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지비츠를 검색해보세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3A-v1-naG">
+                                                <rect key="frame" x="0.0" y="0.0" width="313" height="21.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="313" id="q1c-Mx-vhj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemGrayColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j5H-MD-f7d">
+                                                <rect key="frame" x="337" y="0.5" width="21" height="20"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21.5" id="KlW-fq-WeW"/>
+                                                    <constraint firstAttribute="width" constant="21" id="XAB-W6-6Qi"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="QYc-dt-MLT" secondAttribute="trailing" constant="8" id="Hmt-ue-Ik6"/>
+                                    <constraint firstItem="QYc-dt-MLT" firstAttribute="leading" secondItem="cmj-HB-kas" secondAttribute="leading" constant="8" id="UjZ-tE-e66"/>
+                                    <constraint firstItem="QYc-dt-MLT" firstAttribute="top" secondItem="cmj-HB-kas" secondAttribute="top" constant="9" id="X0Q-qm-eLe"/>
+                                    <constraint firstAttribute="width" constant="374" id="pRi-th-OB2"/>
+                                    <constraint firstAttribute="height" constant="39" id="pyb-gZ-2CV"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S7m-UB-0rv">
+                                <rect key="frame" x="0.0" y="91" width="414" height="1826"/>
+                                <connections>
+                                    <segue destination="lID-2U-CnQ" kind="embed" id="hcC-bD-N7s"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cmj-HB-kas" secondAttribute="trailing" constant="20" id="D2F-AL-tZp"/>
+                            <constraint firstItem="S7m-UB-0rv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IKu-wx-CMx"/>
+                            <constraint firstItem="cmj-HB-kas" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="l5z-Fe-sB9"/>
+                            <constraint firstItem="S7m-UB-0rv" firstAttribute="top" secondItem="cmj-HB-kas" secondAttribute="bottom" constant="8" id="m5g-J5-TBt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="S7m-UB-0rv" secondAttribute="trailing" id="pg4-dW-ADn"/>
+                            <constraint firstItem="cmj-HB-kas" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rs0-Ej-G70"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="S7m-UB-0rv" secondAttribute="bottom" id="vLC-vd-2lx"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="작품" image="house" catalog="system" selectedImage="house" id="aU4-f9-tuy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="414" height="2000"/>
+                    <connections>
+                        <outlet property="searchView" destination="cmj-HB-kas" id="IwE-F8-eSV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="67"/>
+            <point key="canvasLocation" x="131.8840579710145" y="66.964285714285708"/>
+        </scene>
+        <!--Mid View Controller-->
+        <scene sceneID="0ql-xg-iOj">
+            <objects>
+                <viewController id="lID-2U-CnQ" customClass="MidViewController" customModule="IdusClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VDc-yr-UYx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1826"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbj-1L-8pK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711.5942028985507" y="66.964285714285708"/>
         </scene>
     </scenes>
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

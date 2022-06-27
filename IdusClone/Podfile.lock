@@ -40,12 +40,16 @@ PODS:
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
+  - Pageboy (3.6.2)
+  - Tabman (2.12.0):
+    - Pageboy (~> 3.6.0)
 
 DEPENDENCIES:
   - KakaoSDKAuth
   - KakaoSDKCommon
   - KakaoSDKUser
   - MaterialComponents/BottomSheet
+  - Tabman
 
 SPEC REPOS:
   trunk:
@@ -54,6 +58,8 @@ SPEC REPOS:
     - KakaoSDKCommon
     - KakaoSDKUser
     - MaterialComponents
+    - Pageboy
+    - Tabman
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
@@ -61,7 +67,9 @@ SPEC CHECKSUMS:
   KakaoSDKCommon: 4989e3bae5f4884903bc1df7134e13d0e903d587
   KakaoSDKUser: 5c5fd4b5864e8b5ac9587fdbb473daf2fa675abf
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
+  Tabman: 447a50447ed2869c39ab3b1a779327e43e067c4e
 
-PODFILE CHECKSUM: dda8a756f11f052a9b87eaad1809b3b055da80e0
+PODFILE CHECKSUM: f1e7347c5fa1a9f63fb1aa594b71784c15d3aae4
 
 COCOAPODS: 1.11.3

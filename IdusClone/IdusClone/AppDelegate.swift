@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         KakaoSDK.initSDK(appKey: "53d0fd957c81c28acbf9d18beaed6a6a")
+        UITabBar.appearance().unselectedItemTintColor = UIColor.gray
         // Override point for customization after application launch.
         return true
     }

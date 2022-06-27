@@ -10,6 +10,7 @@ target 'IdusClone' do
   pod 'KakaoSDKCommon'
   pod 'KakaoSDKAuth'
   pod 'KakaoSDKUser'
+  pod 'Tabman'
 
   target 'IdusCloneTests' do
     inherit! :search_paths

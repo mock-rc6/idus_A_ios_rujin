@@ -25,6 +25,14 @@
 		17E40702286996A50006DFF4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40701286996A50006DFF4 /* SearchViewController.swift */; };
 		17E40704286996AD0006DFF4 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40703286996AD0006DFF4 /* ClassViewController.swift */; };
 		17E40706286996BB0006DFF4 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40705286996BB0006DFF4 /* WorkViewController.swift */; };
+		17E407082869A6DE0006DFF4 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E407072869A6DE0006DFF4 /* UIViewController.swift */; };
+		17E40711286A18360006DFF4 /* MidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40710286A18360006DFF4 /* MidViewController.swift */; };
+		17E40717286A1A510006DFF4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40715286A1A510006DFF4 /* TodayViewController.swift */; };
+		17E4071B286A1A600006DFF4 /* RealTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40719286A1A600006DFF4 /* RealTimeViewController.swift */; };
+		17E4071C286A1A600006DFF4 /* RealTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E4071A286A1A600006DFF4 /* RealTimeViewController.xib */; };
+		17E4071F286A1A6E0006DFF4 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4071D286A1A6E0006DFF4 /* NewViewController.swift */; };
+		17E40720286A1A6E0006DFF4 /* NewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E4071E286A1A6E0006DFF4 /* NewViewController.xib */; };
+		17E40722286A25430006DFF4 /* TodayView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E40721286A25430006DFF4 /* TodayView.storyboard */; };
 		17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D71F2868543A00CF1A1B /* AppDelegate.swift */; };
 		17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7212868543A00CF1A1B /* SceneDelegate.swift */; };
 		17F0D7242868543A00CF1A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F0D7232868543A00CF1A1B /* ViewController.swift */; };
@@ -79,6 +87,14 @@
 		17E40701286996A50006DFF4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		17E40703286996AD0006DFF4 /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
 		17E40705286996BB0006DFF4 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
+		17E407072869A6DE0006DFF4 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		17E40710286A18360006DFF4 /* MidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidViewController.swift; sourceTree = "<group>"; };
+		17E40715286A1A510006DFF4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		17E40719286A1A600006DFF4 /* RealTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeViewController.swift; sourceTree = "<group>"; };
+		17E4071A286A1A600006DFF4 /* RealTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeViewController.xib; sourceTree = "<group>"; };
+		17E4071D286A1A6E0006DFF4 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		17E4071E286A1A6E0006DFF4 /* NewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewViewController.xib; sourceTree = "<group>"; };
+		17E40721286A25430006DFF4 /* TodayView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodayView.storyboard; sourceTree = "<group>"; };
 		17F0D71C2868543A00CF1A1B /* IdusClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IdusClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F0D71F2868543A00CF1A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17F0D7212868543A00CF1A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +162,8 @@
 		17E406CE2868D46B0006DFF4 /* EmailRegister */ = {
 			isa = PBXGroup;
 			children = (
+				17E4070D2869CD030006DFF4 /* EmailRegisterDataManager */,
+				17E4070C2869CCF30006DFF4 /* EmailRegisterEntity */,
 				17E406D32868D5630006DFF4 /* EmailRegisterViewController.swift */,
 				17E406D42868D5630006DFF4 /* EmailRegisterViewController.xib */,
 			);
@@ -156,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				17E406D82869009D0006DFF4 /* UIImage.swift */,
+				17E407072869A6DE0006DFF4 /* UIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -163,6 +182,8 @@
 		17E406DA286908FB0006DFF4 /* MemberLogin */ = {
 			isa = PBXGroup;
 			children = (
+				17E4070B2869CCE60006DFF4 /* MemberLoginDataManager */,
+				17E407092869CCC40006DFF4 /* MemberLoginEntity */,
 				17E406E728698D6F0006DFF4 /* MemberLoginViewController.swift */,
 				17E406E828698D6F0006DFF4 /* MemberLoginViewController.xib */,
 			);
@@ -172,8 +193,12 @@
 		17E406EB286995130006DFF4 /* WorkView */ = {
 			isa = PBXGroup;
 			children = (
+				17E40712286A19D10006DFF4 /* TodayView */,
+				17E40713286A19E40006DFF4 /* RealTimeView */,
+				17E40714286A1A170006DFF4 /* NewView */,
 				17E406EF286996000006DFF4 /* WorkView.storyboard */,
 				17E40705286996BB0006DFF4 /* WorkViewController.swift */,
+				17E40710286A18360006DFF4 /* MidViewController.swift */,
 			);
 			path = WorkView;
 			sourceTree = "<group>";
@@ -220,6 +245,61 @@
 				17E406FD2869968A0006DFF4 /* MyInfoViewController.swift */,
 			);
 			path = MyInfoView;
+			sourceTree = "<group>";
+		};
+		17E407092869CCC40006DFF4 /* MemberLoginEntity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MemberLoginEntity;
+			sourceTree = "<group>";
+		};
+		17E4070B2869CCE60006DFF4 /* MemberLoginDataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MemberLoginDataManager;
+			sourceTree = "<group>";
+		};
+		17E4070C2869CCF30006DFF4 /* EmailRegisterEntity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EmailRegisterEntity;
+			sourceTree = "<group>";
+		};
+		17E4070D2869CD030006DFF4 /* EmailRegisterDataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EmailRegisterDataManager;
+			sourceTree = "<group>";
+		};
+		17E40712286A19D10006DFF4 /* TodayView */ = {
+			isa = PBXGroup;
+			children = (
+				17E40715286A1A510006DFF4 /* TodayViewController.swift */,
+				17E40721286A25430006DFF4 /* TodayView.storyboard */,
+			);
+			path = TodayView;
+			sourceTree = "<group>";
+		};
+		17E40713286A19E40006DFF4 /* RealTimeView */ = {
+			isa = PBXGroup;
+			children = (
+				17E40719286A1A600006DFF4 /* RealTimeViewController.swift */,
+				17E4071A286A1A600006DFF4 /* RealTimeViewController.xib */,
+			);
+			path = RealTimeView;
+			sourceTree = "<group>";
+		};
+		17E40714286A1A170006DFF4 /* NewView */ = {
+			isa = PBXGroup;
+			children = (
+				17E4071D286A1A6E0006DFF4 /* NewViewController.swift */,
+				17E4071E286A1A6E0006DFF4 /* NewViewController.xib */,
+			);
+			path = NewView;
 			sourceTree = "<group>";
 		};
 		17F0D7132868543A00CF1A1B = {
@@ -459,7 +539,10 @@
 				17E406EE2869957B0006DFF4 /* BaseStoryBoard.storyboard in Resources */,
 				17E406F6286996440006DFF4 /* ClassView.storyboard in Resources */,
 				17E406EA28698D6F0006DFF4 /* MemberLoginViewController.xib in Resources */,
+				17E4071C286A1A600006DFF4 /* RealTimeViewController.xib in Resources */,
 				17F0D75B286856A800CF1A1B /* LogInView.storyboard in Resources */,
+				17E40720286A1A6E0006DFF4 /* NewViewController.xib in Resources */,
+				17E40722286A25430006DFF4 /* TodayView.storyboard in Resources */,
 				17E406F82869965B0006DFF4 /* SearchView.storyboard in Resources */,
 				17F0D7272868543A00CF1A1B /* Splash.storyboard in Resources */,
 			);
@@ -592,15 +675,20 @@
 				17F0D72A2868543A00CF1A1B /* IdusClone.xcdatamodeld in Sources */,
 				17E406D92869009D0006DFF4 /* UIImage.swift in Sources */,
 				17F0D7242868543A00CF1A1B /* ViewController.swift in Sources */,
+				17E40717286A1A510006DFF4 /* TodayViewController.swift in Sources */,
 				17F0D755286855D000CF1A1B /* Constant.swift in Sources */,
 				17F0D75D286856B900CF1A1B /* LogInViewController.swift in Sources */,
 				17E40706286996BB0006DFF4 /* WorkViewController.swift in Sources */,
 				17F0D7592868565800CF1A1B /* SplashViewController.swift in Sources */,
 				17E40704286996AD0006DFF4 /* ClassViewController.swift in Sources */,
+				17E4071F286A1A6E0006DFF4 /* NewViewController.swift in Sources */,
+				17E4071B286A1A600006DFF4 /* RealTimeViewController.swift in Sources */,
+				17E407082869A6DE0006DFF4 /* UIViewController.swift in Sources */,
 				17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */,
 				17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */,
 				17E40702286996A50006DFF4 /* SearchViewController.swift in Sources */,
 				17E406E928698D6F0006DFF4 /* MemberLoginViewController.swift in Sources */,
+				17E40711286A18360006DFF4 /* MidViewController.swift in Sources */,
 				17E406D52868D5630006DFF4 /* EmailRegisterViewController.swift in Sources */,
 				17E407002869969A0006DFF4 /* CategoryViewController.swift in Sources */,
 				17E406FE2869968A0006DFF4 /* MyInfoViewController.swift in Sources */,
