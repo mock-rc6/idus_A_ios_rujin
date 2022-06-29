@@ -17,10 +17,6 @@ struct EmailRegisterEntity: Codable {
 // MARK: - Result
 struct Result: Codable {
     var jwt: String
-    var userID: Int
+    var userId: Int
 
-    enum CodingKeys: String, CodingKey {
-        case jwt
-        case userID = "userId"
-    }
 }

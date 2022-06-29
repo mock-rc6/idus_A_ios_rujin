@@ -19,6 +19,7 @@
 		1771D494286C70550066F139 /* EmailRegisterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D493286C70550066F139 /* EmailRegisterEntity.swift */; };
 		1771D496286C70AE0066F139 /* EmailRegisterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D495286C70AE0066F139 /* EmailRegisterInput.swift */; };
 		1771D499286C73CB0066F139 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D498286C73CB0066F139 /* IndicatorView.swift */; };
+		1771D49B286C8A8D0066F139 /* EmailTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D49A286C8A8D0066F139 /* EmailTest.swift */; };
 		17E406D52868D5630006DFF4 /* EmailRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406D32868D5630006DFF4 /* EmailRegisterViewController.swift */; };
 		17E406D62868D5640006DFF4 /* EmailRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E406D42868D5630006DFF4 /* EmailRegisterViewController.xib */; };
 		17E406D92869009D0006DFF4 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E406D82869009D0006DFF4 /* UIImage.swift */; };
@@ -91,6 +92,7 @@
 		1771D493286C70550066F139 /* EmailRegisterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegisterEntity.swift; sourceTree = "<group>"; };
 		1771D495286C70AE0066F139 /* EmailRegisterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegisterInput.swift; sourceTree = "<group>"; };
 		1771D498286C73CB0066F139 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		1771D49A286C8A8D0066F139 /* EmailTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTest.swift; sourceTree = "<group>"; };
 		17E406D32868D5630006DFF4 /* EmailRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegisterViewController.swift; sourceTree = "<group>"; };
 		17E406D42868D5630006DFF4 /* EmailRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailRegisterViewController.xib; sourceTree = "<group>"; };
 		17E406D82869009D0006DFF4 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -323,6 +325,7 @@
 			children = (
 				1771D495286C70AE0066F139 /* EmailRegisterInput.swift */,
 				1771D493286C70550066F139 /* EmailRegisterEntity.swift */,
+				1771D49A286C8A8D0066F139 /* EmailTest.swift */,
 			);
 			path = EmailRegisterEntity;
 			sourceTree = "<group>";
@@ -736,6 +739,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1771D49B286C8A8D0066F139 /* EmailTest.swift in Sources */,
 				17F0D72A2868543A00CF1A1B /* IdusClone.xcdatamodeld in Sources */,
 				1771D499286C73CB0066F139 /* IndicatorView.swift in Sources */,
 				1771D486286C561F0066F139 /* ClassTabViewController.swift in Sources */,
@@ -942,6 +946,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -971,6 +976,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

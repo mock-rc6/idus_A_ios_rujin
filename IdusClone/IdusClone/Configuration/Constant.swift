@@ -12,7 +12,7 @@ struct Constant {
     static var MY_TOKEN : String = ""
     static var MY_ID : Int = 0
     
-    static let BASE_URL = "https://prod.sogogi.shop:9000"
+    static let BASE_URL = "http://prod.sogogi.shop:9000"
     
     static var header: HTTPHeaders = [
                 "Content-Type": "application/json",

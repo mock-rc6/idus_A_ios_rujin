@@ -118,6 +118,7 @@ class EmailRegisterViewController: UIViewController {
     @IBAction func pressRegisterBtn(_ sender: UIButton) {
         let userInfo = EmailRegisterInput(email: emailTF.text!, name: nameTF.text!, password: passwordTF.text!, phoneNumber: phoneTF.text!)
         EmailRegisterDataManager().registerNewUser(userInfo, viewController: self)
+        //EmailRegisterDataManager().test()
     }
     
     func initUI() {
