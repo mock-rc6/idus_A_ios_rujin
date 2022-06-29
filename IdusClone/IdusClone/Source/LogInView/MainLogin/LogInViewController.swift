@@ -70,11 +70,7 @@ class LogInViewController: UIViewController {
     
     //MARK: - 회원가입 없이 둘러보기
     @IBAction func moveToWithOutLogin(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "BaseStoryBoard", bundle: Bundle.main)
-        let vc = storyboard.instantiateViewController(withIdentifier: "BaseTBC")
-
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+        moveToMain()
     }
     
     func initUI() {
@@ -83,19 +79,6 @@ class LogInViewController: UIViewController {
         memberLoginBtn.layer.borderWidth = 2
         memberLoginBtn.layer.cornerRadius = 25
     }
- 
-//    func setLineDot(view: UIView){
-//            let borderLayer = CAShapeLayer()
-//
-//            borderLayer.strokeColor = UIColor.white.cgColor
-//        borderLayer.backgroundColor = UIColor.white.cgColor
-//            borderLayer.lineDashPattern = [1, 5]
-//            borderLayer.frame = view.bounds
-//            borderLayer.fillColor = nil
-//            borderLayer.path = UIBezierPath(rect: view.bounds).cgPath
-//
-//            view.layer.addSublayer(borderLayer)
-//        }
 
 
 }

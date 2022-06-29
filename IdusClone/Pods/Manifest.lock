@@ -43,6 +43,7 @@ PODS:
   - Pageboy (3.6.2)
   - Tabman (2.12.0):
     - Pageboy (~> 3.6.0)
+  - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
   - KakaoSDKAuth
@@ -50,6 +51,7 @@ DEPENDENCIES:
   - KakaoSDKUser
   - MaterialComponents/BottomSheet
   - Tabman
+  - XLPagerTabStrip
 
 SPEC REPOS:
   trunk:
@@ -60,6 +62,7 @@ SPEC REPOS:
     - MaterialComponents
     - Pageboy
     - Tabman
+    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
@@ -69,7 +72,8 @@ SPEC CHECKSUMS:
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
   Tabman: 447a50447ed2869c39ab3b1a779327e43e067c4e
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: f1e7347c5fa1a9f63fb1aa594b71784c15d3aae4
+PODFILE CHECKSUM: 09692251aceae6422c0c9711828956f29f434536
 
 COCOAPODS: 1.11.3

@@ -6,10 +6,15 @@
 //
 
 import Foundation
+import Alamofire
 
 struct Constant {
     static var MY_TOKEN : String = ""
     static var MY_ID : Int = 0
     
-    static let BASE_URL = "api-dev.softsquared.com"
+    static let BASE_URL = "https://prod.sogogi.shop:9000"
+    
+    static var header: HTTPHeaders = [
+                "Content-Type": "application/json",
+            ]
 }

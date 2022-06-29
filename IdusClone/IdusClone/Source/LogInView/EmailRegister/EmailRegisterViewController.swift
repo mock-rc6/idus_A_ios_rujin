@@ -12,6 +12,13 @@ class EmailRegisterViewController: UIViewController {
     @IBOutlet weak var selectView: UIView!
     @IBOutlet weak var bgImg: UIImageView!
     
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var nameTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var rePasswordTF: UITextField!
+    @IBOutlet weak var phoneTF: UITextField!
+    @IBOutlet weak var recommenderCodeTF: UITextField!
+    
     @IBOutlet weak var allAgreeBtn: UIButton!
     @IBOutlet weak var firstBtn: UIButton!
     @IBOutlet weak var secondBtn: UIButton!
@@ -37,8 +44,8 @@ class EmailRegisterViewController: UIViewController {
             check = 1
         }
         else {
-            print("a")
             check = 0
+            moveToMain()
         }
     }
     
@@ -106,6 +113,11 @@ class EmailRegisterViewController: UIViewController {
             sender.isSelected = true
             sender.setImage(UIImage(systemName: "checkmark.square"), for : UIControl.State.normal)
         }
+    }
+    
+    @IBAction func pressRegisterBtn(_ sender: UIButton) {
+        let userInfo = EmailRegisterInput(email: emailTF.text!, name: nameTF.text!, password: passwordTF.text!, phoneNumber: phoneTF.text!)
+        EmailRegisterDataManager().registerNewUser(userInfo, viewController: self)
     }
     
     func initUI() {

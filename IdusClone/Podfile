@@ -11,6 +11,7 @@ target 'IdusClone' do
   pod 'KakaoSDKAuth'
   pod 'KakaoSDKUser'
   pod 'Tabman'
+  pod 'XLPagerTabStrip'
 
   target 'IdusCloneTests' do
     inherit! :search_paths

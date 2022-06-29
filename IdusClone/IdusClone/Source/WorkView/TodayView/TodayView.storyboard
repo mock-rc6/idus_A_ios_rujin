@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,22 +23,50 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xk-L1-S98">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1826"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pl3-34-m3k">
-                                                <rect key="frame" x="186" y="1655" width="42" height="21"/>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ezd-he-0Xp">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="42" id="KUj-dv-ld8"/>
-                                                    <constraint firstAttribute="height" constant="21" id="VCp-J8-myP"/>
+                                                    <constraint firstAttribute="height" constant="213" id="U4r-ux-Ebs"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2iU-Om-Rn7">
+                                                    <size key="itemSize" width="414" height="207"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerCell" id="oDe-yd-e93" customClass="BannerCollectionViewCell" customModule="IdusClone" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="3" width="414" height="207"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1ya-M1-bme">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="207"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P24-Ca-mrd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="207"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="P24-Ca-mrd" secondAttribute="trailing" id="MQS-tt-UZx"/>
+                                                                <constraint firstItem="P24-Ca-mrd" firstAttribute="leading" secondItem="1ya-M1-bme" secondAttribute="leading" id="cap-z8-OCO"/>
+                                                                <constraint firstItem="P24-Ca-mrd" firstAttribute="top" secondItem="1ya-M1-bme" secondAttribute="top" id="q29-sB-zch"/>
+                                                                <constraint firstAttribute="bottom" secondItem="P24-Ca-mrd" secondAttribute="bottom" id="xjw-vA-Rxy"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="414" height="207"/>
+                                                        <connections>
+                                                            <outlet property="bannerImg" destination="P24-Ca-mrd" id="bts-HW-Ug9"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Pl3-34-m3k" secondAttribute="trailing" constant="186" id="PZ1-YT-HEV"/>
-                                            <constraint firstItem="Pl3-34-m3k" firstAttribute="leading" secondItem="3Xk-L1-S98" secondAttribute="leading" constant="186" id="WNl-sQ-bdw"/>
-                                            <constraint firstAttribute="bottom" secondItem="Pl3-34-m3k" secondAttribute="bottom" constant="150" id="g44-As-jDk"/>
+                                            <constraint firstItem="Ezd-he-0Xp" firstAttribute="leading" secondItem="3Xk-L1-S98" secondAttribute="leading" id="41u-yW-pro"/>
+                                            <constraint firstItem="Ezd-he-0Xp" firstAttribute="top" secondItem="3Xk-L1-S98" secondAttribute="top" id="bQM-wR-3PQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ezd-he-0Xp" secondAttribute="trailing" id="cSO-3z-H7n"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -63,6 +92,9 @@
                         </constraints>
                     </view>
                     <size key="freeformSize" width="414" height="1826"/>
+                    <connections>
+                        <outlet property="bannerCV" destination="Ezd-he-0Xp" id="cEG-Bk-kLl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

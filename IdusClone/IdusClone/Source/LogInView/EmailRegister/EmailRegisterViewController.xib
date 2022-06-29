@@ -12,9 +12,15 @@
             <connections>
                 <outlet property="allAgreeBtn" destination="tHS-8d-OzF" id="a1k-gv-YJO"/>
                 <outlet property="bgImg" destination="iAb-Ps-LR4" id="qM6-eM-Jy2"/>
+                <outlet property="emailTF" destination="cW4-bI-EQe" id="qcA-4I-bD8"/>
                 <outlet property="firstBtn" destination="7Jt-XJ-Q1d" id="m00-eC-a4w"/>
                 <outlet property="forthBtn" destination="QuO-r2-zT4" id="5lr-Pq-Ucj"/>
                 <outlet property="leftTopBtn" destination="1x3-s0-dDt" id="okr-sO-TFh"/>
+                <outlet property="nameTF" destination="THv-Jw-fuH" id="H8W-Vh-mol"/>
+                <outlet property="passwordTF" destination="LJd-UJ-XhH" id="w8R-0z-NUr"/>
+                <outlet property="phoneTF" destination="wK9-4r-VDu" id="LKt-1k-d9j"/>
+                <outlet property="rePasswordTF" destination="dT3-sG-Atd" id="aqD-pa-fLC"/>
+                <outlet property="recommenderCodeTF" destination="CQD-XW-qbS" id="ceu-f7-4fN"/>
                 <outlet property="registerBtn" destination="UVn-Vu-VCU" id="5Kg-3R-Q8f"/>
                 <outlet property="secondBtn" destination="8SM-UW-SdW" id="rNc-eO-uGl"/>
                 <outlet property="selectView" destination="fgA-TN-cs0" id="GbN-WO-yHO"/>
@@ -61,7 +67,7 @@
                                     </constraints>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" textContentType="email"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FcA-a5-hbX">
                                     <rect key="frame" x="0.0" y="34" width="374" height="1"/>
@@ -89,7 +95,7 @@
                                     </constraints>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" textContentType="name"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4H3-O5-bNS">
                                     <rect key="frame" x="0.0" y="34" width="374" height="1"/>
@@ -117,7 +123,7 @@
                                     </constraints>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" textContentType="password"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkK-Tr-vRz">
                                     <rect key="frame" x="0.0" y="34" width="374" height="1"/>
@@ -145,7 +151,7 @@
                                     </constraints>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" textContentType="password"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mN-ma-6Rl">
                                     <rect key="frame" x="0.0" y="34" width="374" height="1"/>
@@ -173,7 +179,7 @@
                                     </constraints>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits"/>
+                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tV2-8i-CHd">
                                     <rect key="frame" x="0.0" y="34" width="374" height="1"/>
@@ -439,6 +445,9 @@
                         <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="17"/>
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="pressRegisterBtn:" destination="-1" eventType="touchUpInside" id="W7C-E7-s7L"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

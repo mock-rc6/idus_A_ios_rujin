@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MaterialComponents.MaterialBottomSheet
 
 class MemberLoginViewController: UIViewController {
     
@@ -28,11 +29,38 @@ class MemberLoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //MARK: - ID & PW 찾기
     @IBAction func findIdPw(_ sender: UIButton) {
         
     }
     
+    //MARK: - 카카오 로그인
+    @IBAction func logInKaKao(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "BottomSheetVC") as! BottomSheetViewController
+        
+        let bottomSheet: MDCBottomSheetController = MDCBottomSheetController(contentViewController: vc)
+        
+        bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 250
+        bottomSheet.scrimColor = UIColor.black.withAlphaComponent(0.9)
+        present(bottomSheet, animated: false, completion: nil)
+    }
+    
+    //MARK: - 이메일 로그인
+    @IBAction func pressEmailLogIn(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "BaseStoryBoard", bundle: Bundle.main)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BaseTBC")
 
+        changeRootViewController(vc)
+    }
+    
+    //MARK: - 상단 xmark 이벤트
+    @IBAction func pressXmark(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "BaseStoryBoard", bundle: Bundle.main)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BaseTBC")
+
+        changeRootViewController(vc)
+    }
+    
     func initUI() {
         self.bgImg.image = bgImg.image?.applyBlur_original(radius: 10)
         

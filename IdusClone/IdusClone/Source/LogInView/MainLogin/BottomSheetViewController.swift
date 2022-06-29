@@ -29,10 +29,11 @@ class BottomSheetViewController: UIViewController {
                 else {
                     print("loginWithKakaoTalk() success.")
 
-                    //do something
+                    self.moveToMain()
                     _ = oauthToken
                 }
             }
+            
         }
     }
     
@@ -44,7 +45,7 @@ class BottomSheetViewController: UIViewController {
                 else {
                     print("loginWithKakaoAccount() success.")
 
-                    //do something
+                    self.moveToMain()
                     _ = oauthToken
                 }
             }
@@ -64,4 +65,5 @@ class BottomSheetViewController: UIViewController {
         xMarkBtn.setImage(largeBoldDoc, for: .normal)
     }
     
+
 }

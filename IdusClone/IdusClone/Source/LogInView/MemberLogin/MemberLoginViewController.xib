@@ -40,6 +40,9 @@
                     <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="pressXmark:" destination="-1" eventType="touchUpInside" id="2oT-hD-8CL"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SNS 로그인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ON4-Dc-7ts">
                     <rect key="frame" x="128" y="167" width="159" height="21"/>
@@ -107,6 +110,9 @@
                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="baseBackgroundColor" red="0.39002117510000001" green="0.2568804026" blue="0.10140512140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="logInKaKao:" destination="-1" eventType="touchUpInside" id="EyB-0A-NWj"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gle-k4-yqh">
                                     <rect key="frame" x="184" y="0.0" width="167" height="34"/>
@@ -154,6 +160,16 @@
                         <constraint firstAttribute="height" constant="21" id="zjD-bk-2ET"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- - - - - - - - - - - - - - - - - - - - - - - - - - - - -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wwu-07-Cuc">
+                    <rect key="frame" x="32" y="365" width="351" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="351" id="6Qk-i8-Ngu"/>
+                        <constraint firstAttribute="height" constant="20.5" id="fUy-Uo-yoN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -245,6 +261,9 @@
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="pressEmailLogIn:" destination="-1" eventType="touchUpInside" id="ssm-nA-BJs"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kjv-3s-3fP">
                     <rect key="frame" x="64" y="582" width="287" height="31"/>
@@ -266,14 +285,17 @@
             <color key="backgroundColor" systemColor="systemGrayColor"/>
             <constraints>
                 <constraint firstItem="mv1-dw-fB9" firstAttribute="top" secondItem="ON4-Dc-7ts" secondAttribute="bottom" constant="25" id="1Vx-Rt-6Ve"/>
+                <constraint firstItem="Wwu-07-Cuc" firstAttribute="leading" secondItem="mcR-hx-GDm" secondAttribute="leading" constant="32" id="3Q9-zj-v3T"/>
                 <constraint firstItem="ON4-Dc-7ts" firstAttribute="leading" secondItem="mcR-hx-GDm" secondAttribute="leading" constant="128" id="9ju-J6-Ddq"/>
                 <constraint firstItem="ON4-Dc-7ts" firstAttribute="top" secondItem="mcR-hx-GDm" secondAttribute="top" constant="123" id="FWJ-f6-xmy"/>
                 <constraint firstItem="xer-ao-kaI" firstAttribute="leading" secondItem="mcR-hx-GDm" secondAttribute="leading" constant="32" id="FbB-O8-F6O"/>
                 <constraint firstItem="mcR-hx-GDm" firstAttribute="trailing" secondItem="wtA-XQ-gdg" secondAttribute="trailing" constant="31" id="KL7-e1-FbI"/>
+                <constraint firstItem="mcR-hx-GDm" firstAttribute="trailing" secondItem="Wwu-07-Cuc" secondAttribute="trailing" constant="31" id="KWs-sb-PTs"/>
+                <constraint firstItem="Wwu-07-Cuc" firstAttribute="top" secondItem="pYL-h6-MTu" secondAttribute="bottom" constant="-7" id="Ls1-67-2VN"/>
                 <constraint firstItem="Kjv-3s-3fP" firstAttribute="top" secondItem="xer-ao-kaI" secondAttribute="bottom" constant="15" id="Luy-hP-u34"/>
                 <constraint firstItem="wtA-XQ-gdg" firstAttribute="top" secondItem="mv1-dw-fB9" secondAttribute="bottom" constant="8" id="Mcn-K7-uxh"/>
                 <constraint firstItem="mcR-hx-GDm" firstAttribute="trailing" secondItem="ON4-Dc-7ts" secondAttribute="trailing" constant="127" id="P8G-ug-5iv"/>
-                <constraint firstItem="Fm1-eq-9gi" firstAttribute="top" secondItem="pYL-h6-MTu" secondAttribute="bottom" constant="24" id="RbR-vb-OvX"/>
+                <constraint firstItem="Fm1-eq-9gi" firstAttribute="top" secondItem="Wwu-07-Cuc" secondAttribute="bottom" constant="10.5" id="TAt-uI-wAk"/>
                 <constraint firstItem="mcR-hx-GDm" firstAttribute="trailing" secondItem="Fm1-eq-9gi" secondAttribute="trailing" constant="139" id="U2D-8U-Ez2"/>
                 <constraint firstItem="Z5b-B2-XIZ" firstAttribute="leading" secondItem="mcR-hx-GDm" secondAttribute="leading" constant="32" id="UZn-1l-kXn"/>
                 <constraint firstItem="Kjv-3s-3fP" firstAttribute="leading" secondItem="mcR-hx-GDm" secondAttribute="leading" constant="64" id="XLg-qM-hIa"/>
@@ -292,7 +314,7 @@
                 <constraint firstItem="mcR-hx-GDm" firstAttribute="trailing" secondItem="xer-ao-kaI" secondAttribute="trailing" constant="31" id="vQt-jD-fag"/>
                 <constraint firstItem="mcR-hx-GDm" firstAttribute="trailing" secondItem="mv1-dw-fB9" secondAttribute="trailing" constant="31" id="w6d-YH-aTi"/>
             </constraints>
-            <point key="canvasLocation" x="-677" y="74"/>
+            <point key="canvasLocation" x="-611.59420289855075" y="91.071428571428569"/>
         </view>
     </objects>
     <resources>

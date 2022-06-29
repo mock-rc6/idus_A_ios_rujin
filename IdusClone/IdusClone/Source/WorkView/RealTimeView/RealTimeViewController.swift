@@ -6,8 +6,13 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class RealTimeViewController: UIViewController {
+class RealTimeViewController: UIViewController, IndicatorInfoProvider {
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "실시간")
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +20,9 @@ class RealTimeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 
     /*
     // MARK: - Navigation

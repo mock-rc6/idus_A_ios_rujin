@@ -9,7 +9,7 @@ import UIKit
 import Tabman
 import Pageboy
 
-class MidViewController: TabmanViewController {
+class WorkTabViewController: TabmanViewController {
     
     var viewControllers : [UIViewController] = []
 
@@ -21,7 +21,7 @@ class MidViewController: TabmanViewController {
     
 }
 
-extension MidViewController {
+extension WorkTabViewController {
     
     func setUpTabMan() {
         
@@ -59,7 +59,7 @@ extension MidViewController {
 
 //MARK: - PageboyViewControllerDataSource, TMBarDataSource
 
-extension MidViewController : PageboyViewControllerDataSource, TMBarDataSource {
+extension WorkTabViewController : PageboyViewControllerDataSource, TMBarDataSource {
     
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
         switch index {

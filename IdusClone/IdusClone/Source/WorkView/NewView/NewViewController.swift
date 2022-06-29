@@ -6,8 +6,14 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class NewViewController: UIViewController {
+class NewViewController: UIViewController, IndicatorInfoProvider {
+    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
+        return IndicatorInfo(title: "NEW")
+
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +21,10 @@ class NewViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     /*
     // MARK: - Navigation
 
