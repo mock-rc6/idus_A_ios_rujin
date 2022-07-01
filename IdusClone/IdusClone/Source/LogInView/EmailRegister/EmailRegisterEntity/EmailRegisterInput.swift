@@ -6,9 +6,9 @@
 //
 
 
-struct EmailRegisterInput : Encodable {
-    var email : String
-    var name : String
-    var password : String
-    var phoneNumber : String
+struct EmailRegisterInput {
+    var email : String?
+    var name : String?
+    var password : String?
+    var phoneNumber : String?
 }

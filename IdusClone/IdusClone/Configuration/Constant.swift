@@ -10,11 +10,14 @@ import Alamofire
 
 struct Constant {
     static var MY_TOKEN : String = ""
-    static var MY_ID : Int = 0
+    static var JWT : String = ""
+    static var USER_ID : Int = 0
     
     static let BASE_URL = "http://prod.sogogi.shop:9000"
     
     static var header: HTTPHeaders = [
                 "Content-Type": "application/json",
             ]
+    
+    
 }
