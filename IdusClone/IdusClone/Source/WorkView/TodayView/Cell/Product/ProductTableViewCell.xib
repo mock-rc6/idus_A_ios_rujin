@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductTVC" rowHeight="352" id="6zn-Ky-qYS" customClass="ProductTableViewCell" customModule="IdusClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="352"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6zn-Ky-qYS" id="pI6-74-Gh7">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="352"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="유니크한 케이스 #키치 #이색" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCT-Lt-ewX">
+                        <rect key="frame" x="10" y="0.0" width="298" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="G4U-rr-yq2"/>
+                            <constraint firstAttribute="width" constant="298" id="W6B-RC-Zgi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEf-5e-op5">
+                        <rect key="frame" x="347" y="-0.5" width="53" height="30"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <state key="normal" title="더보기 &gt;">
+                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="pressUpperBtn:" destination="6zn-Ky-qYS" eventType="touchUpInside" id="QN2-LO-b2N"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wTj-3Z-sBX">
+                        <rect key="frame" x="0.0" y="47" width="414" height="253"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Whn-iC-MJl">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlY-zK-vck">
+                        <rect key="frame" x="15" y="300" width="384" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="4co-je-jye"/>
+                        </constraints>
+                        <state key="normal" title="작품 더보기 &gt;"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="pressBottomBtn:" destination="6zn-Ky-qYS" eventType="touchUpInside" id="dX2-d2-ANC"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YCT-Lt-ewX" firstAttribute="top" secondItem="pI6-74-Gh7" secondAttribute="top" id="1TN-cV-vwZ"/>
+                    <constraint firstAttribute="bottom" secondItem="KlY-zK-vck" secondAttribute="bottom" constant="6" id="3WT-Vf-JcN"/>
+                    <constraint firstItem="wTj-3Z-sBX" firstAttribute="leading" secondItem="pI6-74-Gh7" secondAttribute="leading" id="5J5-g1-uvp"/>
+                    <constraint firstItem="YCT-Lt-ewX" firstAttribute="leading" secondItem="pI6-74-Gh7" secondAttribute="leading" constant="10" id="6Tc-mw-2kV"/>
+                    <constraint firstItem="KlY-zK-vck" firstAttribute="leading" secondItem="pI6-74-Gh7" secondAttribute="leading" constant="15" id="CuV-R1-jl3"/>
+                    <constraint firstAttribute="trailing" secondItem="KlY-zK-vck" secondAttribute="trailing" constant="15" id="Df2-fk-dJa"/>
+                    <constraint firstAttribute="trailing" secondItem="wTj-3Z-sBX" secondAttribute="trailing" id="DqO-AQ-O7p"/>
+                    <constraint firstAttribute="trailing" secondItem="WEf-5e-op5" secondAttribute="trailing" constant="14" id="Hut-wv-7hb"/>
+                    <constraint firstItem="wTj-3Z-sBX" firstAttribute="top" secondItem="WEf-5e-op5" secondAttribute="bottom" constant="17.5" id="LZW-RM-NtE"/>
+                    <constraint firstItem="KlY-zK-vck" firstAttribute="top" secondItem="wTj-3Z-sBX" secondAttribute="bottom" id="p5Q-59-U8P"/>
+                    <constraint firstItem="WEf-5e-op5" firstAttribute="centerY" secondItem="YCT-Lt-ewX" secondAttribute="centerY" id="yBt-0K-BvZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="9NQ-Te-p4a"/>
+            <connections>
+                <outlet property="moreProductBtn" destination="KlY-zK-vck" id="3M2-nC-Fej"/>
+                <outlet property="productCV" destination="wTj-3Z-sBX" id="soS-se-i5s"/>
+                <outlet property="titleLbl" destination="YCT-Lt-ewX" id="C1q-fY-zmh"/>
+            </connections>
+            <point key="canvasLocation" x="-420.28985507246381" y="-86.383928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

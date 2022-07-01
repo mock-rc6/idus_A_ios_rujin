@@ -14,14 +14,14 @@
             <objects>
                 <viewController storyboardIdentifier="TodayVC" id="Y6W-OH-hqX" customClass="TodayViewController" customModule="IdusClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1826"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2526"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrn-MS-x9m">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1826"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="2526"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Xk-L1-S98">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1826"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2526"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ezd-he-0Xp">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="213"/>
@@ -61,12 +61,20 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VPv-dY-gsM">
+                                                <rect key="frame" x="0.0" y="209" width="414" height="2317"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="Ezd-he-0Xp" firstAttribute="leading" secondItem="3Xk-L1-S98" secondAttribute="leading" id="41u-yW-pro"/>
+                                            <constraint firstAttribute="trailing" secondItem="VPv-dY-gsM" secondAttribute="trailing" id="NRI-Fn-5JC"/>
+                                            <constraint firstItem="VPv-dY-gsM" firstAttribute="leading" secondItem="3Xk-L1-S98" secondAttribute="leading" id="Qbv-R0-G4Z"/>
+                                            <constraint firstAttribute="bottom" secondItem="VPv-dY-gsM" secondAttribute="bottom" id="XFo-Z2-bn7"/>
                                             <constraint firstItem="Ezd-he-0Xp" firstAttribute="top" secondItem="3Xk-L1-S98" secondAttribute="top" id="bQM-wR-3PQ"/>
                                             <constraint firstAttribute="trailing" secondItem="Ezd-he-0Xp" secondAttribute="trailing" id="cSO-3z-H7n"/>
+                                            <constraint firstItem="VPv-dY-gsM" firstAttribute="top" secondItem="Ezd-he-0Xp" secondAttribute="bottom" constant="-4" id="u5q-41-Eb6"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -91,9 +99,10 @@
                             <constraint firstItem="wrn-MS-x9m" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="34" id="tsB-SZ-ole"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="1826"/>
+                    <size key="freeformSize" width="414" height="2526"/>
                     <connections>
                         <outlet property="bannerCV" destination="Ezd-he-0Xp" id="cEG-Bk-kLl"/>
+                        <outlet property="tableView" destination="VPv-dY-gsM" id="Qgb-Vr-Vah"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

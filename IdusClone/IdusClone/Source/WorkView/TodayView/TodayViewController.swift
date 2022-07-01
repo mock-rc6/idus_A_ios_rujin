@@ -10,6 +10,7 @@ import UIKit
 class TodayViewController: UIViewController {
     
     @IBOutlet weak var bannerCV: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     
     var nowPage : Int = 0
     let bannerArray : [UIImage] = [UIImage(named: "banner1")!, UIImage(named: "banner2")!, UIImage(named: "banner3")!, UIImage(named: "banner4")!, UIImage(named: "banner5")!, UIImage(named: "banner6")!, UIImage(named: "banner7")!, UIImage(named: "banner8")!, UIImage(named: "banner9")!, UIImage(named: "banner10")!, UIImage(named: "banner11")!, UIImage(named: "banner12")!]
@@ -19,6 +20,7 @@ class TodayViewController: UIViewController {
         
         bannerCV.delegate = self
         bannerCV.dataSource = self
+        setupTableView()
         bannerTimer()
         // Do any additional setup after loading the view.
     }
@@ -29,6 +31,70 @@ class TodayViewController: UIViewController {
     
 }
 
+extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //print(String(lists.count) + " 줄")
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.row {
+        case 0:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "SmallIconTVC") as? SmallIconTableViewCell {
+                
+                return cell
+            }
+        case 1:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "RelatedProductTVC") as? RelatedProductTableViewCell {
+                
+                return cell
+            }
+        case 2:
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell {
+                
+                return cell
+            }
+        default:
+            return UITableViewCell()
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 0:
+            return 130
+        case 1:
+            return 380
+        case 2:
+            return 380
+        default:
+            return 100
+        }
+    }
+    
+    //tableview cell에 들어갈 cell들의 Nib을 등록
+    private func setupTableView() {
+        // Register the xib for tableview cell
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        // SmallIconTVC
+        let smallIconTableCellNib = UINib(nibName: "SmallIconTableViewCell", bundle: nil)
+        self.tableView.register(smallIconTableCellNib, forCellReuseIdentifier: "SmallIconTVC")
+        
+        // 상품
+        let productTableCellNib = UINib(nibName: "ProductTableViewCell", bundle: nil)
+        self.tableView.register(productTableCellNib, forCellReuseIdentifier: "ProductTVC")
+        
+        let relatedProductTableCellNib = UINib(nibName: "RelatedProductTableViewCell", bundle: nil)
+        self.tableView.register(relatedProductTableCellNib, forCellReuseIdentifier: "RelatedProductTVC")
+    }
+}
+
+
+//MARK: - Banner CollectionView
 extension TodayViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return bannerArray.count
