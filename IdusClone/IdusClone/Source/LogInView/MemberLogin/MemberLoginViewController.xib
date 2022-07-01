@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -14,9 +13,11 @@
                 <outlet property="bgImg" destination="qWk-l4-HTb" id="MCp-jj-jHq"/>
                 <outlet property="emailLbl" destination="Fm1-eq-9gi" id="r00-GV-G4C"/>
                 <outlet property="emailLoginBtn" destination="xer-ao-kaI" id="VdX-ht-ILG"/>
+                <outlet property="emailTF" destination="uyo-gj-gwv" id="jvQ-Od-rCg"/>
                 <outlet property="facebookBtn" destination="R4a-MU-lyt" id="9EQ-rm-RL2"/>
                 <outlet property="kakaotalkBtn" destination="dSF-jm-Xh6" id="GUy-gX-vg3"/>
                 <outlet property="naverBtn" destination="kNJ-L7-DaN" id="lEt-dD-8mA"/>
+                <outlet property="passwordTF" destination="1s0-b8-WTO" id="S0X-QK-OBc"/>
                 <outlet property="snsLbl" destination="ON4-Dc-7ts" id="L2q-Sk-Pqr"/>
                 <outlet property="twitterBtn" destination="Gle-k4-yqh" id="CaS-2V-SmM"/>
                 <outlet property="view" destination="Q6e-vM-oKs" id="Kvi-Po-0ep"/>

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		099F3DDF578C5920C2A832E5 /* Pods_IdusCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 812AF351AB8C5FC865A590FB /* Pods_IdusCloneTests.framework */; };
 		1726D95B2868BA9800C5B0E5 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1726D95A2868BA9800C5B0E5 /* BottomSheetViewController.swift */; };
+		172B6878286EB84E002B697A /* MemberLoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B6877286EB84E002B697A /* MemberLoginDataManager.swift */; };
+		172B687A286EB85F002B697A /* MemberLoginInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B6879286EB85F002B697A /* MemberLoginInput.swift */; };
+		172B687C286EB86A002B697A /* MemberLoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B687B286EB869002B697A /* MemberLoginEntity.swift */; };
 		1771D484286AE79A0066F139 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D483286AE79A0066F139 /* BannerCollectionViewCell.swift */; };
 		1771D486286C561F0066F139 /* ClassTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D485286C561E0066F139 /* ClassTabViewController.swift */; };
 		1771D48A286C56AC0066F139 /* OnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D489286C56AC0066F139 /* OnlineViewController.swift */; };
@@ -81,6 +84,9 @@
 		0BCC9586F3C050EBB5FC7673 /* Pods-IdusCloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdusCloneTests.release.xcconfig"; path = "Target Support Files/Pods-IdusCloneTests/Pods-IdusCloneTests.release.xcconfig"; sourceTree = "<group>"; };
 		1577374A859C3039803769A1 /* Pods_IdusClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdusClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1726D95A2868BA9800C5B0E5 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		172B6877286EB84E002B697A /* MemberLoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberLoginDataManager.swift; sourceTree = "<group>"; };
+		172B6879286EB85F002B697A /* MemberLoginInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberLoginInput.swift; sourceTree = "<group>"; };
+		172B687B286EB869002B697A /* MemberLoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberLoginEntity.swift; sourceTree = "<group>"; };
 		1771D483286AE79A0066F139 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		1771D485286C561E0066F139 /* ClassTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTabViewController.swift; sourceTree = "<group>"; };
 		1771D489286C56AC0066F139 /* OnlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineViewController.swift; sourceTree = "<group>"; };
@@ -307,6 +313,8 @@
 		17E407092869CCC40006DFF4 /* MemberLoginEntity */ = {
 			isa = PBXGroup;
 			children = (
+				172B6879286EB85F002B697A /* MemberLoginInput.swift */,
+				172B687B286EB869002B697A /* MemberLoginEntity.swift */,
 			);
 			path = MemberLoginEntity;
 			sourceTree = "<group>";
@@ -314,6 +322,7 @@
 		17E4070B2869CCE60006DFF4 /* MemberLoginDataManager */ = {
 			isa = PBXGroup;
 			children = (
+				172B6877286EB84E002B697A /* MemberLoginDataManager.swift */,
 			);
 			path = MemberLoginDataManager;
 			sourceTree = "<group>";
@@ -736,6 +745,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172B687C286EB86A002B697A /* MemberLoginEntity.swift in Sources */,
 				17F0D72A2868543A00CF1A1B /* IdusClone.xcdatamodeld in Sources */,
 				1771D499286C73CB0066F139 /* IndicatorView.swift in Sources */,
 				1771D486286C561F0066F139 /* ClassTabViewController.swift in Sources */,
@@ -751,10 +761,12 @@
 				17E4071F286A1A6E0006DFF4 /* NewViewController.swift in Sources */,
 				17E4071B286A1A600006DFF4 /* RealTimeViewController.swift in Sources */,
 				1771D492286C6BCC0066F139 /* EmailRegisterDataManaer.swift in Sources */,
+				172B6878286EB84E002B697A /* MemberLoginDataManager.swift in Sources */,
 				17E407082869A6DE0006DFF4 /* UIViewController.swift in Sources */,
 				1771D484286AE79A0066F139 /* BannerCollectionViewCell.swift in Sources */,
 				17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */,
 				17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */,
+				172B687A286EB85F002B697A /* MemberLoginInput.swift in Sources */,
 				17E40702286996A50006DFF4 /* SearchViewController.swift in Sources */,
 				17E406E928698D6F0006DFF4 /* MemberLoginViewController.swift in Sources */,
 				1771D494286C70550066F139 /* EmailRegisterEntity.swift in Sources */,

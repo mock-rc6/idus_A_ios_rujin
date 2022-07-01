@@ -20,6 +20,9 @@ class MemberLoginViewController: UIViewController {
     @IBOutlet weak var kakaotalkBtn: UIButton!
     @IBOutlet weak var twitterBtn: UIButton!
     
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    
     @IBOutlet weak var emailLoginBtn: UIButton!
     
     override func viewDidLoad() {
@@ -47,10 +50,8 @@ class MemberLoginViewController: UIViewController {
     
     //MARK: - 이메일 로그인
     @IBAction func pressEmailLogIn(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "BaseStoryBoard", bundle: Bundle.main)
-        let vc = storyboard.instantiateViewController(withIdentifier: "BaseTBC")
-
-        changeRootViewController(vc)
+        let loginInfo = MemberLoginInput(email: emailTF.text!, password: passwordTF.text!)
+        MemberLoginDataManager().loginWithEmail(loginInfo, viewController: self)
     }
     
     //MARK: - 상단 xmark 이벤트
