@@ -27,6 +27,10 @@
 		172B689C28703F00002B697A /* TodayDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B689B28703F00002B697A /* TodayDataManager.swift */; };
 		172B689F28703F48002B697A /* TodayEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B689E28703F48002B697A /* TodayEntity.swift */; };
 		172B68A1287061BF002B697A /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B68A0287061BF002B697A /* UIImageView.swift */; };
+		172B68A5287074C2002B697A /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B68A3287074C2002B697A /* ReviewTableViewCell.swift */; };
+		172B68A6287074C2002B697A /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172B68A4287074C2002B697A /* ReviewTableViewCell.xib */; };
+		172B68A9287074D5002B697A /* ReviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B68A7287074D5002B697A /* ReviewCollectionViewCell.swift */; };
+		172B68AA287074D5002B697A /* ReviewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172B68A8287074D5002B697A /* ReviewCollectionViewCell.xib */; };
 		1771D484286AE79A0066F139 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D483286AE79A0066F139 /* BannerCollectionViewCell.swift */; };
 		1771D486286C561F0066F139 /* ClassTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D485286C561E0066F139 /* ClassTabViewController.swift */; };
 		1771D48A286C56AC0066F139 /* OnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D489286C56AC0066F139 /* OnlineViewController.swift */; };
@@ -117,6 +121,10 @@
 		172B689B28703F00002B697A /* TodayDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDataManager.swift; sourceTree = "<group>"; };
 		172B689E28703F48002B697A /* TodayEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayEntity.swift; sourceTree = "<group>"; };
 		172B68A0287061BF002B697A /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		172B68A3287074C2002B697A /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		172B68A4287074C2002B697A /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		172B68A7287074D5002B697A /* ReviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		172B68A8287074D5002B697A /* ReviewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCollectionViewCell.xib; sourceTree = "<group>"; };
 		1771D483286AE79A0066F139 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		1771D485286C561E0066F139 /* ClassTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTabViewController.swift; sourceTree = "<group>"; };
 		1771D489286C56AC0066F139 /* OnlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineViewController.swift; sourceTree = "<group>"; };
@@ -248,6 +256,10 @@
 		172B6888286EEDD3002B697A /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				172B68A3287074C2002B697A /* ReviewTableViewCell.swift */,
+				172B68A4287074C2002B697A /* ReviewTableViewCell.xib */,
+				172B68A7287074D5002B697A /* ReviewCollectionViewCell.swift */,
+				172B68A8287074D5002B697A /* ReviewCollectionViewCell.xib */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -705,6 +717,7 @@
 			files = (
 				17E406D62868D5640006DFF4 /* EmailRegisterViewController.xib in Resources */,
 				17E406FC2869966E0006DFF4 /* MyInfoView.storyboard in Resources */,
+				172B68A6287074C2002B697A /* ReviewTableViewCell.xib in Resources */,
 				172B6890286EEE2C002B697A /* ProductCollectionViewCell.xib in Resources */,
 				172B688C286EEE1D002B697A /* ProductTableViewCell.xib in Resources */,
 				17E406F0286996000006DFF4 /* WorkView.storyboard in Resources */,
@@ -724,6 +737,7 @@
 				17E40722286A25430006DFF4 /* TodayView.storyboard in Resources */,
 				17E406F82869965B0006DFF4 /* SearchView.storyboard in Resources */,
 				17F0D7272868543A00CF1A1B /* Splash.storyboard in Resources */,
+				172B68AA287074D5002B697A /* ReviewCollectionViewCell.xib in Resources */,
 				172B6899286F29DC002B697A /* RelatedProductTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -871,6 +885,7 @@
 				1771D48A286C56AC0066F139 /* OnlineViewController.swift in Sources */,
 				17E40704286996AD0006DFF4 /* ClassViewController.swift in Sources */,
 				17E4071F286A1A6E0006DFF4 /* NewViewController.swift in Sources */,
+				172B68A5287074C2002B697A /* ReviewTableViewCell.swift in Sources */,
 				17E4071B286A1A600006DFF4 /* RealTimeViewController.swift in Sources */,
 				172B6881286ED0CC002B697A /* SmallIconCollectionViewCell.swift in Sources */,
 				1771D492286C6BCC0066F139 /* EmailRegisterDataManager.swift in Sources */,
@@ -880,6 +895,7 @@
 				17F0D7202868543A00CF1A1B /* AppDelegate.swift in Sources */,
 				17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */,
 				172B68A1287061BF002B697A /* UIImageView.swift in Sources */,
+				172B68A9287074D5002B697A /* ReviewCollectionViewCell.swift in Sources */,
 				172B687A286EB85F002B697A /* MemberLoginInput.swift in Sources */,
 				17E40702286996A50006DFF4 /* SearchViewController.swift in Sources */,
 				172B6885286ED34D002B697A /* SmallIconTableViewCell.swift in Sources */,

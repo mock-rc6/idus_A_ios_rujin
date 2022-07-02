@@ -9,23 +9,23 @@ import Foundation
 
 // MARK: - Welcome
 struct TodayEntity: Codable {
-    var isSuccess: Bool?
-    var code: Int?
-    var message: String?
-    var result: ProductResult?
+    var isSuccess: Bool
+    var code: Int
+    var message: String
+    var result: ProductResult
 }
 
 // MARK: - Result
 struct ProductResult: Codable {
-    var categoryProductList: [CategoryProductList]?
-    var productReviewList: [ProductReviewList]?
+    var categoryProductList: [CategoryProductList]
+    var productReviewList: [ProductReviewList]
 }
 
 // MARK: - CategoryProductList
 struct CategoryProductList: Codable {
-    var categoryID: Int?
-    var categoryName: String?
-    var productsList: [ProductsList]?
+    var categoryID: Int
+    var categoryName: String
+    var productsList: [ProductsList]
 
     enum CodingKeys: String, CodingKey {
         case categoryID = "categoryId"
@@ -35,9 +35,9 @@ struct CategoryProductList: Codable {
 
 // MARK: - ProductsList
 struct ProductsList: Codable {
-    var productID: Int?
-    var productImg: String?
-    var productTitle: String?
+    var productID: Int
+    var productImg: String
+    var productTitle: String
 
     enum CodingKeys: String, CodingKey {
         case productID = "productId"
@@ -47,13 +47,13 @@ struct ProductsList: Codable {
 
 // MARK: - ProductReviewList
 struct ProductReviewList: Codable {
-    var reviewID: Int?
-    var reviewImg: String?
-    var rating: Int?
-    var nickName, contents: String?
-    var productID: Int?
-    var productImg: String?
-    var productTitle: String?
+    var reviewID: Int
+    var reviewImg: String
+    var rating: Int
+    var nickName, contents: String
+    var productID: Int
+    var productImg: String
+    var productTitle: String
 
     enum CodingKeys: String, CodingKey {
         case reviewID = "reviewId"

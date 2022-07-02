@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReviewTVC" rowHeight="385" id="SkX-gT-mpv" customClass="ReviewTableViewCell" customModule="IdusClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="385"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SkX-gT-mpv" id="LXw-en-hXP">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="385"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="따끈따끈한 포토 후기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PK4-DO-bMZ">
+                        <rect key="frame" x="10" y="0.0" width="298" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="FLX-ZO-Q8D"/>
+                            <constraint firstAttribute="width" constant="298" id="lwV-LX-Lb4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qix-2N-HNO">
+                        <rect key="frame" x="351" y="-0.5" width="53" height="30"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <state key="normal" title="더보기 &gt;">
+                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="pressUpperBtn:" destination="SkX-gT-mpv" eventType="touchUpInside" id="4Ff-l4-Fd0"/>
+                        </connections>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Am5-gw-qL6">
+                        <rect key="frame" x="0.0" y="47" width="418" height="286"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bq7-Pp-L1Z">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUz-3d-CqD">
+                        <rect key="frame" x="15" y="333" width="388" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="FVF-mW-Fb9"/>
+                        </constraints>
+                        <state key="normal" title="작품 더보기 &gt;"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="pressBottomBtn:" destination="SkX-gT-mpv" eventType="touchUpInside" id="emB-en-zb9"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Am5-gw-qL6" firstAttribute="top" secondItem="qix-2N-HNO" secondAttribute="bottom" constant="17.5" id="22z-R7-sPP"/>
+                    <constraint firstAttribute="trailing" secondItem="BUz-3d-CqD" secondAttribute="trailing" constant="15" id="65p-by-Nc5"/>
+                    <constraint firstItem="PK4-DO-bMZ" firstAttribute="leading" secondItem="LXw-en-hXP" secondAttribute="leading" constant="10" id="69j-mV-ZiM"/>
+                    <constraint firstItem="BUz-3d-CqD" firstAttribute="leading" secondItem="LXw-en-hXP" secondAttribute="leading" constant="15" id="9iT-rC-xR4"/>
+                    <constraint firstItem="PK4-DO-bMZ" firstAttribute="top" secondItem="LXw-en-hXP" secondAttribute="top" id="A4K-eS-6bW"/>
+                    <constraint firstItem="qix-2N-HNO" firstAttribute="centerY" secondItem="PK4-DO-bMZ" secondAttribute="centerY" id="GRt-xK-XCG"/>
+                    <constraint firstItem="BUz-3d-CqD" firstAttribute="top" secondItem="Am5-gw-qL6" secondAttribute="bottom" id="daO-DW-dOM"/>
+                    <constraint firstItem="Am5-gw-qL6" firstAttribute="leading" secondItem="LXw-en-hXP" secondAttribute="leading" id="fdl-YO-gsO"/>
+                    <constraint firstAttribute="trailing" secondItem="Am5-gw-qL6" secondAttribute="trailing" id="qoh-vM-lKv"/>
+                    <constraint firstAttribute="bottom" secondItem="BUz-3d-CqD" secondAttribute="bottom" constant="6" id="wsO-6n-BH5"/>
+                    <constraint firstAttribute="trailing" secondItem="qix-2N-HNO" secondAttribute="trailing" constant="14" id="z8N-ND-CaT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="viH-59-FM3"/>
+            <connections>
+                <outlet property="bottomBtn" destination="BUz-3d-CqD" id="8rC-QD-KUn"/>
+                <outlet property="reviewCV" destination="Am5-gw-qL6" id="cfT-QA-OMJ"/>
+            </connections>
+            <point key="canvasLocation" x="-417.39130434782612" y="-75.334821428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

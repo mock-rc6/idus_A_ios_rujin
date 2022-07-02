@@ -36,35 +36,63 @@ class TodayViewController: UIViewController {
 
 extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //print(String(lists.count) + " 줄")
-        return 3
+        
+        return (todayData?.categoryProductList.count ?? 0) + 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        switch indexPath.row {
+        let line = indexPath.row
+        
+        switch line {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "SmallIconTVC") as? SmallIconTableViewCell else { return UITableViewCell() }
             
             return cell
             
         case 1:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "RelatedProductTVC") as? RelatedProductTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTVC") as? ReviewTableViewCell else { return UITableViewCell() }
                 
             if let value = todayData {
-                cell.setData(value.categoryProductList![0])
+                cell.setCell(value.productReviewList)
             }
                 return cell
     
         case 2:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell else { return UITableViewCell() }
                 
-                return cell
+            if let value = todayData {
+                cell.setCell(value.categoryProductList[line-2])
+                cell.titleLbl.text = "# + \(String(describing: todayData!.categoryProductList[line-2].categoryName))"
             }
+                return cell
+            
+        case 3:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell else { return UITableViewCell() }
+                
+            if let value = todayData {
+                cell.setCell(value.categoryProductList[line-2])
+                cell.titleLbl.text = "# + \(String(describing: todayData!.categoryProductList[line-2].categoryName))"
+            }
+                return cell
+        case 4:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell else { return UITableViewCell() }
+                
+            if let value = todayData {
+                cell.setCell(value.categoryProductList[line-2])
+                cell.titleLbl.text = "# + \(String(describing: todayData!.categoryProductList[line-2].categoryName))"
+            }
+                return cell
+//        case 5:
+//            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTVC") as? ReviewTableViewCell else { return UITableViewCell() }
+//
+//            if let value = todayData {
+//                cell.setCell(value.categoryProductList)
+//            }
+//                return cell
         default:
             return UITableViewCell()
         }
-        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -96,6 +124,9 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
         
         let relatedProductTableCellNib = UINib(nibName: "RelatedProductTableViewCell", bundle: nil)
         self.tableView.register(relatedProductTableCellNib, forCellReuseIdentifier: "RelatedProductTVC")
+        
+        let reviewTableCellNib = UINib(nibName: "ReviewTableViewCell", bundle: nil)
+        self.tableView.register(reviewTableCellNib, forCellReuseIdentifier: "ReviewTVC")
     }
 }
 

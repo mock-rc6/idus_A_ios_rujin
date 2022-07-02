@@ -14,6 +14,8 @@ class ProductTableViewCell: UITableViewCell {
     
     @IBOutlet weak var productCV: UICollectionView!
     
+    var productData : CategoryProductList?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -49,7 +51,7 @@ class ProductTableViewCell: UITableViewCell {
 extension ProductTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 10
+        return productData?.productsList.count ?? 0
         //return movieVO.popular.count
     }
    
@@ -57,6 +59,8 @@ extension ProductTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as? ProductCollectionViewCell {
             
             cell.productImage.image = UIImage(named: "productSample")
+            //cell.productImage.load(url: (productData?.productsList[indexPath.row].productImg)!)
+            cell.productLbl.text = productData?.productsList[indexPath.row].productTitle
             return cell
         }
         return UICollectionViewCell()
@@ -81,12 +85,9 @@ extension ProductTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
 //
 //    }
     
-    //데이터 가져올 함수
-//    func setCell(goods: Array<TodayGoods>, realtime: Array<TodayRealtime>, index: Int)  {
-//        self.index = index
-//        self.todayGoodsArray = goods
-//        self.todayRealtimeArray = realtime
-//        self.todayGoodsCollectionView.reloadData()
-//    }
+    func setCell(_ data : CategoryProductList)  {
+        self.productData = data
+        self.productCV.reloadData()
+    }
 }
 

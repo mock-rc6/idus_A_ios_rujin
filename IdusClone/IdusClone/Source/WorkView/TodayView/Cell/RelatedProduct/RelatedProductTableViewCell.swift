@@ -45,14 +45,14 @@ class RelatedProductTableViewCell: UITableViewCell {
 //MARK: TableViewCell - UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout
 extension RelatedProductTableViewCell : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return relatedProductData?.productsList!.count ?? 5
+        return relatedProductData?.productsList.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RelatedProductCell", for: indexPath) as? RelatedProductCollectionViewCell {
             
             cell.productImg.image = UIImage(named: "productSample")
-            cell.productLbl.text = relatedProductData?.productsList![indexPath.row].productTitle
+            cell.productLbl.text = relatedProductData?.productsList[indexPath.row].productTitle
             return cell
         }
         return UICollectionViewCell()
