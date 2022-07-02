@@ -12,6 +12,8 @@ class TodayViewController: UIViewController {
     @IBOutlet weak var bannerCV: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     
+    var todayData : ProductResult?
+    
     var nowPage : Int = 0
     let bannerArray : [UIImage] = [UIImage(named: "banner1")!, UIImage(named: "banner2")!, UIImage(named: "banner3")!, UIImage(named: "banner4")!, UIImage(named: "banner5")!, UIImage(named: "banner6")!, UIImage(named: "banner7")!, UIImage(named: "banner8")!, UIImage(named: "banner9")!, UIImage(named: "banner10")!, UIImage(named: "banner11")!, UIImage(named: "banner12")!]
     
@@ -22,6 +24,7 @@ class TodayViewController: UIViewController {
         bannerCV.dataSource = self
         setupTableView()
         bannerTimer()
+        TodayDataManager().getTodayViewInfo(viewController: self)
         // Do any additional setup after loading the view.
     }
     
@@ -41,15 +44,18 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.row {
         case 0:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "SmallIconTVC") as? SmallIconTableViewCell {
-                
-                return cell
-            }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "SmallIconTVC") as? SmallIconTableViewCell else { return UITableViewCell() }
+            
+            return cell
+            
         case 1:
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "RelatedProductTVC") as? RelatedProductTableViewCell {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "RelatedProductTVC") as? RelatedProductTableViewCell else { return UITableViewCell() }
                 
-                return cell
+            if let value = todayData {
+                cell.setData(value.categoryProductList![0])
             }
+                return cell
+    
         case 2:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell {
                 

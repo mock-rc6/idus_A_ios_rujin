@@ -18,6 +18,5 @@ struct Constant {
     static var header: HTTPHeaders = [
                 "Content-Type": "application/json",
             ]
-    
-    
+        
 }
