@@ -63,7 +63,7 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
                 
             if let value = todayData {
                 cell.setCell(value.categoryProductList[line-2])
-                cell.titleLbl.text = "# + \(String(describing: todayData!.categoryProductList[line-2].categoryName))"
+                cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-2].categoryName))"
             }
                 return cell
             
@@ -72,7 +72,7 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
                 
             if let value = todayData {
                 cell.setCell(value.categoryProductList[line-2])
-                cell.titleLbl.text = "# + \(String(describing: todayData!.categoryProductList[line-2].categoryName))"
+                cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-2].categoryName))"
             }
                 return cell
         case 4:
@@ -80,7 +80,7 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
                 
             if let value = todayData {
                 cell.setCell(value.categoryProductList[line-2])
-                cell.titleLbl.text = "# + \(String(describing: todayData!.categoryProductList[line-2].categoryName))"
+                cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-2].categoryName))"
             }
                 return cell
 //        case 5:

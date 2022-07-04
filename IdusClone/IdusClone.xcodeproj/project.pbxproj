@@ -31,6 +31,11 @@
 		172B68A6287074C2002B697A /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172B68A4287074C2002B697A /* ReviewTableViewCell.xib */; };
 		172B68A9287074D5002B697A /* ReviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B68A7287074D5002B697A /* ReviewCollectionViewCell.swift */; };
 		172B68AA287074D5002B697A /* ReviewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 172B68A8287074D5002B697A /* ReviewCollectionViewCell.xib */; };
+		174384852872FB140076E78B /* RealTimeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174384842872FB140076E78B /* RealTimeView.storyboard */; };
+		17438489287307020076E78B /* RealTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17438487287307020076E78B /* RealTimeTableViewCell.swift */; };
+		1743848A287307020076E78B /* RealTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17438488287307020076E78B /* RealTimeTableViewCell.xib */; };
+		1743848D287307170076E78B /* RealTimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743848B287307170076E78B /* RealTimeCollectionViewCell.swift */; };
+		1743848E287307170076E78B /* RealTimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1743848C287307170076E78B /* RealTimeCollectionViewCell.xib */; };
 		1771D484286AE79A0066F139 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D483286AE79A0066F139 /* BannerCollectionViewCell.swift */; };
 		1771D486286C561F0066F139 /* ClassTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D485286C561E0066F139 /* ClassTabViewController.swift */; };
 		1771D48A286C56AC0066F139 /* OnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D489286C56AC0066F139 /* OnlineViewController.swift */; };
@@ -61,7 +66,6 @@
 		17E40711286A18360006DFF4 /* WorkTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40710286A18360006DFF4 /* WorkTabViewController.swift */; };
 		17E40717286A1A510006DFF4 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40715286A1A510006DFF4 /* TodayViewController.swift */; };
 		17E4071B286A1A600006DFF4 /* RealTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E40719286A1A600006DFF4 /* RealTimeViewController.swift */; };
-		17E4071C286A1A600006DFF4 /* RealTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E4071A286A1A600006DFF4 /* RealTimeViewController.xib */; };
 		17E4071F286A1A6E0006DFF4 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E4071D286A1A6E0006DFF4 /* NewViewController.swift */; };
 		17E40720286A1A6E0006DFF4 /* NewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E4071E286A1A6E0006DFF4 /* NewViewController.xib */; };
 		17E40722286A25430006DFF4 /* TodayView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E40721286A25430006DFF4 /* TodayView.storyboard */; };
@@ -125,6 +129,11 @@
 		172B68A4287074C2002B697A /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
 		172B68A7287074D5002B697A /* ReviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCollectionViewCell.swift; sourceTree = "<group>"; };
 		172B68A8287074D5002B697A /* ReviewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCollectionViewCell.xib; sourceTree = "<group>"; };
+		174384842872FB140076E78B /* RealTimeView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealTimeView.storyboard; sourceTree = "<group>"; };
+		17438487287307020076E78B /* RealTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeTableViewCell.swift; sourceTree = "<group>"; };
+		17438488287307020076E78B /* RealTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeTableViewCell.xib; sourceTree = "<group>"; };
+		1743848B287307170076E78B /* RealTimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		1743848C287307170076E78B /* RealTimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeCollectionViewCell.xib; sourceTree = "<group>"; };
 		1771D483286AE79A0066F139 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		1771D485286C561E0066F139 /* ClassTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTabViewController.swift; sourceTree = "<group>"; };
 		1771D489286C56AC0066F139 /* OnlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineViewController.swift; sourceTree = "<group>"; };
@@ -155,7 +164,6 @@
 		17E40710286A18360006DFF4 /* WorkTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkTabViewController.swift; sourceTree = "<group>"; };
 		17E40715286A1A510006DFF4 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		17E40719286A1A600006DFF4 /* RealTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeViewController.swift; sourceTree = "<group>"; };
-		17E4071A286A1A600006DFF4 /* RealTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeViewController.xib; sourceTree = "<group>"; };
 		17E4071D286A1A6E0006DFF4 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		17E4071E286A1A6E0006DFF4 /* NewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewViewController.xib; sourceTree = "<group>"; };
 		17E40721286A25430006DFF4 /* TodayView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodayView.storyboard; sourceTree = "<group>"; };
@@ -289,6 +297,17 @@
 				172B689E28703F48002B697A /* TodayEntity.swift */,
 			);
 			path = TodayEntity;
+			sourceTree = "<group>";
+		};
+		17438486287306DE0076E78B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				17438487287307020076E78B /* RealTimeTableViewCell.swift */,
+				17438488287307020076E78B /* RealTimeTableViewCell.xib */,
+				1743848B287307170076E78B /* RealTimeCollectionViewCell.swift */,
+				1743848C287307170076E78B /* RealTimeCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1771D482286AE6840066F139 /* Cell */ = {
@@ -470,8 +489,9 @@
 		17E40713286A19E40006DFF4 /* RealTimeView */ = {
 			isa = PBXGroup;
 			children = (
+				17438486287306DE0076E78B /* Cell */,
 				17E40719286A1A600006DFF4 /* RealTimeViewController.swift */,
-				17E4071A286A1A600006DFF4 /* RealTimeViewController.xib */,
+				174384842872FB140076E78B /* RealTimeView.storyboard */,
 			);
 			path = RealTimeView;
 			sourceTree = "<group>";
@@ -719,15 +739,17 @@
 				17E406FC2869966E0006DFF4 /* MyInfoView.storyboard in Resources */,
 				172B68A6287074C2002B697A /* ReviewTableViewCell.xib in Resources */,
 				172B6890286EEE2C002B697A /* ProductCollectionViewCell.xib in Resources */,
+				1743848A287307020076E78B /* RealTimeTableViewCell.xib in Resources */,
 				172B688C286EEE1D002B697A /* ProductTableViewCell.xib in Resources */,
 				17E406F0286996000006DFF4 /* WorkView.storyboard in Resources */,
 				17F0D72C2868543E00CF1A1B /* Assets.xcassets in Resources */,
 				17E406FA286996640006DFF4 /* CategoryView.storyboard in Resources */,
+				1743848E287307170076E78B /* RealTimeCollectionViewCell.xib in Resources */,
 				17E406EE2869957B0006DFF4 /* BaseStoryBoard.storyboard in Resources */,
 				17E406F6286996440006DFF4 /* ClassView.storyboard in Resources */,
 				17E406EA28698D6F0006DFF4 /* MemberLoginViewController.xib in Resources */,
 				172B6886286ED34D002B697A /* SmallIconTableViewCell.xib in Resources */,
-				17E4071C286A1A600006DFF4 /* RealTimeViewController.xib in Resources */,
+				174384852872FB140076E78B /* RealTimeView.storyboard in Resources */,
 				17F0D75B286856A800CF1A1B /* LogInView.storyboard in Resources */,
 				17E40720286A1A6E0006DFF4 /* NewViewController.xib in Resources */,
 				1771D48E286C56CA0066F139 /* OfflineView.storyboard in Resources */,
@@ -870,6 +892,7 @@
 				172B687C286EB86A002B697A /* MemberLoginEntity.swift in Sources */,
 				17F0D72A2868543A00CF1A1B /* IdusClone.xcdatamodeld in Sources */,
 				172B689C28703F00002B697A /* TodayDataManager.swift in Sources */,
+				17438489287307020076E78B /* RealTimeTableViewCell.swift in Sources */,
 				172B688B286EEE1D002B697A /* ProductTableViewCell.swift in Sources */,
 				1771D499286C73CB0066F139 /* IndicatorView.swift in Sources */,
 				1771D486286C561F0066F139 /* ClassTabViewController.swift in Sources */,
@@ -887,6 +910,7 @@
 				17E4071F286A1A6E0006DFF4 /* NewViewController.swift in Sources */,
 				172B68A5287074C2002B697A /* ReviewTableViewCell.swift in Sources */,
 				17E4071B286A1A600006DFF4 /* RealTimeViewController.swift in Sources */,
+				1743848D287307170076E78B /* RealTimeCollectionViewCell.swift in Sources */,
 				172B6881286ED0CC002B697A /* SmallIconCollectionViewCell.swift in Sources */,
 				1771D492286C6BCC0066F139 /* EmailRegisterDataManager.swift in Sources */,
 				172B6878286EB84E002B697A /* MemberLoginDataManager.swift in Sources */,
