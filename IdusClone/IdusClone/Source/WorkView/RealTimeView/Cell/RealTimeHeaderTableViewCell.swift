@@ -41,7 +41,6 @@ class RealTimeHeaderTableViewCell: UITableViewCell {
             sender.setImage(UIImage(systemName: "square"), for : UIControl.State.normal)
             print("이미지 x")
             delegate?.didSelectOptionBtn(br : br, img: img)
-            //RealTimeDataManager().getRealTimeProduct(br: br, img: 0, viewController: RealTimeViewController())
         }
         else {
             img = 1
@@ -49,7 +48,6 @@ class RealTimeHeaderTableViewCell: UITableViewCell {
             print("이미지 o")
             sender.setImage(UIImage(systemName: "checkmark.square"), for : UIControl.State.normal)
             delegate?.didSelectOptionBtn(br : br, img: img)
-            //RealTimeDataManager().getRealTimeProduct(br: br, img: 0, viewController: RealTimeViewController())
         }
     }
     
