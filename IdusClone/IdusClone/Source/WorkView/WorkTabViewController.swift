@@ -26,7 +26,7 @@ extension WorkTabViewController {
     func setUpTabMan() {
         
         let firstVC = UIStoryboard.init(name: "TodayView", bundle: nil).instantiateViewController(withIdentifier: "TodayVC") as! TodayViewController
-        let secondVC = RealTimeViewController()
+        let secondVC = UIStoryboard.init(name: "RealTimeView", bundle: nil).instantiateViewController(withIdentifier: "RealTimeVC") as! RealTimeViewController
         let thirdVC = NewViewController()
     
         viewControllers.append(firstVC)

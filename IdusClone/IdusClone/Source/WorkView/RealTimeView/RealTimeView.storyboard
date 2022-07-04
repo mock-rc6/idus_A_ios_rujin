@@ -8,103 +8,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Real Time View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RealTimeVC" id="Y6W-OH-hqX" customClass="RealTimeViewController" customModule="IdusClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="2526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lBI-Ob-9od">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="2526"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lBI-Ob-9od">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="ToA-vq-0dk">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTm-ti-8W7">
-                                            <rect key="frame" x="8" y="13" width="100" height="19"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="19" id="s9o-C0-1na"/>
-                                                <constraint firstAttribute="width" constant="100" id="yLx-N8-4Bi"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="tintColor" systemColor="systemGrayColor"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title=" 이미지만 볼래요" image="square" catalog="system">
-                                                <color key="titleColor" systemColor="systemGrayColor"/>
-                                            </state>
-                                            <state key="disabled" title=" 이미지만 볼래요" image="checkmark.square" catalog="system">
-                                                <color key="titleColor" systemColor="systemGrayColor"/>
-                                            </state>
-                                            <state key="selected" title=" 이미지만 볼래요" image="square" catalog="system">
-                                                <color key="titleColor" systemColor="systemGrayColor"/>
-                                            </state>
-                                        </button>
-                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Vrp-SK-h7l">
-                                            <rect key="frame" x="213" y="10" width="193" height="26"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQT-Uo-9Hz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="26"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="Mxj-6i-kPR"/>
-                                                        <constraint firstAttribute="height" constant="26" id="Tw1-GZ-hkt"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
-                                                    <color key="tintColor" systemColor="systemGrayColor"/>
-                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" image="실시간 구매">
-                                                        <color key="titleColor" systemColor="systemGrayColor"/>
-                                                    </state>
-                                                    <state key="disabled" image="실시간 구매"/>
-                                                    <state key="selected" image="실시간 구매"/>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxT-UJ-eeK">
-                                                    <rect key="frame" x="103" y="0.0" width="90" height="26"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="iUv-Sm-eTB"/>
-                                                        <constraint firstAttribute="height" constant="26" id="kTM-jw-XHx"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
-                                                    <color key="tintColor" systemColor="systemGrayColor"/>
-                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                    <state key="normal" image="실시간 후기">
-                                                        <color key="titleColor" systemColor="systemGrayColor"/>
-                                                    </state>
-                                                    <state key="disabled" image="실시간 후기"/>
-                                                    <state key="selected" image="실시간 후기"/>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="193" id="AaM-wx-Gxg"/>
-                                                <constraint firstAttribute="height" constant="26" id="ghi-Yz-3m9"/>
-                                            </constraints>
-                                        </stackView>
-                                    </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    <constraints>
-                                        <constraint firstItem="XTm-ti-8W7" firstAttribute="leading" secondItem="ToA-vq-0dk" secondAttribute="leading" constant="8" id="8S7-kj-LDV"/>
-                                        <constraint firstItem="Vrp-SK-h7l" firstAttribute="leading" secondItem="XTm-ti-8W7" secondAttribute="trailing" constant="105" id="Ppk-qN-tfx"/>
-                                        <constraint firstItem="XTm-ti-8W7" firstAttribute="top" secondItem="ToA-vq-0dk" secondAttribute="top" constant="13" id="Wrh-PV-KtZ"/>
-                                        <constraint firstAttribute="trailing" secondItem="Vrp-SK-h7l" secondAttribute="trailing" constant="8" id="fYI-GK-gBY"/>
-                                        <constraint firstItem="Vrp-SK-h7l" firstAttribute="top" secondItem="ToA-vq-0dk" secondAttribute="top" constant="10" id="ze8-1k-swv"/>
-                                    </constraints>
-                                </view>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="lBI-Ob-9od" secondAttribute="top" constant="44" id="8nD-58-vGr"/>
-                            <constraint firstItem="lBI-Ob-9od" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="34" id="XCa-yz-PhL"/>
+                            <constraint firstItem="lBI-Ob-9od" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="8Yl-Oo-Ge5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="lBI-Ob-9od" secondAttribute="top" id="CtY-K5-oci"/>
                             <constraint firstItem="lBI-Ob-9od" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="cnC-eo-nkE"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lBI-Ob-9od" secondAttribute="trailing" id="v2d-g0-WXG"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="2526"/>
+                    <connections>
+                        <outlet property="tableView" destination="lBI-Ob-9od" id="QM2-7X-9ni"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,15 +40,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkmark.square" catalog="system" width="128" height="114"/>
-        <image name="square" catalog="system" width="128" height="114"/>
-        <image name="실시간 구매" width="1004" height="272"/>
-        <image name="실시간 후기" width="770" height="218"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RealTimeHeaderTVC" rowHeight="76" id="2uR-SD-jnW" customClass="RealTimeHeaderTableViewCell" customModule="IdusClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2uR-SD-jnW" id="8gx-WT-Ilh">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9I-St-Jeg">
+                        <rect key="frame" x="6" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="8Gz-k2-h9z"/>
+                            <constraint firstAttribute="width" constant="20" id="j0C-7r-1ts"/>
+                        </constraints>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="square" catalog="system"/>
+                        <state key="disabled" image="square" catalog="system"/>
+                        <state key="selected" image="checkmark.square" catalog="system"/>
+                        <buttonConfiguration key="configuration" style="plain" image="square" catalog="system"/>
+                        <connections>
+                            <action selector="pressCheckBtn:" destination="2uR-SD-jnW" eventType="touchUpInside" id="7C6-vu-aGf"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajf-KP-Psc">
+                        <rect key="frame" x="146" y="8" width="122" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="Z3y-wG-unO"/>
+                            <constraint firstAttribute="width" constant="122" id="j8O-fH-jN4"/>
+                        </constraints>
+                        <state key="normal" image="실시간 구매_선택"/>
+                        <connections>
+                            <action selector="pressBuyBtn:" destination="2uR-SD-jnW" eventType="touchUpInside" id="xoA-JQ-hDI"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okk-AX-rO1">
+                        <rect key="frame" x="282" y="8" width="122" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="122" id="of1-am-uH7"/>
+                            <constraint firstAttribute="height" constant="34" id="yNz-t6-KUL"/>
+                        </constraints>
+                        <state key="normal" image="실시간 후기"/>
+                        <connections>
+                            <action selector="pressReviewBtn:" destination="2uR-SD-jnW" eventType="touchUpInside" id="rSE-br-s4l"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금! 다른 사람들이 구매하는 작품" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AN-VE-NFa">
+                        <rect key="frame" x="6" y="50" width="189" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8월 13일 3:15 기준" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW0-yb-JjD">
+                        <rect key="frame" x="285" y="50" width="111.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미지만 볼래요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBC-7p-PhR">
+                        <rect key="frame" x="31" y="16" width="95" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="g9I-St-Jeg" firstAttribute="top" secondItem="8gx-WT-Ilh" secondAttribute="top" constant="15" id="8rV-jt-8NY"/>
+                    <constraint firstItem="okk-AX-rO1" firstAttribute="centerY" secondItem="g9I-St-Jeg" secondAttribute="centerY" id="CYS-Im-rU5"/>
+                    <constraint firstItem="9AN-VE-NFa" firstAttribute="top" secondItem="ajf-KP-Psc" secondAttribute="bottom" constant="8" symbolic="YES" id="Fll-KJ-CpA"/>
+                    <constraint firstItem="okk-AX-rO1" firstAttribute="leading" secondItem="ajf-KP-Psc" secondAttribute="trailing" constant="14" id="I96-iZ-jyz"/>
+                    <constraint firstItem="hW0-yb-JjD" firstAttribute="top" secondItem="okk-AX-rO1" secondAttribute="bottom" constant="8" symbolic="YES" id="IUW-fu-0lH"/>
+                    <constraint firstItem="9AN-VE-NFa" firstAttribute="top" secondItem="ajf-KP-Psc" secondAttribute="bottom" constant="8" symbolic="YES" id="LZC-ov-B0Q"/>
+                    <constraint firstItem="pBC-7p-PhR" firstAttribute="leading" secondItem="g9I-St-Jeg" secondAttribute="trailing" constant="5" id="Mf8-cV-PzT"/>
+                    <constraint firstItem="g9I-St-Jeg" firstAttribute="leading" secondItem="8gx-WT-Ilh" secondAttribute="leading" constant="6" id="ZCy-zd-Yu4"/>
+                    <constraint firstAttribute="trailing" secondItem="hW0-yb-JjD" secondAttribute="trailing" constant="17.5" id="heM-dO-eeU"/>
+                    <constraint firstItem="9AN-VE-NFa" firstAttribute="leading" secondItem="8gx-WT-Ilh" secondAttribute="leading" constant="6" id="pth-XH-YNc"/>
+                    <constraint firstItem="ajf-KP-Psc" firstAttribute="leading" secondItem="pBC-7p-PhR" secondAttribute="trailing" constant="20" id="tYq-bo-RTk"/>
+                    <constraint firstItem="ajf-KP-Psc" firstAttribute="centerY" secondItem="g9I-St-Jeg" secondAttribute="centerY" id="yX2-vc-iPe"/>
+                    <constraint firstItem="pBC-7p-PhR" firstAttribute="centerY" secondItem="g9I-St-Jeg" secondAttribute="centerY" id="zuJ-Vp-8Aa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="RV4-zc-bmF"/>
+            <connections>
+                <outlet property="baseTimeLbl" destination="hW0-yb-JjD" id="YRW-TO-xf3"/>
+                <outlet property="buyBtn" destination="ajf-KP-Psc" id="5eZ-pj-OZW"/>
+                <outlet property="checkBtn" destination="g9I-St-Jeg" id="Ejn-1b-Pf0"/>
+                <outlet property="reviewBtn" destination="okk-AX-rO1" id="2bL-cK-5KT"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="155.35714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <image name="실시간 구매_선택" width="164" height="60"/>
+        <image name="실시간 후기" width="160" height="58"/>
+    </resources>
+</document>

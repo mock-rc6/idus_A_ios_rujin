@@ -51,10 +51,10 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
             return cell
             
         case 1:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTVC") as? ReviewTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "RelatedProductTVC") as? RelatedProductTableViewCell else { return UITableViewCell() }
                 
             if let value = todayData {
-                cell.setCell(value.productReviewList)
+                cell.setData(value.categoryProductList[0])
             }
                 return cell
     
@@ -83,13 +83,13 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
                 cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-2].categoryName))"
             }
                 return cell
-//        case 5:
-//            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTVC") as? ReviewTableViewCell else { return UITableViewCell() }
-//
-//            if let value = todayData {
-//                cell.setCell(value.categoryProductList)
-//            }
-//                return cell
+        case 5:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTVC") as? ReviewTableViewCell else { return UITableViewCell() }
+
+            if let value = todayData {
+                cell.setCell(value.productReviewList)
+            }
+                return cell
         default:
             return UITableViewCell()
         }
@@ -99,10 +99,10 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0:
             return 130
-        case 1:
+        case 1, 2, 3, 4:
             return 380
-        case 2:
-            return 380
+        case 5:
+            return 500
         default:
             return 100
         }

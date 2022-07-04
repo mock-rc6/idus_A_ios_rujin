@@ -6,32 +6,94 @@
 //
 
 import UIKit
-import XLPagerTabStrip
 
-class RealTimeViewController: UIViewController, IndicatorInfoProvider {
-    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "실시간")
+class RealTimeViewController: UIViewController, CheckDelegate {
+    func didSelectOptionBtn(br : Int, img : Int) {
+        print("@@##")
+        if img == 0 {
+            height = 1.7
+        }
+        else {
+            height = 1.0
+        }
+        RealTimeDataManager().getRealTimeProduct(br: br, img: 0, viewController: self)
+        print("br : \(br)")
+        print("img : \(img)")
     }
     
+    
+    var height = 1.7
+    var realTimeData : RealTimeResult?
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupTableView()
+        RealTimeDataManager().getRealTimeProduct(br: 1, img: 0, viewController: self)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    /*
-    // MARK: - Navigation
+ 
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension RealTimeViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 2
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let line = indexPath.row
+        
+        switch line {
+        case 0:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "RealTimeHeaderTVC") as? RealTimeHeaderTableViewCell else { return UITableViewCell() }
+            
+            cell.baseTimeLbl.text = realTimeData?.lookUpTime
+            cell.delegate = self
+            return cell
+            
+        case 1:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "RealTimeTVC") as? RealTimeTableViewCell else { return UITableViewCell() }
+            if let value = realTimeData {
+                cell.setCell(value.realTimeProducts)
+                cell.setHeight(height: height)
+            }
+            
+            return cell
+            
+        default:
+            return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 0:
+            return 76
+        case 1:
+            return 3000
+        default:
+            return 100
+        }
+    }
+    
+    //tableview cell에 들어갈 cell들의 Nib을 등록
+    private func setupTableView() {
+        // Register the xib for tableview cell
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        let tableHeaderCellNib = UINib(nibName: "RealTimeHeaderTableViewCell", bundle: nil)
+        self.tableView.register(tableHeaderCellNib, forCellReuseIdentifier: "RealTimeHeaderTVC")
+        
+        let tableCellNib = UINib(nibName: "RealTimeTableViewCell", bundle: nil)
+        self.tableView.register(tableCellNib, forCellReuseIdentifier: "RealTimeTVC")
+    }
 }

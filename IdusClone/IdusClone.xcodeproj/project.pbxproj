@@ -36,6 +36,10 @@
 		1743848A287307020076E78B /* RealTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17438488287307020076E78B /* RealTimeTableViewCell.xib */; };
 		1743848D287307170076E78B /* RealTimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743848B287307170076E78B /* RealTimeCollectionViewCell.swift */; };
 		1743848E287307170076E78B /* RealTimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1743848C287307170076E78B /* RealTimeCollectionViewCell.xib */; };
+		17438492287338C50076E78B /* RealTimeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17438491287338C50076E78B /* RealTimeDataManager.swift */; };
+		1743849428733C290076E78B /* RealTimeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743849328733C290076E78B /* RealTimeEntity.swift */; };
+		17438497287356870076E78B /* RealTimeHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17438495287356870076E78B /* RealTimeHeaderTableViewCell.swift */; };
+		17438498287356870076E78B /* RealTimeHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17438496287356870076E78B /* RealTimeHeaderTableViewCell.xib */; };
 		1771D484286AE79A0066F139 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D483286AE79A0066F139 /* BannerCollectionViewCell.swift */; };
 		1771D486286C561F0066F139 /* ClassTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D485286C561E0066F139 /* ClassTabViewController.swift */; };
 		1771D48A286C56AC0066F139 /* OnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1771D489286C56AC0066F139 /* OnlineViewController.swift */; };
@@ -134,6 +138,10 @@
 		17438488287307020076E78B /* RealTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeTableViewCell.xib; sourceTree = "<group>"; };
 		1743848B287307170076E78B /* RealTimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeCollectionViewCell.swift; sourceTree = "<group>"; };
 		1743848C287307170076E78B /* RealTimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		17438491287338C50076E78B /* RealTimeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeDataManager.swift; sourceTree = "<group>"; };
+		1743849328733C290076E78B /* RealTimeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeEntity.swift; sourceTree = "<group>"; };
+		17438495287356870076E78B /* RealTimeHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		17438496287356870076E78B /* RealTimeHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealTimeHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		1771D483286AE79A0066F139 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		1771D485286C561E0066F139 /* ClassTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTabViewController.swift; sourceTree = "<group>"; };
 		1771D489286C56AC0066F139 /* OnlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineViewController.swift; sourceTree = "<group>"; };
@@ -302,12 +310,30 @@
 		17438486287306DE0076E78B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				17438495287356870076E78B /* RealTimeHeaderTableViewCell.swift */,
+				17438496287356870076E78B /* RealTimeHeaderTableViewCell.xib */,
 				17438487287307020076E78B /* RealTimeTableViewCell.swift */,
 				17438488287307020076E78B /* RealTimeTableViewCell.xib */,
 				1743848B287307170076E78B /* RealTimeCollectionViewCell.swift */,
 				1743848C287307170076E78B /* RealTimeCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		1743848F287338940076E78B /* RealTimeDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				17438491287338C50076E78B /* RealTimeDataManager.swift */,
+			);
+			path = RealTimeDataManager;
+			sourceTree = "<group>";
+		};
+		17438490287338A10076E78B /* RealTimeEntity */ = {
+			isa = PBXGroup;
+			children = (
+				1743849328733C290076E78B /* RealTimeEntity.swift */,
+			);
+			path = RealTimeEntity;
 			sourceTree = "<group>";
 		};
 		1771D482286AE6840066F139 /* Cell */ = {
@@ -489,6 +515,8 @@
 		17E40713286A19E40006DFF4 /* RealTimeView */ = {
 			isa = PBXGroup;
 			children = (
+				1743848F287338940076E78B /* RealTimeDataManager */,
+				17438490287338A10076E78B /* RealTimeEntity */,
 				17438486287306DE0076E78B /* Cell */,
 				17E40719286A1A600006DFF4 /* RealTimeViewController.swift */,
 				174384842872FB140076E78B /* RealTimeView.storyboard */,
@@ -738,6 +766,7 @@
 				17E406D62868D5640006DFF4 /* EmailRegisterViewController.xib in Resources */,
 				17E406FC2869966E0006DFF4 /* MyInfoView.storyboard in Resources */,
 				172B68A6287074C2002B697A /* ReviewTableViewCell.xib in Resources */,
+				17438498287356870076E78B /* RealTimeHeaderTableViewCell.xib in Resources */,
 				172B6890286EEE2C002B697A /* ProductCollectionViewCell.xib in Resources */,
 				1743848A287307020076E78B /* RealTimeTableViewCell.xib in Resources */,
 				172B688C286EEE1D002B697A /* ProductTableViewCell.xib in Resources */,
@@ -900,6 +929,7 @@
 				172B6898286F29DC002B697A /* RelatedProductTableViewCell.swift in Sources */,
 				17F0D7242868543A00CF1A1B /* ViewController.swift in Sources */,
 				17E40717286A1A510006DFF4 /* TodayViewController.swift in Sources */,
+				17438492287338C50076E78B /* RealTimeDataManager.swift in Sources */,
 				17F0D755286855D000CF1A1B /* Constant.swift in Sources */,
 				172B689F28703F48002B697A /* TodayEntity.swift in Sources */,
 				17F0D75D286856B900CF1A1B /* LogInViewController.swift in Sources */,
@@ -920,12 +950,14 @@
 				17F0D7222868543A00CF1A1B /* SceneDelegate.swift in Sources */,
 				172B68A1287061BF002B697A /* UIImageView.swift in Sources */,
 				172B68A9287074D5002B697A /* ReviewCollectionViewCell.swift in Sources */,
+				17438497287356870076E78B /* RealTimeHeaderTableViewCell.swift in Sources */,
 				172B687A286EB85F002B697A /* MemberLoginInput.swift in Sources */,
 				17E40702286996A50006DFF4 /* SearchViewController.swift in Sources */,
 				172B6885286ED34D002B697A /* SmallIconTableViewCell.swift in Sources */,
 				17E406E928698D6F0006DFF4 /* MemberLoginViewController.swift in Sources */,
 				1771D494286C70550066F139 /* EmailRegisterEntity.swift in Sources */,
 				1771D490286C56FF0066F139 /* OfflineViewController.swift in Sources */,
+				1743849428733C290076E78B /* RealTimeEntity.swift in Sources */,
 				17E40711286A18360006DFF4 /* WorkTabViewController.swift in Sources */,
 				17E406D52868D5630006DFF4 /* EmailRegisterViewController.swift in Sources */,
 				1771D496286C70AE0066F139 /* EmailRegisterInput.swift in Sources */,
