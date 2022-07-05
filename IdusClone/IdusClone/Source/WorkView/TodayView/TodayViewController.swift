@@ -9,21 +9,16 @@ import UIKit
 
 class TodayViewController: UIViewController {
     
-    @IBOutlet weak var bannerCV: UICollectionView!
+
     @IBOutlet weak var tableView: UITableView!
     
     var todayData : ProductResult?
     
-    var nowPage : Int = 0
-    let bannerArray : [UIImage] = [UIImage(named: "banner1")!, UIImage(named: "banner2")!, UIImage(named: "banner3")!, UIImage(named: "banner4")!, UIImage(named: "banner5")!, UIImage(named: "banner6")!, UIImage(named: "banner7")!, UIImage(named: "banner8")!, UIImage(named: "banner9")!, UIImage(named: "banner10")!, UIImage(named: "banner11")!, UIImage(named: "banner12")!]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bannerCV.delegate = self
-        bannerCV.dataSource = self
+  
         setupTableView()
-        bannerTimer()
         TodayDataManager().getTodayViewInfo(viewController: self)
         // Do any additional setup after loading the view.
     }
@@ -37,7 +32,7 @@ class TodayViewController: UIViewController {
 extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return (todayData?.categoryProductList.count ?? 0) + 3
+        return (todayData?.categoryProductList.count ?? 0) + 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,11 +41,16 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
         
         switch line {
         case 0:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "SmallIconTVC") as? SmallIconTableViewCell else { return UITableViewCell() }
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "BannerTVC") as? BannerTableViewCell else { return UITableViewCell() }
             
             return cell
             
         case 1:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "SmallIconTVC") as? SmallIconTableViewCell else { return UITableViewCell() }
+            
+            return cell
+            
+        case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "RelatedProductTVC") as? RelatedProductTableViewCell else { return UITableViewCell() }
                 
             if let value = todayData {
@@ -58,32 +58,32 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
             }
                 return cell
     
-        case 2:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell else { return UITableViewCell() }
-                
-            if let value = todayData {
-                cell.setCell(value.categoryProductList[line-2])
-                cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-2].categoryName))"
-            }
-                return cell
-            
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell else { return UITableViewCell() }
                 
             if let value = todayData {
-                cell.setCell(value.categoryProductList[line-2])
-                cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-2].categoryName))"
+                cell.setCell(value.categoryProductList[line-3])
+                cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-3].categoryName))"
             }
                 return cell
+            
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell else { return UITableViewCell() }
                 
             if let value = todayData {
-                cell.setCell(value.categoryProductList[line-2])
-                cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-2].categoryName))"
+                cell.setCell(value.categoryProductList[line-3])
+                cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-3].categoryName))"
             }
                 return cell
         case 5:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell else { return UITableViewCell() }
+                
+            if let value = todayData {
+                cell.setCell(value.categoryProductList[line-3])
+                cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-3].categoryName))"
+            }
+                return cell
+        case 6:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTVC") as? ReviewTableViewCell else { return UITableViewCell() }
 
             if let value = todayData {
@@ -98,10 +98,12 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
+            return 200
+        case 1:
             return 130
-        case 1, 2, 3, 4:
+        case 2, 3, 4, 5:
             return 380
-        case 5:
+        case 6:
             return 500
         default:
             return 100
@@ -113,6 +115,10 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
         // Register the xib for tableview cell
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // 배너
+        let bannerTableCellNib = UINib(nibName: "BannerTableViewCell", bundle: nil)
+        self.tableView.register(bannerTableCellNib, forCellReuseIdentifier: "BannerTVC")
         
         // SmallIconTVC
         let smallIconTableCellNib = UINib(nibName: "SmallIconTableViewCell", bundle: nil)
@@ -131,50 +137,5 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
 }
 
 
-//MARK: - Banner CollectionView
-extension TodayViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return bannerArray.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = bannerCV.dequeueReusableCell(withReuseIdentifier: "BannerCell", for: indexPath) as? BannerCollectionViewCell else { return UICollectionViewCell() }
-        cell.bannerImg.image = bannerArray[indexPath.row]
-        
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: bannerCV.frame.size.width  , height:  bannerCV.frame.height)
-    }
-    
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        nowPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
-    }
-    
-}
 
-//MARK: - banner Timer 세팅
-
-extension TodayViewController {
-    func bannerTimer() {
-        let _: Timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { (Timer) in
-            self.bannerMove()
-        }
-    }
-    // 배너 움직이는 매서드
-    func bannerMove() {
-        // 현재페이지가 마지막 페이지일 경우
-        if nowPage == bannerArray.count-1 {
-            // 맨 처음 페이지로 돌아감
-            bannerCV.scrollToItem(at: NSIndexPath(item: 0, section: 0) as IndexPath, at: .right, animated: true)
-            nowPage = 0
-            return
-        }
-        // 다음 페이지로 전환
-        nowPage += 1
-        bannerCV.scrollToItem(at: NSIndexPath(item: nowPage, section: 0) as IndexPath, at: .right, animated: true)
-    }
-}
 

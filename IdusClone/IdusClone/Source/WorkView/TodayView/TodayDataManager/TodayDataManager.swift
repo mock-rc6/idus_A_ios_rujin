@@ -17,10 +17,8 @@ struct TodayDataManager {
             switch response.result {
             case .success(let result) :
                 print("Today-요청성공!!!!!!!")
-                if result.result != nil {
-                    viewController.todayData = result.result
-                    viewController.tableView.reloadData()
-                }
+                viewController.todayData = result.result
+                viewController.tableView.reloadData()
             case .failure(let error):
                 print("Today-요청실패!!!!!!!")
                 print(error.localizedDescription)

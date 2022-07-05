@@ -13,7 +13,7 @@
             <objects>
                 <viewController storyboardIdentifier="WorkVC" id="Y6W-OH-hqX" customClass="WorkViewController" customModule="IdusClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="2700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmj-HB-kas">
@@ -57,10 +57,7 @@
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPP-8a-sU0">
-                                <rect key="frame" x="0.0" y="91" width="414" height="2526"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="2526" id="nA1-ZF-zth"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="91" width="414" height="722"/>
                                 <connections>
                                     <segue destination="MQl-Kk-wuf" kind="embed" id="tgz-gg-XOM"/>
                                 </connections>
@@ -73,6 +70,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cmj-HB-kas" secondAttribute="trailing" constant="20" id="8kl-Q7-xdQ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FPP-8a-sU0" secondAttribute="trailing" id="BWv-YU-rIg"/>
                             <constraint firstItem="FPP-8a-sU0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="CIi-BI-AoL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="FPP-8a-sU0" secondAttribute="bottom" id="dGi-tX-sdK"/>
                             <constraint firstItem="FPP-8a-sU0" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="i4T-HU-Xo1"/>
                             <constraint firstItem="cmj-HB-kas" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rlY-ob-FyF"/>
                             <constraint firstItem="FPP-8a-sU0" firstAttribute="top" secondItem="cmj-HB-kas" secondAttribute="bottom" constant="8" symbolic="YES" id="vsX-MU-pey"/>
@@ -80,7 +78,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="작품" image="house" catalog="system" selectedImage="house" id="aU4-f9-tuy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="414" height="2700"/>
                     <connections>
                         <outlet property="searchView" destination="cmj-HB-kas" id="IwE-F8-eSV"/>
                     </connections>
@@ -94,7 +91,7 @@
             <objects>
                 <viewController id="MQl-Kk-wuf" customClass="WorkTabViewController" customModule="IdusClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f7S-8b-FgL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="2526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="MdO-2G-f9F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
