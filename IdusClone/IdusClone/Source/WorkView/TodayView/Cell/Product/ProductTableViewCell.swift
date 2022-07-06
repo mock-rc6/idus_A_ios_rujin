@@ -15,6 +15,7 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var productCV: UICollectionView!
     
     var productData : CategoryProductList?
+    var delegate : TransferDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -64,6 +65,15 @@ extension ProductTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
             return cell
         }
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       
+        let productId = productData?.productsList[indexPath.row].productID
+        delegate?.didSelectProduct(productId : productId!)
+        print("상품")
+        print(productId)
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

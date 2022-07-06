@@ -30,6 +30,7 @@ class RealTimeViewController: UIViewController, CheckDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tabBarController?.tabBar.isHidden = false
         setupTableView()
         RealTimeDataManager().getRealTimeProduct(br: 1, img: 0, viewController: self)
     }
@@ -78,7 +79,7 @@ extension RealTimeViewController : UITableViewDelegate, UITableViewDataSource {
         case 0:
             return 76
         case 1:
-            return 3000
+            return 1500
         default:
             return 100
         }

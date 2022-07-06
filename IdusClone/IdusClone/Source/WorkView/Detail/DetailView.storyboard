@@ -117,6 +117,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="likeCnt" destination="1f5-PW-hpw" id="fcU-kv-FKJ"/>
                         <outlet property="tableView" destination="8Qy-ti-f7j" id="I9h-8W-kdu"/>
                     </connections>
                 </viewController>

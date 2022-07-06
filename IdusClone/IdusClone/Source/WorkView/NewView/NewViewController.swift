@@ -28,6 +28,7 @@ class NewViewController: UIViewController, ImgCheckDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tabBarController?.tabBar.isHidden = false
         setNib()
         NewDataManager().getNewData(viewController: self)
     }

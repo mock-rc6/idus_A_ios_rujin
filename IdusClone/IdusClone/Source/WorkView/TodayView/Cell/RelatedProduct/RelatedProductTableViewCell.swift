@@ -7,12 +7,17 @@
 
 import UIKit
 
+protocol TransferDelegate : AnyObject {
+    func didSelectProduct(productId : Int)
+}
+
 class RelatedProductTableViewCell: UITableViewCell {
 
     @IBOutlet weak var bottomBtn: UIButton!
     @IBOutlet weak var relatedProductCV: UICollectionView!
     
     var relatedProductData : CategoryProductList?
+    var delegate : TransferDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -56,6 +61,12 @@ extension RelatedProductTableViewCell : UICollectionViewDelegate, UICollectionVi
             return cell
         }
         return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       
+        let productId = relatedProductData?.productsList[indexPath.row].productID
+        delegate?.didSelectProduct(productId : productId!)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

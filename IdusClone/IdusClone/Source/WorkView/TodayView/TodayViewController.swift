@@ -7,9 +7,14 @@
 
 import UIKit
 
-class TodayViewController: UIViewController {
+class TodayViewController: UIViewController, TransferDelegate {
+    func didSelectProduct(productId : Int) {
+        let vc = UIStoryboard(name: "DetailView", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailVC") as! DetailViewController
+        vc.productId = productId
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
-
     @IBOutlet weak var tableView: UITableView!
     
     var todayData : ProductResult?
@@ -17,7 +22,7 @@ class TodayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-  
+        self.tabBarController?.tabBar.isHidden = false
         setupTableView()
         TodayDataManager().getTodayViewInfo(viewController: self)
         // Do any additional setup after loading the view.
@@ -53,6 +58,7 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "RelatedProductTVC") as? RelatedProductTableViewCell else { return UITableViewCell() }
                 
+            cell.delegate = self
             if let value = todayData {
                 cell.setData(value.categoryProductList[0])
             }
@@ -61,6 +67,7 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell else { return UITableViewCell() }
                 
+            cell.delegate = self
             if let value = todayData {
                 cell.setCell(value.categoryProductList[line-3])
                 cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-3].categoryName))"
@@ -70,6 +77,7 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell else { return UITableViewCell() }
                 
+            cell.delegate = self
             if let value = todayData {
                 cell.setCell(value.categoryProductList[line-3])
                 cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-3].categoryName))"
@@ -78,6 +86,7 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
         case 5:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTVC") as? ProductTableViewCell else { return UITableViewCell() }
                 
+            cell.delegate = self
             if let value = todayData {
                 cell.setCell(value.categoryProductList[line-3])
                 cell.titleLbl.text = "#\(String(describing: todayData!.categoryProductList[line-3].categoryName))"

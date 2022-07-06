@@ -13,6 +13,7 @@ class DetailImageTableViewCell: UITableViewCell {
     @IBOutlet weak var detailImgCV: UICollectionView!
     
     var imageList : [String] = []
+    var imaage = [UIImage(named: "banner1"), UIImage(named: "banner2"), UIImage(named: "banner3")]
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,7 +41,7 @@ class DetailImageTableViewCell: UITableViewCell {
 extension DetailImageTableViewCell : UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return imageList.count
+        return imaage.count
         //return movieVO.popular.count
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -50,7 +51,8 @@ extension DetailImageTableViewCell : UICollectionViewDelegate, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DetailImageCell", for: indexPath) as? DetailImageCollectionViewCell {
             
-            cell.productImg.load(url: imageList[indexPath.row])
+            //cell.productImg.load(url: imageList[indexPath.row])
+            cell.productImg.image = imaage[indexPath.row]
             return cell
         }
         return UICollectionViewCell()

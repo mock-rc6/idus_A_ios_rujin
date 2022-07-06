@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailProductInfoTVC" rowHeight="161" id="KGk-i7-Jjw" customClass="DetailProductInfoTableViewCell" customModule="IdusClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="161"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="161"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2v-cS-BzN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="161"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="상품바" translatesAutoresizingMaskIntoConstraints="NO" id="gjP-9N-2Ts">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="CCQ-34-Ara"/>
+                                    <constraint firstAttribute="width" constant="414" id="Wd1-I0-UDP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="작품 설명" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnX-WQ-e2R">
+                                <rect key="frame" x="20" y="94" width="375" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="M0G-t1-6ba"/>
+                                    <constraint firstAttribute="width" constant="375" id="tXh-Qe-Isj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DnX-WQ-e2R" firstAttribute="leading" secondItem="z2v-cS-BzN" secondAttribute="leading" constant="20" symbolic="YES" id="OjR-ty-JyS"/>
+                            <constraint firstItem="gjP-9N-2Ts" firstAttribute="top" secondItem="z2v-cS-BzN" secondAttribute="top" id="eJm-yw-10M"/>
+                            <constraint firstAttribute="bottom" secondItem="DnX-WQ-e2R" secondAttribute="bottom" constant="6" id="hFp-NF-EX1"/>
+                            <constraint firstAttribute="trailing" secondItem="DnX-WQ-e2R" secondAttribute="trailing" constant="19" id="hSO-d5-zeL"/>
+                            <constraint firstAttribute="trailing" secondItem="gjP-9N-2Ts" secondAttribute="trailing" id="ref-3e-2JO"/>
+                            <constraint firstItem="gjP-9N-2Ts" firstAttribute="leading" secondItem="z2v-cS-BzN" secondAttribute="leading" id="zcc-q0-kk4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="z2v-cS-BzN" secondAttribute="bottom" id="AWQ-3o-RrC"/>
+                    <constraint firstAttribute="trailing" secondItem="z2v-cS-BzN" secondAttribute="trailing" id="FcD-UF-k9f"/>
+                    <constraint firstItem="z2v-cS-BzN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aIm-1e-gh0"/>
+                    <constraint firstItem="z2v-cS-BzN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lyJ-1l-Fyh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="productContentLbl" destination="DnX-WQ-e2R" id="Oaz-vN-zmg"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="-33.816964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="상품바" width="828" height="160"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
