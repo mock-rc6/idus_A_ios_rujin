@@ -87,6 +87,8 @@
 		17B3871A2875F17E00E10418 /* DetailWriterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B387182875F17E00E10418 /* DetailWriterTableViewCell.swift */; };
 		17B3871B2875F17E00E10418 /* DetailWriterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17B387192875F17E00E10418 /* DetailWriterTableViewCell.xib */; };
 		17B3871D2875FA9200E10418 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3871C2875FA9200E10418 /* String.swift */; };
+		17B38721287601CE00E10418 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B3871F287601CD00E10418 /* PurchaseViewController.swift */; };
+		17B38722287601CE00E10418 /* PurchaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17B38720287601CD00E10418 /* PurchaseViewController.xib */; };
 		17B6A58A287496A400DD1A56 /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B6A588287496A400DD1A56 /* BannerTableViewCell.swift */; };
 		17B6A58B287496A400DD1A56 /* BannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17B6A589287496A400DD1A56 /* BannerTableViewCell.xib */; };
 		17B6A58E287496EB00DD1A56 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B6A58C287496EB00DD1A56 /* BannerCollectionViewCell.swift */; };
@@ -233,6 +235,8 @@
 		17B387182875F17E00E10418 /* DetailWriterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWriterTableViewCell.swift; sourceTree = "<group>"; };
 		17B387192875F17E00E10418 /* DetailWriterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailWriterTableViewCell.xib; sourceTree = "<group>"; };
 		17B3871C2875FA9200E10418 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		17B3871F287601CD00E10418 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		17B38720287601CD00E10418 /* PurchaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PurchaseViewController.xib; sourceTree = "<group>"; };
 		17B6A588287496A400DD1A56 /* BannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTableViewCell.swift; sourceTree = "<group>"; };
 		17B6A589287496A400DD1A56 /* BannerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerTableViewCell.xib; sourceTree = "<group>"; };
 		17B6A58C287496EB00DD1A56 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -459,6 +463,7 @@
 		174384AE287439BD0076E78B /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				17B3871E287601A100E10418 /* Purchase */,
 				174384C828744D1F0076E78B /* DetailDataManager */,
 				174384C728744D140076E78B /* DetailEntity */,
 				174384AF287439C80076E78B /* Cell */,
@@ -640,6 +645,15 @@
 				17B387192875F17E00E10418 /* DetailWriterTableViewCell.xib */,
 			);
 			path = DetailWriter;
+			sourceTree = "<group>";
+		};
+		17B3871E287601A100E10418 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				17B3871F287601CD00E10418 /* PurchaseViewController.swift */,
+				17B38720287601CD00E10418 /* PurchaseViewController.xib */,
+			);
+			path = Purchase;
 			sourceTree = "<group>";
 		};
 		17B6A5902874A8C900DD1A56 /* DetailHeader */ = {
@@ -1074,6 +1088,7 @@
 				17B6A58B287496A400DD1A56 /* BannerTableViewCell.xib in Resources */,
 				17B387082875E47100E10418 /* DetailCommentCollectionViewCell.xib in Resources */,
 				17B386E82875B79800E10418 /* DetailShippingTableViewCell.xib in Resources */,
+				17B38722287601CE00E10418 /* PurchaseViewController.xib in Resources */,
 				174384852872FB140076E78B /* RealTimeView.storyboard in Resources */,
 				17B6A58F287496EB00DD1A56 /* BannerCollectionViewCell.xib in Resources */,
 				17F0D75B286856A800CF1A1B /* LogInView.storyboard in Resources */,
@@ -1239,6 +1254,7 @@
 				174384CA28744D410076E78B /* DetailDataManager.swift in Sources */,
 				17438492287338C50076E78B /* RealTimeDataManager.swift in Sources */,
 				17F0D755286855D000CF1A1B /* Constant.swift in Sources */,
+				17B38721287601CE00E10418 /* PurchaseViewController.swift in Sources */,
 				17B386EC2875BEEE00E10418 /* DetailProductInfoTableViewCell.swift in Sources */,
 				172B689F28703F48002B697A /* TodayEntity.swift in Sources */,
 				17F0D75D286856B900CF1A1B /* LogInViewController.swift in Sources */,
