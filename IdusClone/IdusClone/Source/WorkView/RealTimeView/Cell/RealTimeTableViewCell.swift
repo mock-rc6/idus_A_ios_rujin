@@ -46,7 +46,7 @@ extension RealTimeTableViewCell : UICollectionViewDelegate, UICollectionViewData
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = realTimeCV.dequeueReusableCell(withReuseIdentifier: "RealTimeCell", for: indexPath) as? RealTimeCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.productImg.load(url: realTimeProductData[indexPath.row].imgURL)
+        cell.productImg.load(url: URL(string: "https://\(realTimeProductData[indexPath.row].imgURL)")!)
         cell.writerNameLbl.text = realTimeProductData[indexPath.row].writerName
         cell.productDetailLbl.text = realTimeProductData[indexPath.row].title
         

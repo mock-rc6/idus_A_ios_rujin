@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pay View Controller-->
+        <scene sceneID="SeG-Zo-tzz">
+            <objects>
+                <viewController storyboardIdentifier="PayVC" id="idm-03-PD9" customClass="PayViewController" customModule="IdusClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kx6-DM-97i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ene-Xj-af4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="zym-eu-lZf">
+                                <rect key="frame" x="20" y="772" width="374" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93333339689999995" green="0.50980395079999996" blue="0.26666668059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnBuy:" destination="idm-03-PD9" eventType="touchUpInside" id="0qI-1R-iSE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,800원 간편하게 카트 결제" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXd-jw-l6r">
+                                <rect key="frame" x="57" y="785" width="300" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="NWU-Ha-GYX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="예상 적립금 : 18p" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flL-mF-ptb">
+                                <rect key="frame" x="139" y="818" width="136" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="zXi-Ff-usO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fQ0-ws-DXt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ene-Xj-af4" firstAttribute="top" secondItem="fQ0-ws-DXt" secondAttribute="top" id="HZO-X9-xbq"/>
+                            <constraint firstItem="flL-mF-ptb" firstAttribute="top" secondItem="xXd-jw-l6r" secondAttribute="bottom" constant="5" id="LHN-C5-CK6"/>
+                            <constraint firstItem="fQ0-ws-DXt" firstAttribute="trailing" secondItem="ene-Xj-af4" secondAttribute="trailing" id="bYI-Nt-cfw"/>
+                            <constraint firstItem="fQ0-ws-DXt" firstAttribute="trailing" secondItem="xXd-jw-l6r" secondAttribute="trailing" constant="57" id="h3Y-Sa-T4S"/>
+                            <constraint firstItem="xXd-jw-l6r" firstAttribute="leading" secondItem="fQ0-ws-DXt" secondAttribute="leading" constant="57" id="tah-mV-Mmp"/>
+                            <constraint firstItem="ene-Xj-af4" firstAttribute="leading" secondItem="fQ0-ws-DXt" secondAttribute="leading" id="tus-rT-TuE"/>
+                            <constraint firstItem="fQ0-ws-DXt" firstAttribute="bottom" secondItem="ene-Xj-af4" secondAttribute="bottom" id="uCD-6e-j0A"/>
+                            <constraint firstItem="flL-mF-ptb" firstAttribute="leading" secondItem="fQ0-ws-DXt" secondAttribute="leading" constant="139" id="w5f-en-CWG"/>
+                            <constraint firstItem="xXd-jw-l6r" firstAttribute="top" secondItem="fQ0-ws-DXt" secondAttribute="top" constant="697" id="xXp-bX-7LO"/>
+                            <constraint firstItem="fQ0-ws-DXt" firstAttribute="trailing" secondItem="flL-mF-ptb" secondAttribute="trailing" constant="139" id="xkK-ZD-q3u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="T6Y-Zb-9vH"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="labelPayment" destination="xXd-jw-l6r" id="5Ey-r3-PBe"/>
+                        <outlet property="tableView" destination="ene-Xj-af4" id="sRp-gF-chf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FpL-VH-WKJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2257.971014492754" y="233.70535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

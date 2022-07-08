@@ -5,7 +5,7 @@
 //  Created by RooZin on 2022/07/05.
 //
 
-import Foundation
+
 
 import Foundation
 
@@ -21,8 +21,7 @@ struct DetailEntity: Codable {
 struct DetailResult: Codable {
     var imgURLList: [String]
     var writerID: Int
-    var writerName: String
-    var profileImg: DetailJSONNull?
+    var writerName, profileImg: String
     var rating: Double
     var countReview: Int
     var title: String
@@ -49,9 +48,7 @@ struct CommentList: Codable {
     var userName: String
     var userProfileImg: String?
     var userComment: String
-    var writerName: String?
-    var writerProfileImg: DetailJSONNull?
-    var writerComment: String?
+    var writerName, writerProfileImg, writerComment: String?
 }
 
 // MARK: - ReviewList
@@ -81,32 +78,5 @@ struct ShortReviewList: Codable {
         case repurchase
         case imgURL = "imgUrl"
         case contents
-    }
-}
-
-// MARK: - Encode/decode helpers
-
-class DetailJSONNull: Codable, Hashable {
-
-    public static func == (lhs: DetailJSONNull, rhs: DetailJSONNull) -> Bool {
-        return true
-    }
-
-    public var hashValue: Int {
-        return 0
-    }
-
-    public init() {}
-
-    public required init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        if !container.decodeNil() {
-            throw DecodingError.typeMismatch(DetailJSONNull.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for JSONNull"))
-        }
-    }
-
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        try container.encodeNil()
     }
 }

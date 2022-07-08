@@ -42,11 +42,15 @@ extension DetailCommentTableViewCell : UICollectionViewDelegate, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = commentCV.dequeueReusableCell(withReuseIdentifier: "DetailCommentCell", for: indexPath) as? DetailCommentCollectionViewCell else { return UICollectionViewCell() }
         
-       //cell.customerImg.load(url: comments[indexPath.row].userProfileImg!)
+        if let value = comments[indexPath.row].userProfileImg {
+            cell.customerImg.load(url: URL(string: "https://\(value)")!)
+        }
         cell.customerNameLbl.text = comments[indexPath.row].userName
         cell.customCommentLbl.text = comments[indexPath.row].userComment
         
-        //cell.writerImg.load(url: comments[indexPath.row].writerProfileImg)
+        if let value = comments[indexPath.row].writerProfileImg {
+            cell.writerImg.load(url: URL(string: "https://\(value)")!)
+        }
         cell.writerNameLbl.text = comments[indexPath.row].writerName
         cell.writerCommentLbl.text = comments[indexPath.row].writerComment
         

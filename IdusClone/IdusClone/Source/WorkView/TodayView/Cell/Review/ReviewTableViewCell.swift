@@ -55,8 +55,9 @@ extension ReviewTableViewCell : UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = reviewCV.dequeueReusableCell(withReuseIdentifier: "ReviewCell", for: indexPath) as? ReviewCollectionViewCell else { return UICollectionViewCell() }
         
-        //cell.reviewImg.load(url : (reviewData?[indexPath.row].reviewImg)!)
-        cell.reviewImg.image = UIImage(named: "productSample")
+        if let value = reviewData?[indexPath.row].reviewImg {
+            cell.reviewImg.load(url : URL(string: "https://\(value)")!)
+        }
         
         switch reviewData?[indexPath.row].rating {
         case 1:
@@ -80,8 +81,9 @@ extension ReviewTableViewCell : UICollectionViewDelegate, UICollectionViewDataSo
         cell.reviewerLbl.text = reviewData?[indexPath.row].nickName
         cell.reviewLbl.text = reviewData?[indexPath.row].contents
         
-        //cell.productImg.load(url : (reviewData?[indexPath.row].productImg)!)
-        cell.productImg.image = UIImage(named: "productSample")
+        if let value = reviewData?[indexPath.row].productImg {
+            cell.productImg.load(url : URL(string: "https://\(value)")!)
+        }
         cell.productNameLbl.text = reviewData?[indexPath.row].productTitle
     
         return cell

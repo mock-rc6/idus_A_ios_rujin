@@ -106,10 +106,10 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아트피스 카드지갑" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byz-kP-M5a">
-                                        <rect key="frame" x="69" y="12" width="87" height="15"/>
+                                        <rect key="frame" x="69" y="12" width="175" height="53"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="15" id="BCy-5X-Kp7"/>
-                                            <constraint firstAttribute="width" constant="87" id="or7-vk-UbB"/>
+                                            <constraint firstAttribute="height" constant="53" id="BCy-5X-Kp7"/>
+                                            <constraint firstAttribute="width" constant="175" id="or7-vk-UbB"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" systemColor="systemGrayColor"/>
@@ -121,7 +121,7 @@
                                     <constraint firstItem="3MA-Lf-MaZ" firstAttribute="leading" secondItem="T5h-1d-FDM" secondAttribute="leading" constant="8" id="2lv-0W-I4g"/>
                                     <constraint firstAttribute="height" constant="80" id="4Q2-Et-WuR"/>
                                     <constraint firstItem="Byz-kP-M5a" firstAttribute="leading" secondItem="3MA-Lf-MaZ" secondAttribute="trailing" constant="8" symbolic="YES" id="8Zi-Uw-Q44"/>
-                                    <constraint firstAttribute="trailing" secondItem="Byz-kP-M5a" secondAttribute="trailing" constant="96" id="Qrd-TP-NvC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Byz-kP-M5a" secondAttribute="trailing" constant="8" id="Qrd-TP-NvC"/>
                                     <constraint firstItem="Byz-kP-M5a" firstAttribute="top" secondItem="T5h-1d-FDM" secondAttribute="top" constant="12" id="VTm-em-vah"/>
                                     <constraint firstItem="3MA-Lf-MaZ" firstAttribute="top" secondItem="T5h-1d-FDM" secondAttribute="top" constant="12" id="fTe-Yv-ecu"/>
                                 </constraints>

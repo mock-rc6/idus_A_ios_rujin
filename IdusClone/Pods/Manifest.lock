@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.1)
+  - ExpyTableView (1.2.1)
   - KakaoSDKAuth (2.10.1):
     - KakaoSDKCommon (= 2.10.1)
   - KakaoSDKCommon (2.10.1):
@@ -47,6 +48,7 @@ PODS:
   - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
+  - ExpyTableView
   - KakaoSDKAuth
   - KakaoSDKCommon
   - KakaoSDKUser
@@ -58,6 +60,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - ExpyTableView
     - KakaoSDKAuth
     - KakaoSDKCommon
     - KakaoSDKUser
@@ -69,6 +72,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  ExpyTableView: 19cf224c2ff04b1ec215ec52bc4ba6f81fa809ed
   KakaoSDKAuth: b4fec62192c2ac8a9375847f666c0932e38afeb5
   KakaoSDKCommon: 4989e3bae5f4884903bc1df7134e13d0e903d587
   KakaoSDKUser: 5c5fd4b5864e8b5ac9587fdbb473daf2fa675abf
@@ -78,6 +82,6 @@ SPEC CHECKSUMS:
   Tabman: 447a50447ed2869c39ab3b1a779327e43e067c4e
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: cd08d2fba1a7493aa0b48dc2e311c5a0fdfac89d
+PODFILE CHECKSUM: 36eebd2b10bdb763eab763430ba8b0920afcff66
 
 COCOAPODS: 1.11.3

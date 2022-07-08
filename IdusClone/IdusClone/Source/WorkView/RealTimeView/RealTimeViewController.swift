@@ -35,6 +35,11 @@ class RealTimeViewController: UIViewController, CheckDelegate {
         RealTimeDataManager().getRealTimeProduct(br: 1, img: 0, viewController: self)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

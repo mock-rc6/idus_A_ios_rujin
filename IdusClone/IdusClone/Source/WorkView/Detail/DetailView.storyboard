@@ -104,6 +104,9 @@
                                                 <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="pressBuyBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pOG-ok-UJf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

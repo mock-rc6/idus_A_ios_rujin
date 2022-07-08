@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,19 +16,85 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT8-r0-1rv">
+                                <rect key="frame" x="20" y="44" width="40" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="sFr-Az-TRH"/>
+                                    <constraint firstAttribute="height" constant="39" id="xkx-Kr-DJr"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="arrow.backward" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveToBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DG9-UB-eZk"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="다이어트를 검색해보세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X6B-Fp-Z1Z">
+                                <rect key="frame" x="77" y="46.5" width="261" height="34"/>
+                                <color key="backgroundColor" red="0.96470588450000005" green="0.96470588450000005" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="fqn-mf-vzK"/>
+                                    <constraint firstAttribute="width" constant="261" id="hwE-de-Sya"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z57-Lf-otI">
+                                <rect key="frame" x="358" y="51" width="26" height="25"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="실시간급" translatesAutoresizingMaskIntoConstraints="NO" id="ZaQ-sg-OtH">
+                                <rect key="frame" x="0.0" y="83" width="414" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="d3v-HN-sdn"/>
+                                    <constraint firstAttribute="width" constant="414" id="txl-ia-AJu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="인기 검색어" translatesAutoresizingMaskIntoConstraints="NO" id="ywr-xi-HzK">
+                                <rect key="frame" x="0.0" y="134" width="414" height="498"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="RqW-WB-pXD"/>
+                                    <constraint firstAttribute="width" constant="414" id="UsN-Yw-K52"/>
+                                    <constraint firstAttribute="height" constant="498" id="m8O-mL-G8v"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ywr-xi-HzK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="30u-2g-gJe"/>
+                            <constraint firstItem="z57-Lf-otI" firstAttribute="centerY" secondItem="X6B-Fp-Z1Z" secondAttribute="centerY" id="A9l-nT-vlv"/>
+                            <constraint firstItem="gT8-r0-1rv" firstAttribute="centerY" secondItem="X6B-Fp-Z1Z" secondAttribute="centerY" id="DYj-IL-IHI"/>
+                            <constraint firstItem="X6B-Fp-Z1Z" firstAttribute="leading" secondItem="gT8-r0-1rv" secondAttribute="trailing" constant="17" id="Enc-29-SeE"/>
+                            <constraint firstItem="ZaQ-sg-OtH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="FCP-Kj-ubf"/>
+                            <constraint firstItem="ywr-xi-HzK" firstAttribute="top" secondItem="ZaQ-sg-OtH" secondAttribute="bottom" constant="-9" id="Qeg-aq-Tq2"/>
+                            <constraint firstItem="gT8-r0-1rv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Uvs-Y3-4Ec"/>
+                            <constraint firstItem="gT8-r0-1rv" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="44" id="ZtO-B7-8wg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ywr-xi-HzK" secondAttribute="trailing" id="jvu-yT-SOZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ywr-xi-HzK" secondAttribute="bottom" constant="181" id="kMr-US-zfz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZaQ-sg-OtH" secondAttribute="trailing" id="kpU-dQ-xr3"/>
+                            <constraint firstItem="ZaQ-sg-OtH" firstAttribute="top" secondItem="gT8-r0-1rv" secondAttribute="bottom" id="w3G-Ev-dan"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="z57-Lf-otI" secondAttribute="trailing" constant="30" id="wmC-qN-KQE"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="2yY-LQ-ctz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="67"/>
+            <point key="canvasLocation" x="131.8840579710145" y="66.964285714285708"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="실시간급" width="828" height="112"/>
+        <image name="인기 검색어" width="828" height="1002"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

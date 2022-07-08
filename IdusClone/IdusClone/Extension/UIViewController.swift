@@ -110,4 +110,12 @@ extension UIViewController{
 
         changeRootViewController(vc)
     }
+    
+    func decimalWon(value: Int) -> String{
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+            let result = numberFormatter.string(from: NSNumber(value: value))! + "원"
+            
+            return result
+        }
 }

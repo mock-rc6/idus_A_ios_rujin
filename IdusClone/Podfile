@@ -13,6 +13,7 @@ target 'IdusClone' do
   pod 'Tabman'
   pod 'XLPagerTabStrip'
   pod 'MSPeekCollectionViewDelegateImplementation'
+  pod 'ExpyTableView'
 
   target 'IdusCloneTests' do
     inherit! :search_paths

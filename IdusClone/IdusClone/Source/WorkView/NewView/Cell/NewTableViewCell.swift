@@ -46,7 +46,7 @@ extension NewTableViewCell : UICollectionViewDelegate, UICollectionViewDataSourc
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = newCV.dequeueReusableCell(withReuseIdentifier: "NewCell", for: indexPath) as? NewCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.productImg.load(url: newProductData[indexPath.row].imgURL)
+        cell.productImg.load(url: URL(string: "https://\(newProductData[indexPath.row].imgURL)")!)
         cell.writerNameLbl.text = newProductData[indexPath.row].writerName
         cell.productDetailLbl.text = newProductData[indexPath.row].title
         

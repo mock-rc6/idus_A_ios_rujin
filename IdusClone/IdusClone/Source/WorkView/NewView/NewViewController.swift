@@ -32,6 +32,11 @@ class NewViewController: UIViewController, ImgCheckDelegate {
         setNib()
         NewDataManager().getNewData(viewController: self)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

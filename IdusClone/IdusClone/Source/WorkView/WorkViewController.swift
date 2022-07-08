@@ -23,8 +23,17 @@ class WorkViewController: UIViewController {
         initUI()
     }
     
-    @objc func goToCart() {
-        print("cart")
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
+    @objc func moveToCart() {
+        print("CART")
+        let vc = UIStoryboard(name: "CartView", bundle: Bundle.main).instantiateViewController(withIdentifier: "CartVC") as! CartViewController
+        
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func moveToSearch(_ sender : UIGestureRecognizer) {
@@ -37,7 +46,7 @@ class WorkViewController: UIViewController {
     //MARK: - 네비게이션 바 세팅
     func setNavigationBar() {
         
-        let rightBtn = makeSFSymbolButton(self, action: #selector(goToCart), symbolName: "cart")
+        let rightBtn = makeSFSymbolButton(self, action: #selector(moveToCart), symbolName: "cart")
         
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "idus"))
         self.navigationController?.navigationBar.tintColor = .black

@@ -32,7 +32,49 @@ class DetailViewController: UIViewController {
             likeCnt.text = String(value.countProductLike)
         }
        
+        setNavigationBar()
         setTableView()
+    }
+    
+    @IBAction func pressBuyBtn(_ sender: UIButton) {
+        let vc = PurchaseViewController()
+        vc.modalPresentationStyle = .custom
+        vc.price = detailData?.finalPrice
+        vc.shipping = detailData?.deliveryFee
+        vc.detailData = detailData
+        vc.productId = self.productId
+        vc.optionCnt = 0
+        self.present(vc, animated: true)
+    }
+    
+    func setNavigationBar() {
+        
+        let searchBtn = makeSFSymbolButton(self, action: #selector(moveToSearch), symbolName: "magnifyingglass")
+        let homeBtn = makeSFSymbolButton(self, action: #selector(moveToHome), symbolName: "house")
+        let cartBtn = makeSFSymbolButton(self, action: #selector(moveToCart), symbolName: "cart")
+        
+        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.tintColor = UIColor.black
+        navigationItem.rightBarButtonItems = [cartBtn, homeBtn, searchBtn]
+        
+    }
+    
+    @objc func moveToSearch() {
+        
+    }
+    @objc func moveToHome() {
+        moveToMain()
+    }
+    @objc func moveToCart() {
+        print("CART")
+        let vc = UIStoryboard(name: "CartView", bundle: Bundle.main).instantiateViewController(withIdentifier: "CartVC") as! CartViewController
+        
+        vc.shipping = detailData?.deliveryFee
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func moveToInfo() {
     }
 
 }
@@ -46,15 +88,19 @@ extension DetailViewController : UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.row {
         case 0:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "DetailImgTVC") as? DetailImageTableViewCell else { return UITableViewCell() }
-            
-            cell.imageList = detailData!.imgURLList
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "DetailImageTVC") as? DetailImageTableViewCell else { return UITableViewCell() }
+    
+            if let value = detailData {
+                print("AAA")
+                cell.setCell(data: value.imgURLList)
+            }
             
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "DetailHeaderTVC") as? DetailHeaderTableViewCell else { return UITableViewCell() }
-            
+            print("BBB")
             if let value = detailData {
+                cell.writerImg.load(url: URL(string: "https://\(value.profileImg)")!)
                 cell.writeNameLbl.titleLabel?.text = "\(String(describing: value.writerName))>"
                 cell.productTitleLbl.text = value.title
                 cell.ratingLbl.text = "\(String(describing: value.rating))"
@@ -106,7 +152,7 @@ extension DetailViewController : UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "DetailWriterTVC") as? DetailWriterTableViewCell else { return UITableViewCell() }
 
             if let value = detailData {
-                //cell.writerImg.load(url: value.profileImg)
+                cell.writerImg.load(url: URL(string: "https://\(value.profileImg)")!)
                 cell.writerNameLbl.text = value.writerName
                 
                 cell.rateLbl.text = String(value.ratingAverage)

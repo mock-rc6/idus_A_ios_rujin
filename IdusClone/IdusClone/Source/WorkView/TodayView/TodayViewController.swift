@@ -12,6 +12,7 @@ class TodayViewController: UIViewController, TransferDelegate {
         let vc = UIStoryboard(name: "DetailView", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailVC") as! DetailViewController
         vc.productId = productId
         
+        self.navigationController?.navigationBar.topItem?.title = ""
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -22,10 +23,15 @@ class TodayViewController: UIViewController, TransferDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.isHidden = false
         setupTableView()
         TodayDataManager().getTodayViewInfo(viewController: self)
+    
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     override func didReceiveMemoryWarning() {

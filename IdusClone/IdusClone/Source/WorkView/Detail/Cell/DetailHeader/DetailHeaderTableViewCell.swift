@@ -55,7 +55,10 @@ extension DetailHeaderTableViewCell : UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = reviewCV.dequeueReusableCell(withReuseIdentifier: "DetailHeaderCell", for: indexPath) as? DetailHeaderCollectionViewCell else { return UICollectionViewCell() }
         
-        //cell.reviewImg.load(url: reviewData[indexPath.row].imgURL!)
+        if let value = reviewData[indexPath.row].imgURL {
+            cell.reviewImg.load(url: URL(string: "https://\(value)")!)
+        }
+        
         cell.reviewLbl.text = reviewData[indexPath.row].contents
         
         return cell
@@ -70,6 +73,7 @@ extension DetailHeaderTableViewCell : UICollectionViewDelegate, UICollectionView
     //데이터 가져올 함수
     func setCell(data: [ShortReviewList])  {
         self.reviewData = data
+        print("숏리뷰")
         self.reviewCV.reloadData()
     }
     

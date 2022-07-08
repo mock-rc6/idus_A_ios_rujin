@@ -53,10 +53,15 @@ extension DetailReviewTableViewCell : UICollectionViewDelegate, UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = reviewCV.dequeueReusableCell(withReuseIdentifier: "DetailReviewCell", for: indexPath) as? DetailReviewCollectionViewCell else { return UICollectionViewCell() }
         
-        //cell.profileImg.load(url: reviews[indexPath.row].profileImg!)
+        
         cell.reviewerLbl.text = reviews[indexPath.row].nickName
         cell.reviewDateLbl.text = reviews[indexPath.row].createAt
-        //cell.reviewImg.load(url: reviews[indexPath.row].reviewImg!)
+        if let value = reviews[indexPath.row].reviewImg {
+            cell.reviewImg.load(url: URL(string: "https://\(value)")!)
+        }
+        if let value = reviews[indexPath.row].profileImg {
+            cell.profileImg.load(url: URL(string: "https://\(value)")!)
+        }
         cell.reviewLbl.text = reviews[indexPath.row].contents
         
         return cell

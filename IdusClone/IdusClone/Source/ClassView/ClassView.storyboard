@@ -13,7 +13,7 @@
             <objects>
                 <viewController storyboardIdentifier="ClassVC" id="UuH-dd-Mao" customClass="ClassViewController" customModule="IdusClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wMK-pU-zuo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7yl-X1-0nt">
@@ -57,10 +57,7 @@
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DBn-dL-Bc8">
-                                <rect key="frame" x="0.0" y="91" width="414" height="1826"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1826" id="qQn-Ta-irb"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="91" width="414" height="722"/>
                                 <connections>
                                     <segue destination="u9u-1c-RCo" kind="embed" id="FDg-7c-BvC"/>
                                 </connections>
@@ -75,11 +72,11 @@
                             <constraint firstItem="iMw-GJ-t7b" firstAttribute="trailing" secondItem="7yl-X1-0nt" secondAttribute="trailing" constant="20" id="KbH-da-mdH"/>
                             <constraint firstItem="DBn-dL-Bc8" firstAttribute="leading" secondItem="iMw-GJ-t7b" secondAttribute="leading" id="a3t-WG-vOp"/>
                             <constraint firstItem="iMw-GJ-t7b" firstAttribute="trailing" secondItem="DBn-dL-Bc8" secondAttribute="trailing" id="jXM-Dt-lbg"/>
+                            <constraint firstItem="iMw-GJ-t7b" firstAttribute="bottom" secondItem="DBn-dL-Bc8" secondAttribute="bottom" id="tRg-QY-Ped"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="클래스" image="play.tv" catalog="system" selectedImage="play.tv" id="EvZ-QJ-4qJ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="414" height="2000"/>
                     <connections>
                         <outlet property="classSearchView" destination="7yl-X1-0nt" id="3pY-K3-1fo"/>
                     </connections>
@@ -93,8 +90,9 @@
             <objects>
                 <viewController id="u9u-1c-RCo" customClass="ClassTabViewController" customModule="IdusClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g1X-4V-NdF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1826"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="722"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="P32-Z6-XWZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>

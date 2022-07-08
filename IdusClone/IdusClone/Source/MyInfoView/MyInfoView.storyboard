@@ -15,15 +15,30 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OhL-jC-cuS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OhL-jC-cuS" secondAttribute="trailing" id="D25-eH-mIq"/>
+                            <constraint firstItem="OhL-jC-cuS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="brF-jG-Vaa"/>
+                            <constraint firstItem="OhL-jC-cuS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eSm-gU-Epq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="OhL-jC-cuS" secondAttribute="bottom" id="ziP-Lg-Puk"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="내 정보" image="person" catalog="system" selectedImage="person" id="aWx-Wm-ZlW"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="OhL-jC-cuS" id="0bQ-md-kpF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="67"/>
+            <point key="canvasLocation" x="131.8840579710145" y="66.964285714285708"/>
         </scene>
     </scenes>
     <resources>

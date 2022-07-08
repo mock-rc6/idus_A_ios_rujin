@@ -44,9 +44,22 @@ class BottomSheetViewController: UIViewController {
                 }
                 else {
                     print("loginWithKakaoAccount() success.")
-
+                    
+                    UserApi.shared.me() {(user, error) in
+                        if let error = error {
+                            print(error)
+                        }
+                        else {
+                            print("me() success.")
+                            
+                            //do something
+                            _ = user
+                            print("!!!user : \(user?.id)")
+                        }
+                    }
                     self.moveToMain()
                     _ = oauthToken
+                    
                 }
             }
     }

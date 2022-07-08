@@ -9,66 +9,82 @@ import UIKit
 
 class OnlineViewController: UIViewController {
     
-    @IBOutlet weak var bannerCV: UICollectionView!
+    var onlineData : OnlineResult?
     
-    var nowPage : Int = 0
-    let bannerArray : [UIImage] = [UIImage(named: "banner1")!, UIImage(named: "banner2")!, UIImage(named: "banner3")!, UIImage(named: "banner4")!, UIImage(named: "banner5")!, UIImage(named: "banner6")!, UIImage(named: "banner7")!, UIImage(named: "banner8")!, UIImage(named: "banner9")!, UIImage(named: "banner10")!, UIImage(named: "banner11")!, UIImage(named: "banner12")!]
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        bannerCV.delegate = self
-        bannerCV.dataSource = self
-        bannerTimer()
+        ClassDataManager().getOnlineClassData(viewController: self)
+        setupTableView()
     }
     
-
-
 }
 
-//MARK: - CollectionView
-extension OnlineViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return bannerArray.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = bannerCV.dequeueReusableCell(withReuseIdentifier: "BannerCell", for: indexPath) as? BannerCollectionViewCell else { return UICollectionViewCell() }
-        cell.bannerImg.image = bannerArray[indexPath.row]
+
+extension OnlineViewController : UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return cell
+        return 3
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: bannerCV.frame.size.width  , height:  bannerCV.frame.height)
-    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let line = indexPath.row
+        
+        switch line {
+        case 0:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "OnlineBannerTVC") as? OnlineBannerTableViewCell else { return UITableViewCell() }
+            
+            return cell
+        case 1:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "OnlineSmallIconTVC") as? OnlineSmallIconTableViewCell else { return UITableViewCell() }
+            
+            return cell
+        case 2:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "OnlineReviewTVC") as? OnlineReviewTableViewCell else { return UITableViewCell() }
+            
+            if let value = onlineData {
+                print("AAAReVIEW")
+                cell.setCell(value.bestReviewList)
+            }
+            
+            return cell
     
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        nowPage = Int(scrollView.contentOffset.x) / Int(scrollView.frame.width)
-    }
-    
-}
-
-//MARK: - banner Timer 세팅
-
-extension OnlineViewController {
-    func bannerTimer() {
-        let _: Timer = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { (Timer) in
-            self.bannerMove()
+        default:
+            return UITableViewCell()
         }
     }
-    // 배너 움직이는 매서드
-    func bannerMove() {
-        // 현재페이지가 마지막 페이지일 경우
-        if nowPage == bannerArray.count-1 {
-            // 맨 처음 페이지로 돌아감
-            bannerCV.scrollToItem(at: NSIndexPath(item: 0, section: 0) as IndexPath, at: .right, animated: true)
-            nowPage = 0
-            return
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 0:
+            return 200
+        case 1:
+            return 130
+        case 2:
+            return 441
+        default:
+            return 100
         }
-        // 다음 페이지로 전환
-        nowPage += 1
-        bannerCV.scrollToItem(at: NSIndexPath(item: nowPage, section: 0) as IndexPath, at: .right, animated: true)
+    }
+    
+    //tableview cell에 들어갈 cell들의 Nib을 등록
+    private func setupTableView() {
+        // Register the xib for tableview cell
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        // 배너
+        let bannerTableCellNib = UINib(nibName: "OnlineBannerTableViewCell", bundle: nil)
+        self.tableView.register(bannerTableCellNib, forCellReuseIdentifier: "OnlineBannerTVC")
+        
+        let smallIconCellNib = UINib(nibName: "OnlineSmallIconTableViewCell", bundle: nil)
+        self.tableView.register(smallIconCellNib, forCellReuseIdentifier: "OnlineSmallIconTVC")
+        
+        let reviewTableCellNib = UINib(nibName: "OnlineReviewTableViewCell", bundle: nil)
+        self.tableView.register(reviewTableCellNib, forCellReuseIdentifier: "OnlineReviewTVC")
+        
     }
 }

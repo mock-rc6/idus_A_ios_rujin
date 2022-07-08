@@ -56,7 +56,9 @@ extension RelatedProductTableViewCell : UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RelatedProductCell", for: indexPath) as? RelatedProductCollectionViewCell {
             
-            cell.productImg.image = UIImage(named: "productSample")
+            if let value = relatedProductData?.productsList[indexPath.row].productImg {
+                cell.productImg.load(url: URL(string: "https://\(value)")!)
+            }
             cell.productLbl.text = relatedProductData?.productsList[indexPath.row].productTitle
             return cell
         }
