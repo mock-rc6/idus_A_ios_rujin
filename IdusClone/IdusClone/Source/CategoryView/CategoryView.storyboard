@@ -16,25 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="카테" translatesAutoresizingMaskIntoConstraints="NO" id="OQU-C1-4XO">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="카테" translatesAutoresizingMaskIntoConstraints="NO" id="jwy-5F-DaH">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OQU-C1-4XO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1qb-p3-5AQ"/>
-                            <constraint firstItem="OQU-C1-4XO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Aav-5N-J6G"/>
-                            <constraint firstItem="OQU-C1-4XO" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ES9-PA-M74"/>
-                            <constraint firstItem="OQU-C1-4XO" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="Gnl-XD-mj8"/>
+                            <constraint firstItem="jwy-5F-DaH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="2Vp-K1-HQW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jwy-5F-DaH" secondAttribute="trailing" id="Pik-5t-vwd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="jwy-5F-DaH" secondAttribute="bottom" id="Shy-SS-yiW"/>
+                            <constraint firstItem="jwy-5F-DaH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qjj-EU-WJX"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="카테고리" image="line.3.horizontal" catalog="system" selectedImage="line.3.horizontal" id="5wR-zL-a3Z"/>
+                    <tabBarItem key="tabBarItem" title="카테고리" image="line.3.horizontal" catalog="system" selectedImage="line.3.horizontal" id="WdO-2p-5f7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="66.964285714285708"/>
+            <point key="canvasLocation" x="131.8840579710145" y="62.946428571428569"/>
         </scene>
     </scenes>
     <resources>

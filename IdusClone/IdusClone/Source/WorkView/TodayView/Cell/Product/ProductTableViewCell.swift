@@ -21,6 +21,9 @@ class ProductTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         setNib()
+        moreProductBtn.layer.borderWidth = 1
+        moreProductBtn.layer.borderColor = UIColor.lightGray.cgColor
+        moreProductBtn.layer.cornerRadius = 10
     }
 
     //MARK: - 상단 더보기 버튼
@@ -79,8 +82,7 @@ extension ProductTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             
-        let width = collectionView.bounds.width / 2.17
-        return CGSize(width: width, height: width * 1.85)
+        return CGSize(width: 135, height: 192)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

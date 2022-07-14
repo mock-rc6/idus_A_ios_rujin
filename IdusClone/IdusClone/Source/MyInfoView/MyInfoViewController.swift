@@ -7,7 +7,13 @@
 
 import UIKit
 
-class MyInfoViewController: UIViewController {
+class MyInfoViewController: UIViewController, ShippingProtocol {
+    func didSelectBtnShipping() {
+        let vc = UIStoryboard(name: "DeliveryView", bundle: nil).instantiateViewController(withIdentifier: "DeliveryVC") as! DeliveryViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -70,6 +76,7 @@ extension MyInfoViewController: UITableViewDataSource, UITableViewDelegate{
         case 0:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "MyInfoProfileTVC") as? MyInfoProfileTableViewCell {
                 
+                cell.delegate = self
                 return cell
             }
         case 2:

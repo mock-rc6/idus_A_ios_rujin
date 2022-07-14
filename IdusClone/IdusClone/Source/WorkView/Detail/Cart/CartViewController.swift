@@ -31,12 +31,13 @@ class CartViewController: UIViewController {
 
     func setNavigationBar() {
         
-        let btnBack = makeImagelButton(nil, action: #selector(moveBack), symbolName: "arrow.backward")
+        let btnBack = makeSFSymbolButton(self, action: #selector(moveBack), symbolName: "arrow.backward")
         let cartTitle = UIBarButtonItem(title: "장바구니", style: .plain, target: self, action: #selector(moveBack))
         navigationController?.navigationBar.barTintColor = UIColor.white
         navigationController?.navigationBar.tintColor = UIColor.black
         
         navigationItem.leftBarButtonItems = [btnBack, cartTitle]
+        self.tabBarController?.tabBar.isHidden = true
     }
 
     @objc func moveBack(){
@@ -48,6 +49,7 @@ class CartViewController: UIViewController {
         vc.payPrice = cartData?.basketProductDetailList[0].finalPrice
         vc.shipping = shipping
         vc.productPrice = (cartData?.basketProductDetailList[0].finalPrice)! - shipping!
+        
         vc.productName = cartData?.basketProductDetailList[0].title
         self.navigationController?.pushViewController(vc, animated: true)
     }

@@ -32,7 +32,6 @@ class WorkViewController: UIViewController {
         print("CART")
         let vc = UIStoryboard(name: "CartView", bundle: Bundle.main).instantiateViewController(withIdentifier: "CartVC") as! CartViewController
         
-        
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -49,6 +48,7 @@ class WorkViewController: UIViewController {
         let rightBtn = makeSFSymbolButton(self, action: #selector(moveToCart), symbolName: "cart")
         
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "idus"))
+        self.navigationItem.backButtonTitle = ""
         self.navigationController?.navigationBar.tintColor = .black
         self.navigationItem.rightBarButtonItem = rightBtn
         

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delivery View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DeliveryVC" id="Y6W-OH-hqX" customClass="DeliveryViewController" customModule="IdusClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="주문상단" translatesAutoresizingMaskIntoConstraints="NO" id="4Uc-Vl-HOA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="9gz-Zk-wdB"/>
+                                    <constraint firstAttribute="height" constant="128" id="HEZ-34-9ia"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yOl-xX-4Nd">
+                                <rect key="frame" x="0.0" y="180" width="414" height="682"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="0gs-y5-rtg"/>
+                                    <constraint firstAttribute="height" constant="682" id="lXC-Qo-sb8"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yOl-xX-4Nd" secondAttribute="trailing" id="0J2-eX-BEF"/>
+                            <constraint firstItem="yOl-xX-4Nd" firstAttribute="top" secondItem="4Uc-Vl-HOA" secondAttribute="bottom" constant="8" symbolic="YES" id="9eK-cY-3BZ"/>
+                            <constraint firstItem="yOl-xX-4Nd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="J75-cG-Xau"/>
+                            <constraint firstItem="4Uc-Vl-HOA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="JNj-SX-EeC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="yOl-xX-4Nd" secondAttribute="bottom" id="U22-lx-fcd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4Uc-Vl-HOA" secondAttribute="trailing" id="caI-kq-3UV"/>
+                            <constraint firstItem="4Uc-Vl-HOA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="wNg-kL-Hhm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="yOl-xX-4Nd" id="XQw-R0-6IG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="주문상단" width="828" height="252"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

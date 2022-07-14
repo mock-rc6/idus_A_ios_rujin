@@ -29,9 +29,6 @@ class RelatedProductTableViewCell: UITableViewCell {
     }
     
     
-    @IBAction func pressBottomBtn(_ sender: UIButton) {
-    }
-    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -72,9 +69,8 @@ extension RelatedProductTableViewCell : UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            // 컬렉션 뷰 한 줄에 2개가 딱 맞게 정사각형으로 들어가게!
-        let width = collectionView.bounds.width / 2.17
-        return CGSize(width: width, height: width * 1.85)
+            
+        return CGSize(width: 160, height: 258)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

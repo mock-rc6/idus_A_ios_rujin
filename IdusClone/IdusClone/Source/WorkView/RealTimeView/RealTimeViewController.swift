@@ -7,7 +7,15 @@
 
 import UIKit
 
-class RealTimeViewController: UIViewController, CheckDelegate {
+class RealTimeViewController: UIViewController, CheckDelegate, TransferDelegate {
+    func didSelectProduct(productId: Int) {
+        let vc = UIStoryboard(name: "DetailView", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailVC") as! DetailViewController
+        vc.productId = productId
+        
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func didSelectOptionBtn(br : Int, img : Int) {
         print("@@##")
         if img == 0 {
@@ -71,6 +79,8 @@ extension RealTimeViewController : UITableViewDelegate, UITableViewDataSource {
                 cell.setCell(value.realTimeProducts)
                 cell.setHeight(height: height)
             }
+            
+            cell.delegate = self
             
             return cell
             

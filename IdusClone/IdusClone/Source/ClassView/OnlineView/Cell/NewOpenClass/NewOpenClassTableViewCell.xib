@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewOpenClassTVC" rowHeight="524" id="05n-8E-MHY" customClass="NewOpenClassTableViewCell" customModule="IdusClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="523"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="05n-8E-MHY" id="Bya-zn-WgN">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="523"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nha-o0-6p6">
+                        <rect key="frame" x="0.0" y="63" width="414" height="424"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AJI-io-iCj">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEW! 새로 오픈한 클래스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAn-bZ-e9H">
+                        <rect key="frame" x="6" y="26" width="298" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="298" id="Bo6-MM-bdE"/>
+                            <constraint firstAttribute="height" constant="29" id="cdW-dy-S7R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="nha-o0-6p6" firstAttribute="top" secondItem="Bya-zn-WgN" secondAttribute="top" constant="63" id="O8d-0m-nX5"/>
+                    <constraint firstItem="zAn-bZ-e9H" firstAttribute="top" secondItem="Bya-zn-WgN" secondAttribute="top" constant="26" id="P4k-fj-Kuz"/>
+                    <constraint firstAttribute="bottom" secondItem="nha-o0-6p6" secondAttribute="bottom" constant="36" id="RaJ-g4-ZzU"/>
+                    <constraint firstAttribute="trailing" secondItem="nha-o0-6p6" secondAttribute="trailing" id="ZlN-ez-Uiw"/>
+                    <constraint firstItem="nha-o0-6p6" firstAttribute="leading" secondItem="Bya-zn-WgN" secondAttribute="leading" id="eVD-qK-9MN"/>
+                    <constraint firstItem="zAn-bZ-e9H" firstAttribute="leading" secondItem="Bya-zn-WgN" secondAttribute="leading" constant="6" id="zg1-Wc-4Xr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="WeS-tf-2GH"/>
+            <connections>
+                <outlet property="newClassCV" destination="nha-o0-6p6" id="NZV-WW-Fs3"/>
+            </connections>
+            <point key="canvasLocation" x="-416.66666666666669" y="-51.227678571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

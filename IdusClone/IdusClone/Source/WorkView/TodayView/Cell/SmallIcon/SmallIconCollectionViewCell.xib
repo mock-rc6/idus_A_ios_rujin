@@ -10,29 +10,33 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SmallIconCell" id="gTV-IL-0wX" customClass="SmallIconCollectionViewCell" customModule="IdusClone" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="83" height="89"/>
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="83" height="89"/>
+                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ggY-sA-Fha">
-                        <rect key="frame" x="10" y="10" width="62" height="64"/>
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="R4X-hD-mnF"/>
+                            <constraint firstAttribute="width" constant="70" id="vnJ-jJ-8EX"/>
+                        </constraints>
                     </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="ggY-sA-Fha" secondAttribute="trailing" constant="11" id="9mE-qr-CFr"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="ggY-sA-Fha" secondAttribute="bottom" constant="15" id="NML-qS-s9K"/>
-                <constraint firstItem="ggY-sA-Fha" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="10" id="SlF-t7-m3O"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="ggY-sA-Fha" secondAttribute="top" constant="34" id="m1v-pP-Q5V"/>
+                <constraint firstItem="ggY-sA-Fha" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Jkf-Pu-s6R"/>
+                <constraint firstAttribute="trailing" secondItem="ggY-sA-Fha" secondAttribute="trailing" id="bY3-A9-aGb"/>
+                <constraint firstAttribute="bottom" secondItem="ggY-sA-Fha" secondAttribute="bottom" id="eVM-re-fyo"/>
+                <constraint firstItem="ggY-sA-Fha" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xjn-UD-KuW"/>
             </constraints>
             <size key="customSize" width="83" height="89"/>
             <connections>
                 <outlet property="iconImage" destination="ggY-sA-Fha" id="p6w-4R-DMx"/>
             </connections>
-            <point key="canvasLocation" x="97.826086956521749" y="120.87053571428571"/>
+            <point key="canvasLocation" x="97.101449275362327" y="120.53571428571428"/>
         </collectionViewCell>
     </objects>
 </document>

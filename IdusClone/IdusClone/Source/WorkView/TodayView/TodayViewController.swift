@@ -115,11 +115,13 @@ extension TodayViewController : UITableViewDelegate, UITableViewDataSource {
         case 0:
             return 200
         case 1:
-            return 130
-        case 2, 3, 4, 5:
-            return 380
+            return 180
+        case 2:
+            return 306
+        case 3, 4, 5:
+            return 506
         case 6:
-            return 500
+            return 400
         default:
             return 100
         }

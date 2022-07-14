@@ -11,6 +11,8 @@ class RealTimeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var realTimeCV: UICollectionView!
     
+    var delegate : TransferDelegate?
+    
     var realTimeProductData : [RealTimeProduct] = []
     var cellheight = 1.7
     
@@ -84,6 +86,15 @@ extension RealTimeTableViewCell : UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       
+        let productId = realTimeProductData[indexPath.row].productID
+        delegate?.didSelectProduct(productId : productId)
+        print("상품")
+        print(productId)
+        
     }
     
     func setCell(_ data : [RealTimeProduct]) {

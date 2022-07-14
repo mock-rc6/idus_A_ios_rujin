@@ -2,7 +2,7 @@
 //  CategoryViewController.swift
 //  IdusClone
 //
-//  Created by RooZin on 2022/06/27.
+//  Created by RooZin on 2022/07/13.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ class CategoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationController?.isNavigationBarHidden = true
     }
     
 

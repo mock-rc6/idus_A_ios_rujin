@@ -7,7 +7,15 @@
 
 import UIKit
 
-class NewViewController: UIViewController, ImgCheckDelegate {
+class NewViewController: UIViewController, ImgCheckDelegate, TransferDelegate {
+    func didSelectProduct(productId: Int) {
+        let vc = UIStoryboard(name: "DetailView", bundle: Bundle.main).instantiateViewController(withIdentifier: "DetailVC") as! DetailViewController
+        vc.productId = productId
+        
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     func didSelectCheckBtn(isChecked : Bool) {
         if isChecked {
             height = 1.0
@@ -64,6 +72,8 @@ extension NewViewController : UITableViewDelegate, UITableViewDataSource {
             return cell
         case 1 :
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewTVC") as? NewTableViewCell else { return UITableViewCell() }
+            
+            cell.delegate = self
             
             if let value = newData {
                 cell.setCell(value.newProductsList)

@@ -7,7 +7,14 @@
 
 import UIKit
 
-class OnlineViewController: UIViewController {
+class OnlineViewController: UIViewController, TransferClassDelegate {
+    func didSelectClass(classId: Int) {
+        let vc = UIStoryboard(name: "OnlineDetailView", bundle: Bundle.main).instantiateViewController(withIdentifier: "OnlineDetailVC") as! OnlineDetailViewController
+        vc.classId = classId
+        print("check")
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     var onlineData : OnlineResult?
     
@@ -20,13 +27,17 @@ class OnlineViewController: UIViewController {
         setupTableView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
 }
 
 
 extension OnlineViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 3
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,9 +57,31 @@ extension OnlineViewController : UITableViewDelegate, UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "OnlineReviewTVC") as? OnlineReviewTableViewCell else { return UITableViewCell() }
             
             if let value = onlineData {
-                print("AAAReVIEW")
+                
                 cell.setCell(value.bestReviewList)
             }
+            
+            return cell
+        case 3:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewOpenClassTVC") as? NewOpenClassTableViewCell else { return UITableViewCell() }
+            
+            if let value = onlineData {
+                
+                cell.setCell(value.newOpenClassesList)
+            }
+            
+            cell.delegate = self
+            
+            return cell
+        case 4:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "AllClassTVC") as? AllClassTableViewCell else { return UITableViewCell() }
+            
+            if let value = onlineData {
+                
+                cell.setCell(value.allOnlineClassesList)
+            }
+            
+            cell.delegate = self
             
             return cell
     
@@ -65,6 +98,10 @@ extension OnlineViewController : UITableViewDelegate, UITableViewDataSource {
             return 130
         case 2:
             return 441
+        case 3:
+            return 524
+        case 4:
+            return 2400
         default:
             return 100
         }
@@ -85,6 +122,12 @@ extension OnlineViewController : UITableViewDelegate, UITableViewDataSource {
         
         let reviewTableCellNib = UINib(nibName: "OnlineReviewTableViewCell", bundle: nil)
         self.tableView.register(reviewTableCellNib, forCellReuseIdentifier: "OnlineReviewTVC")
+        
+        let newOpenClassTableCellNib = UINib(nibName: "NewOpenClassTableViewCell", bundle: nil)
+        self.tableView.register(newOpenClassTableCellNib, forCellReuseIdentifier: "NewOpenClassTVC")
+        
+        let allClassTableCellNib = UINib(nibName: "AllClassTableViewCell", bundle: nil)
+        self.tableView.register(allClassTableCellNib, forCellReuseIdentifier: "AllClassTVC")
         
     }
 }

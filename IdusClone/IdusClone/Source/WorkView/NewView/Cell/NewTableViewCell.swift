@@ -9,6 +9,8 @@ import UIKit
 
 class NewTableViewCell: UITableViewCell {
 
+    var delegate : TransferDelegate?
+    
     @IBOutlet weak var newCV: UICollectionView!
     
     var newProductData : [NewProductsList] = []
@@ -61,6 +63,15 @@ extension NewTableViewCell : UICollectionViewDelegate, UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+       
+        let productId = newProductData[indexPath.row].productID
+        delegate?.didSelectProduct(productId : productId)
+        print("상품")
+        print(productId)
+        
     }
     
     func setCell(_ data : [NewProductsList]) {
